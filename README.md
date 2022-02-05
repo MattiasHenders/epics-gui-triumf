@@ -2,7 +2,7 @@
 
 SHORT Intro to the GUI project
 
-![TRIUMF and BCIT](img/triumf_bcit.png)
+<img src="/img/triumf_bcit.png" alt="TRIUMF and BCIT" width="250"/>
 
 ## Table of Contents
 
@@ -18,8 +18,9 @@ Text describing
 ## <a name="installation"></a> Installation
 
 ``
-git clone
+git clone https://github.com/MattiasHenders/epics-gui-triumf.git
 ``
+
 ``
 cd epics-gui-triumf
 ``
