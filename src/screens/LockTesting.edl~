@@ -224,11 +224,7 @@ y 324
 w 77
 h 76
 lineColor index 0
-lineAlarm
-fill
 fillColor index 19
-fillAlarm
-alarmPv "lock2"
 endObjectProperties
 
 # (Rectangle)
@@ -270,11 +266,7 @@ y 322
 w 77
 h 76
 lineColor index 0
-lineAlarm
-fill
 fillColor index 19
-fillAlarm
-alarmPv "lock1"
 endObjectProperties
 
 # (Rectangle)
@@ -288,11 +280,7 @@ y 349
 w 84
 h 29
 lineColor index 0
-lineAlarm
-fill
 fillColor index 19
-fillAlarm
-alarmPv "lock1-2_link"
 endObjectProperties
 
 # (Rectangle)
@@ -306,11 +294,66 @@ y 348
 w 84
 h 29
 lineColor index 0
-lineAlarm
-fill
 fillColor index 19
-fillAlarm
-alarmPv "lock2-3_link"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 472
+y 258
+w 77
+h 145
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 504
+y 258
+w 14
+h 13
+lineColor index 0
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 508
+y 271
+w 6
+h 56
+lineColor index 0
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 472
+y 327
+w 77
+h 76
+lineColor index 0
+fillColor index 19
+endObjectProperties
+
+endGroup
+
 endObjectProperties
 
 # (Rectangle)
@@ -324,11 +367,7 @@ y 348
 w 84
 h 29
 lineColor index 0
-lineAlarm
-fill
 fillColor index 19
-fillAlarm
-alarmPv "lock1-2-3_link"
 endObjectProperties
 
 # (Rectangle)
@@ -447,101 +486,5 @@ labelType "literal"
 3d
 font "helvetica-bold-r-10.0"
 objType "controls"
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 504
-y 258
-w 14
-h 13
-lineColor index 0
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 508
-y 271
-w 6
-h 56
-lineColor index 0
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 472
-y 327
-w 77
-h 76
-lineColor index 0
-lineAlarm
-fill
-fillColor index 19
-fillAlarm
-alarmPv "lock3"
-endObjectProperties
-
-# (Text Monitor)
-object activeXTextDspClass:noedit
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 403
-y 404
-w 43
-h 13
-controlPv "lock1-2_link"
-font "helvetica-medium-r-10.0"
-fgColor index 0
-fgAlarm
-bgColor index 19
-useDisplayBg
-autoHeight
-limitsFromDb
-nullColor index 7
-useHexPrefix
-useAlarmBorder
-newPos
-objType "monitors"
-id "2-3link"
-endObjectProperties
-
-# (Text Monitor)
-object activeXTextDspClass:noedit
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 565
-y 404
-w 48
-h 13
-controlPv "lock1-2-3_link"
-font "helvetica-medium-r-10.0"
-fgColor index 0
-bgColor index 19
-useDisplayBg
-autoHeight
-limitsFromDb
-nullColor index 7
-useHexPrefix
-newPos
-objType "monitors"
-id "lock1-2-3_link"
 endObjectProperties
 
