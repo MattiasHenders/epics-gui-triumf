@@ -768,23 +768,3 @@ value {
 autoSize
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 50
-y 100
-w 450
-h 48
-font "courier-bold-i-48.0"
-fgColor index 21
-bgColor index 19
-useDisplayBg
-value {
-  "Mattias is cool"
-}
-autoSize
-endObjectProperties
-
