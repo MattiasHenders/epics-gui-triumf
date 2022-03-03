@@ -60,8 +60,8 @@ minor 1
 release 1
 x 799
 y 518
-w 60
-h 13
+w 45
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 5
@@ -79,8 +79,8 @@ minor 1
 release 1
 x 720
 y 565
-w 36
-h 13
+w 31
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -99,8 +99,8 @@ minor 1
 release 1
 x 718
 y 624
-w 36
-h 13
+w 31
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -119,8 +119,8 @@ minor 1
 release 1
 x 716
 y 678
-w 36
-h 13
+w 31
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -193,8 +193,8 @@ minor 1
 release 1
 x 150
 y 283
-w 60
-h 13
+w 53
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -213,8 +213,8 @@ minor 1
 release 1
 x 315
 y 286
-w 60
-h 13
+w 53
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -233,8 +233,8 @@ minor 1
 release 1
 x 480
 y 286
-w 60
-h 13
+w 53
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -411,8 +411,8 @@ minor 1
 release 1
 x 131
 y 718
-w 114
-h 13
+w 88
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -431,8 +431,8 @@ minor 1
 release 1
 x 127
 y 499
-w 120
-h 13
+w 99
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -451,8 +451,8 @@ minor 1
 release 1
 x 287
 y 500
-w 120
-h 13
+w 99
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -471,8 +471,8 @@ minor 1
 release 1
 x 452
 y 499
-w 120
-h 13
+w 99
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -588,8 +588,8 @@ minor 1
 release 1
 x 597
 y 169
-w 222
-h 13
+w 178
+h 12
 font "helvetica-medium-r-10.0"
 fontAlign "center"
 fgColor index 0
@@ -654,8 +654,8 @@ minor 1
 release 1
 x 644
 y 356
-w 114
-h 26
+w 93
+h 24
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -723,8 +723,8 @@ minor 1
 release 1
 x 644
 y 356
-w 108
-h 26
+w 86
+h 24
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -746,5 +746,45 @@ visPv "lock1-2-3_link"
 visInvert
 visMin "3"
 visMax "4"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 89
+y 22
+w 791
+h 75
+font "times-medium-r-72.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "TRIUMF Pi Cluster Demo"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 50
+y 100
+w 450
+h 48
+font "courier-bold-i-48.0"
+fgColor index 21
+bgColor index 19
+useDisplayBg
+value {
+  "Mattias is cool"
+}
+autoSize
 endObjectProperties
 
