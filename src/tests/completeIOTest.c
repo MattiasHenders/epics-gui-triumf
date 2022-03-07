@@ -4,6 +4,9 @@
 #include <time.h>
 #include <wiringPi.h>
 
+//Used to make system calls
+int system(const char *command);
+
 int main(int argc, char **argv)
 {
 
