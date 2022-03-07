@@ -8,6 +8,8 @@ int system(const char *command);
 
 int main(int argc, char **argv) {
 
+	printf("Starting test of caputting to EPICS.\n");
+
 	//Amount of time to loop (default 100)
 	int loops = 1000;
 
@@ -31,4 +33,6 @@ int main(int argc, char **argv) {
 
 	//Print the output
 	printf("Total time spent was %f sec\n", time_spent);
+
+	return 0;
 }

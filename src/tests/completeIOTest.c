@@ -11,10 +11,15 @@ int main(int argc, char **argv)
   // EPICS EXAMPLES
   //###################################################
 
+  printf("Starting test of read pin, turn off/on, write to EPICS.\n");
+
   int pin = 4;
 
-  wiringPiSetup(); // Initializes wiringPi using wiringPi's simlified number system.
-  wiringPiSetupGpio(); // Initializes wiringPi using the Broadcom GPIO pin numbers
+  //Initializes wiringPi using the Broadcom GPIO pin numbers
+  wiringPiSetupGpio(); 
+  if (wiringPiSetup() == -1) {
+    exit(1);
+  }
 
   //Amount of time to loop (default 100)
 	int loops = 1000;
@@ -27,16 +32,18 @@ int main(int argc, char **argv)
 
     char str[10];
 
-    if (digitalRead(17))
-      printf("Pin 17 is HIGH\n");
+    if (digitalRead(pin)) { //If pin is on
+      printf("Pin %d is HIGH\n", pin);
       sprintf(str, "%s", "OPEN");
-    else
-      printf("Pin 17 is LOW\n");
+      digitalWrite(pin, 0); //Turn pin off
+    } else { //If pin is off
+      printf("Pin %d is LOW\n", pin);
       sprintf(str, "%s", "CLOSED");
+      digitalWrite(pin, 1); //Turn pin on
+    }
 
     char num[25] = "caput test:lock ";
 
-    sprintf(str, "%s", "OPEN");
     strcat(num, str);
     system(num);
   }

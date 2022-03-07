@@ -8,6 +8,8 @@ int system(const char *command);
 
 int main(int argc, char **argv) {
 
+	printf("Starting test of make heavy system calls.\n");
+
 	//Amount of time to loop (default 100)
 	int loops = 1000;
 
@@ -17,7 +19,8 @@ int main(int argc, char **argv) {
 	//Loop through, putting to EPICS
 	for (int i = 0; i < loops; ++i) {
 
-		system("sleep 0.0001");
+		//Make heavy system call
+		system("sleep 0.00001");
 	}
 
 	//Check time
