@@ -9,3 +9,8 @@ record(ai, "input:humidity"){
     field(DESC, "Humidity Sensor")
 
 }
+
+
+record(ai, "test:number"){
+
+}
