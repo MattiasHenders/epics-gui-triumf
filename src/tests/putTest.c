@@ -1,37 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include <sys/mman.h>
-#include <unistd.h>
-#include <cadef.h>
 #include <time.h>
+#include <wiringPi.h>
 
 int main(int argc, char **argv)
-{    
+{
 
-    //###################################################
-    // EPICS EXAMPLES
-    //###################################################
+  //###################################################
+  // EPICS EXAMPLES
+  //###################################################
 
-    chid fred;
+  int pin = 4;
 
-    int NUM_LOOPS = 100;
+  wiringPiSetup(); // Initializes wiringPi using wiringPi's simlified number system.
+  wiringPiSetupGpio(); // Initializes wiringPi using the Broadcom GPIO pin numbers
 
-    clock_t begin = clock();
+  //Amount of time to loop (default 100)
+	int loops = 1000;
 
-    for (int i = 0; i < NUM_LOOPS; ++i) {
-        
-        SEVCHK(ca_put(DBR_STRING, fred, "0"), "Put failed");
-        ca_flush_io();
+	//Start of Clock
+	clock_t begin = clock();
 
-        SEVCHK(ca_put(DBR_STRING, fred, "1"), "Put failed");
-        ca_flush_io();
+	//Loop through, putting to EPICS
+	for (int i = 0; i < loops; ++i) {
 
-    }
+    char str[10];
 
-    clock_t end = clock();
-    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("%f\n", time_spent);
+    if (digitalRead(17))
+      printf("Pin 17 is HIGH\n");
+      sprintf(str, "%s", "OPEN");
+    else
+      printf("Pin 17 is LOW\n");
+      sprintf(str, "%s", "CLOSED");
+
+    char num[25] = "caput test:lock ";
+
+    sprintf(str, "%s", "OPEN");
+    strcat(num, str);
+    system(num);
+  }
+
+	//Check time
+	clock_t end = clock();
+	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+
+	//Print the output
+	printf("Total time spent was %f sec\n", time_spent);
 
   return 0;
 
