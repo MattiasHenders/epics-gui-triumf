@@ -7,6 +7,7 @@
 int main() {
 
    printf("Starting test of reading and writing pins.\n");
+   printf("===============================\n");
 
    int pin = 4;
 
@@ -30,6 +31,9 @@ int main() {
       loops = argv[2];
    }
 
+	printf("Tests: %d | Loops per test: %d\n", tests, loops);
+	printf("===============================\n");
+   
    //Total time
    double totalSec = 0.0;
 

@@ -24,6 +24,9 @@ int main(int argc, char **argv) {
 		loops = argv[2];
 	}
 
+	printf("Tests: %d | Loops per test: %d\n", tests, loops);
+	printf("===============================\n");
+
 	//Total time
 	double totalSec = 0.0;
 
@@ -37,7 +40,7 @@ int main(int argc, char **argv) {
 		for (int i = 0; i < loops; ++i) {
 
 			//Make heavy system call
-			system("sleep 0.00001");
+			system("sleep 0.0001");
 		}
 
 		//Check time

@@ -27,6 +27,9 @@ int main(int argc, char **argv) {
 	//Total time
 	double totalSec = 0.0;
 
+	printf("Tests: %d | Loops per test: %d\n", tests, loops);
+	printf("===============================\n");
+	
 	//Loop through tests
   	for (int k = 0; k < tests; ++k) {
 
