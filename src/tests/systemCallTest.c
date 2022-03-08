@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
 		for (int i = 0; i < loops; ++i) {
 
 			//Make heavy system call
-			system("sleep 0.0001");
+			system("sleep 0");
 		}
 
 		//Check time
