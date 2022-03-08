@@ -18,10 +18,10 @@ int main(int argc, char **argv) {
 
 	//Check if any args
 	if(argc == 2) {
-		tests = argv[1];
+		tests = strtol(argv[1], NULL, 10);;
 	} else if (argc == 3) {
-		tests = argv[1];
-		loops = argv[2];
+		tests = strtol(argv[1], NULL, 10);
+		loops = strtol(argv[2], NULL, 10);
 	}
 
 	//Total time
@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
 
 	printf("Tests: %d | Loops per test: %d\n", tests, loops);
 	printf("===============================\n");
-	
+
 	//Loop through tests
   	for (int k = 0; k < tests; ++k) {
 
