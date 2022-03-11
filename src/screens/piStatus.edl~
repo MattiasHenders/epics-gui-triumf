@@ -1,0 +1,971 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 100
+w 250
+h 700
+font "helvetica-medium-r-10.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-10.0"
+fgColor index 0
+bgColor index 8
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 8
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 8
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 21
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 1"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 19
+w 48
+h 16
+controlPv "lock1"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 65
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 65
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 78
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 2"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 76
+w 48
+h 16
+controlPv "lock2"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 122
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 122
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 135
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 3"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 133
+w 48
+h 16
+controlPv "lock3"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 179
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 179
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 192
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 4"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 190
+w 48
+h 16
+controlPv "Ioc4"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 236
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 236
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 249
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 5"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 247
+w 48
+h 16
+controlPv "Ioc5"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 293
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 293
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 306
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 6"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 304
+w 48
+h 16
+controlPv "Ioc6"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 350
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 350
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 363
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 7"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 361
+w 48
+h 16
+controlPv "Ioc7"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 407
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 407
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 420
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 8"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 418
+w 48
+h 16
+controlPv "Ioc8"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 464
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 464
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 477
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 9"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 475
+w 48
+h 16
+controlPv "Ioc9"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 521
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 521
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 534
+w 34
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 10"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 532
+w 48
+h 16
+controlPv "Ioc10"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 578
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 578
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 591
+w 34
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 11"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 589
+w 48
+h 16
+controlPv "Ioc11"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 635
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 635
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 648
+w 34
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 12"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 646
+w 48
+h 16
+controlPv "Ioc12"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

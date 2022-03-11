@@ -768,3 +768,25 @@ value {
 autoSize
 endObjectProperties
 
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 294
+y 675
+w 36
+h 26
+fgColor index 0
+bgColor index 19
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "./piStatus.edl"
+}
+endObjectProperties
+
