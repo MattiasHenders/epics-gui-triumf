@@ -1,0 +1,375 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 400
+y 100
+w 800
+h 150
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 0
+bgColor index 21
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 11
+w 176
+h 122
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 11
+w 176
+h 122
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 30
+y 27
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 30
+  1 30
+  2 104
+}
+yPoints {
+  0 27
+  1 118
+  2 73
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 103
+y 28
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 177
+  1 177
+  2 103
+}
+yPoints {
+  0 28
+  1 119
+  2 74
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 202
+y 12
+w 176
+h 122
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 202
+y 12
+w 176
+h 122
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 218
+y 28
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 218
+  1 218
+  2 292
+}
+yPoints {
+  0 28
+  1 119
+  2 74
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 291
+y 29
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 365
+  1 365
+  2 291
+}
+yPoints {
+  0 29
+  1 120
+  2 75
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 389
+y 11
+w 176
+h 122
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 389
+y 11
+w 176
+h 122
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 405
+y 27
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 405
+  1 405
+  2 479
+}
+yPoints {
+  0 27
+  1 118
+  2 73
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 478
+y 28
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 552
+  1 552
+  2 478
+}
+yPoints {
+  0 28
+  1 119
+  2 74
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 574
+y 12
+w 176
+h 122
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 574
+y 12
+w 176
+h 122
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 590
+y 28
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 590
+  1 590
+  2 664
+}
+yPoints {
+  0 28
+  1 119
+  2 74
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 663
+y 29
+w 74
+h 91
+lineColor index 0
+fill
+fillColor index 35
+lineWidth 2
+closePolygon
+numPoints 3
+xPoints {
+  0 737
+  1 737
+  2 663
+}
+yPoints {
+  0 29
+  1 120
+  2 75
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
