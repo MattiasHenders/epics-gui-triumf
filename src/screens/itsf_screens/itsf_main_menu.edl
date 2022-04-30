@@ -146,3 +146,29 @@ value {
 autoSize
 endObjectProperties
 
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 360
+y 90
+w 300
+h 50
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "Vacuum"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_vacuum_menu.edl"
+}
+menuLabel {
+  0 "Vacuum"
+}
+endObjectProperties
+

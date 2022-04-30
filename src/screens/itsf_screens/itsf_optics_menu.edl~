@@ -79,9 +79,9 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 180
+x 220
 y 300
-w 200
+w 240
 h 40
 lineColor index 14
 fill
@@ -130,7 +130,7 @@ major 4
 minor 4
 release 0
 x 160
-y 380
+y 370
 w 90
 h 30
 fgColor index 0
@@ -152,9 +152,9 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 390
+x 470
 y 300
-w 180
+w 100
 h 40
 lineColor index 14
 fill
@@ -169,7 +169,7 @@ minor 0
 release 0
 x 130
 y 300
-w 50
+w 80
 h 40
 lineColor index 14
 fill
@@ -183,7 +183,7 @@ major 4
 minor 3
 release 0
 x 160
-y 420
+y 410
 w 40
 h 20
 fgColor index 14
@@ -205,7 +205,7 @@ major 4
 minor 3
 release 0
 x 210
-y 420
+y 410
 w 40
 h 20
 fgColor index 14
@@ -226,8 +226,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 400
-y 420
+x 460
+y 410
 w 40
 h 20
 fgColor index 14
@@ -248,8 +248,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 350
-y 420
+x 410
+y 410
 w 40
 h 20
 fgColor index 14
@@ -270,8 +270,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 350
-y 380
+x 410
+y 370
 w 90
 h 30
 fgColor index 0
@@ -295,7 +295,7 @@ minor 0
 release 0
 x 570
 y 300
-w 160
+w 250
 h 40
 lineColor index 14
 fill
@@ -308,8 +308,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 960
-y 240
+x 980
+y 90
 w 40
 h 20
 fgColor index 14
@@ -330,8 +330,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 910
-y 240
+x 930
+y 90
 w 40
 h 20
 fgColor index 14
@@ -346,38 +346,15 @@ command {
 }
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 910
-y 200
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4A"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "itsf_fc4a.edl"
-}
-endObjectProperties
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 790
+x 880
 y 300
-w 170
+w 80
 h 40
 lineColor index 14
 fill
@@ -391,9 +368,9 @@ major 4
 minor 0
 release 0
 x 1190
-y 580
+y 590
 w 40
-h 90
+h 80
 lineColor index 14
 fill
 fillColor index 14
@@ -447,7 +424,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc4a 0"
+  0 "caput itsf:fc4b 0"
 }
 endObjectProperties
 
@@ -469,7 +446,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc4a 1"
+  0 "caput itsf:fc4b 1"
 }
 endObjectProperties
 
@@ -494,11 +471,11 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
+x 180
 y 280
 w 50
 h 80
-file "fc.edl"
+file "symbols/fc.edl"
 numStates 2
 numPvs 0
 useOriginalColors
@@ -512,66 +489,11 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 350
-y 280
-w 50
-h 80
-file "fc.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 930
-y 280
-w 50
-h 80
-file "fc.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 1185
-y 545
-w 50
-h 80
-file "fc.edl"
-numStates 2
-numPvs 0
-orientation "rotateCW"
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 720
+x 810
 y 290
 w 80
 h 60
-file "valve.edl"
+file "symbols/valve.edl"
 numStates 2
 numPvs 0
 useOriginalColors
@@ -585,8 +507,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 760
-y 250
+x 850
+y 410
 w 40
 h 20
 fgColor index 14
@@ -607,8 +529,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 710
-y 250
+x 800
+y 410
 w 40
 h 20
 fgColor index 14
@@ -629,8 +551,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 710
-y 210
+x 800
+y 370
 w 90
 h 30
 fgColor index 0
@@ -731,11 +653,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4A"
+buttonLabel "ITSF:FC4B"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc4a.edl"
+  0 "itsf_fc4b.edl"
 }
 endObjectProperties
 
@@ -919,7 +841,7 @@ release 0
 x 0
 y 110
 w 140
-h 390
+h 400
 lineColor index 14
 fillColor index 19
 lineStyle "dash"
@@ -943,5 +865,572 @@ value {
   "High Voltage Cage"
 }
 autoSize
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 430
+y 280
+w 50
+h 80
+file "symbols/fc.edl"
+numStates 2
+numPvs 0
+useOriginalColors
+fgColor index 0
+bgColor index 19
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1185
+y 535
+w 50
+h 80
+file "symbols/fc.edl"
+numStates 2
+numPvs 0
+orientation "rotateCW"
+useOriginalColors
+fgColor index 0
+bgColor index 19
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 970
+y 150
+w 0
+h 140
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 970
+  1 970
+}
+yPoints {
+  0 290
+  1 150
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 930
+y 280
+w 50
+h 80
+file "symbols/fc.edl"
+numStates 2
+numPvs 0
+useOriginalColors
+fgColor index 0
+bgColor index 19
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 930
+y 120
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:FC4A"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_fc4a.edl"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 260
+w 10
+h 50
+lineColor index 19
+fill
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 370
+y 260
+w 10
+h 50
+lineColor index 19
+fill
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 260
+w 10
+h 50
+lineColor index 19
+fill
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 660
+y 260
+w 10
+h 50
+lineColor index 19
+fill
+fillColor index 19
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 670
+y 140
+w 0
+h 120
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 670
+  1 670
+}
+yPoints {
+  0 260
+  1 140
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 560
+y 190
+w 0
+h 70
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 560
+  1 560
+}
+yPoints {
+  0 260
+  1 190
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 380
+y 140
+w 0
+h 120
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 380
+  1 380
+}
+yPoints {
+  0 260
+  1 140
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 260
+y 130
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput itsf:q1 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 210
+y 130
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput itsf:q1 0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 210
+y 160
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:Q1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_q1.edl"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 280
+y 190
+w 0
+h 70
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 280
+  1 280
+}
+yPoints {
+  0 260
+  1 190
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 410
+y 80
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput itsf:q2 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 360
+y 80
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput itsf:q2 0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 360
+y 110
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:Q2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_q2.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 510
+y 160
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:Q3"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_q3.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 510
+y 130
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput itsf:q3 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 560
+y 130
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput itsf:q3 1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 660
+y 110
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:Q4"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_q4.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 660
+y 80
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput itsf:q4 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 710
+y 80
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput itsf:q4 1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 20
+y 640
+w 180
+h 40
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "SKIMMER MENU"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_skimmer_menu.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 20
+y 690
+w 290
+h 40
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "CORRECTIVE BENDER MENU"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_corrective_bender_menu.edl"
+}
 endObjectProperties
 
