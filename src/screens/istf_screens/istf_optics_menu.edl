@@ -864,7 +864,7 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 970
+x 960
 y 150
 w 0
 h 140
@@ -872,8 +872,8 @@ lineColor index 14
 fillColor index 19
 numPoints 2
 xPoints {
-  0 970
-  1 970
+  0 960
+  1 960
 }
 yPoints {
   0 290
@@ -1432,5 +1432,158 @@ numDsps 1
 displayFileName {
   0 "istf_iv0.edl"
 }
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 210
+y 100
+w 105
+h 20
+controlPv "istf:q1-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 360
+y 50
+w 100
+h 20
+controlPv "istf:q2-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 510
+y 100
+w 100
+h 20
+controlPv "istf:q3-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 660
+y 50
+w 100
+h 20
+controlPv "istf:q4-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 440
+w 100
+h 20
+controlPv "istf:iv0"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 440
+w 105
+h 20
+controlPv "istf:fc0-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 410
+y 440
+w 105
+h 20
+controlPv "istf:fc2-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 970
+y 550
+w 105
+h 20
+controlPv "istf:fc4b-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 60
+w 105
+h 20
+controlPv "istf:fc4a-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
 endObjectProperties
 
