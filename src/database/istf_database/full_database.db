@@ -1,0 +1,482 @@
+############################################################################
+# FC 0
+############################################################################
+record(bi, "istf:fc0"){
+
+field(DESC, "If the FC is OUT or IN")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+
+
+record(ai, "istf:fc0-voltage"){
+
+field(SCAN, ".1 second")
+field(HIGH, "11")
+field(LOW, "0")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+field(INP, "0")
+
+}
+
+############################################################################
+# Q1
+############################################################################
+record(bi, "istf:q1"){
+
+field(DESC, "If the Quad Lens is ON/OFF")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+record(ai, "istf:q1-voltage"){
+
+field(DESC, "The Quad Lens Power")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:q1-amp"){
+
+field(DESC, "The Quad Lens Power")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+############################################################################
+# Q2
+############################################################################
+record(bi, "istf:q2"){
+
+field(DESC, "If the Quad Lens is ON/OFF")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+record(ai, "istf:q2-voltage"){
+
+field(DESC, "The Quad Lens Power")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:q2-amp"){
+
+field(DESC, "The Quad Lens Amplitude")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+############################################################################
+# Q3
+############################################################################
+record(bi, "istf:q3"){
+
+field(DESC, "If the Quad Lens is ON/OFF")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+record(ai, "istf:q3-voltage"){
+
+field(DESC, "The Quad Lens Power")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:q3-amp"){
+
+field(DESC, "The Quad Lens Amplitude")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+############################################################################
+# Q4
+############################################################################
+record(bi, "istf:q4"){
+
+field(DESC, "If the Quad Lens is ON/OFF")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+record(ai, "istf:q4-voltage"){
+
+field(DESC, "The Quad Lens Power")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:q4-amp"){
+
+field(DESC, "The Quad Lens Amplitude")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "4000")
+field(LOW, "1000")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+############################################################################
+# FC2
+############################################################################
+record(bi, "istf:fc2"){
+
+field(DESC, "If the FC is OUT or IN")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+
+record(ai, "istf:fc2-voltage"){
+
+field(SCAN, ".1 second")
+field(HIGH, "11")
+field(LOW, "0")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+field(INP, "0")
+
+}
+
+############################################################################
+# FC4
+############################################################################
+record(bi, "istf:fc4a"){
+
+field(DESC, "If the FC is OUT or IN")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+
+record(ai, "istf:fc4a-voltage"){
+
+field(SCAN, ".1 second")
+field(HIGH, "11")
+field(LOW, "0")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+field(INP, "0")
+
+}
+
+record(bi, "istf:fc4b"){
+
+field(DESC, "If the FC is OUT or IN")
+field(INP, "0")
+field(ZNAM, "OFF")
+field(ONAM, "ON")
+field(SCAN, ".1 second")
+}
+
+record(ai, "istf:fc4b-voltage"){
+
+field(SCAN, ".1 second")
+field(HIGH, "11")
+field(LOW, "0")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+field(INP, "0")
+
+}
+
+############################################################################
+# CB2T
+############################################################################
+record(ai, "istf:cb2t"){
+
+field(DESC, "The Top Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB2B
+############################################################################
+record(ai, "istf:cb2b"){
+
+field(DESC, "The Bottom Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB2R
+############################################################################
+record(ai, "istf:cb2r"){
+
+field(DESC, "The Right Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB2L
+############################################################################
+record(ai, "istf:cb2l"){
+
+field(DESC, "The Left Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+
+############################################################################
+# CB4AT
+############################################################################
+record(ai, "istf:cb4at"){
+
+field(DESC, "The Top Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB4AB
+############################################################################
+record(ai, "istf:cb4ab"){
+
+field(DESC, "The Bottom Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB4AR
+############################################################################
+record(ai, "istf:cb4ar"){
+
+field(DESC, "The Right Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# CB4AL
+############################################################################
+record(ai, "istf:cb4al"){
+
+field(DESC, "The Left Corrective Bender")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "900")
+field(LOW, "100")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# SK1
+############################################################################
+record(ai, "istf:sk1a"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk1b"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# SK2
+############################################################################
+record(ai, "istf:sk2a"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk2b"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk2d"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk2d"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+############################################################################
+# SK3
+############################################################################
+record(ai, "istf:sk3a"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk3b"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+############################################################################
+# SK4
+############################################################################
+record(ai, "istf:sk4a"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk4b"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk4c"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk4d"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+record(ai, "istf:sk4e"){
+
+field(DESC, "Source Skimmer Amps")
+field(SCAN, ".1 second")
+field(INP, "0")
+field(HIGH, "20")
+field(LOW, "-20")
+field(HSV, "MAJOR")
+field(LSV, "MAJOR")
+}
+
+############################################################################
+# IV0
+############################################################################
+record(bi, "istf:iv0"){
+
+field(DESC, "The Isolation Valve OPEN/CLOSED")
+field(INP, "0")
+field(ZNAM, "CLOSED")
+field(ONAM, "OPEN")
+field(SCAN, ".1 second")
+}

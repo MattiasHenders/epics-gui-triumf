@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 100
-y 100
+x 200
+y 50
 w 1000
 h 500
 font "helvetica-medium-r-18.0"
@@ -19,7 +19,7 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "ITSF Main Menu"
+title "ISTF Main Menu"
 snapToGrid
 disableScroll
 endScreenProperties
@@ -120,7 +120,7 @@ buttonLabel "Optics"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_menu.edl"
+  0 "istf_optics_menu.edl"
 }
 menuLabel {
   0 "Optics"
@@ -141,7 +141,7 @@ font "helvetica-bold-r-24.0"
 fgColor index 14
 bgColor index 8
 value {
-  "ITSF"
+  "ISTF"
 }
 autoSize
 endObjectProperties
@@ -165,7 +165,7 @@ buttonLabel "Vacuum"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_vacuum_menu.edl"
+  0 "istf_vacuum_menu.edl"
 }
 menuLabel {
   0 "Vacuum"

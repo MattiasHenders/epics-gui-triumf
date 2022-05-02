@@ -19,7 +19,7 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "ITSF Vacuum Menu"
+title "ISTF Vacuum Menu"
 snapToGrid
 endScreenProperties
 
@@ -176,11 +176,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:TP0"
+buttonLabel "ISTF:TP0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_tp0.edl"
+  0 "istf_tp0.edl"
 }
 endObjectProperties
 
@@ -202,7 +202,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:tp0 1"
+  0 "caput istf:tp0 1"
 }
 endObjectProperties
 
@@ -224,7 +224,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:tp0 0"
+  0 "caput istf:tp0 0"
 }
 endObjectProperties
 
@@ -291,7 +291,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:iv0 1"
+  0 "caput istf:iv0 1"
 }
 endObjectProperties
 
@@ -313,7 +313,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:iv0 0"
+  0 "caput istf:iv0 0"
 }
 endObjectProperties
 
@@ -332,11 +332,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:IV0"
+buttonLabel "ISTF:IV0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_iv0.edl"
+  0 "istf_iv0.edl"
 }
 endObjectProperties
 
@@ -566,7 +566,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:bp0 0"
+  0 "caput istf:bp0 0"
 }
 endObjectProperties
 
@@ -588,7 +588,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:bp0 1"
+  0 "caput istf:bp0 1"
 }
 endObjectProperties
 
@@ -607,11 +607,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC0"
+buttonLabel "ISTF:FC0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_bp0.edl"
+  0 "istf_bp0.edl"
 }
 endObjectProperties
 
@@ -643,68 +643,5 @@ h 400
 lineColor index 14
 fillColor index 19
 lineStyle "dash"
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 680
-y 590
-w 0
-h 0
-lineColor index 14
-fillColor index 19
-numPoints 1
-xPoints {
-  0 680
-}
-yPoints {
-  0 590
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 680
-y 580
-w 100
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 680
-  1 780
-}
-yPoints {
-  0 580
-  1 580
-}
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 750
-y 530
-w 80
-h 90
-file "symbols/convectron_gauge.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
 endObjectProperties
 

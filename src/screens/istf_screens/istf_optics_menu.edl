@@ -19,7 +19,7 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "ITSF Optics Menu"
+title "ISTF Optics Menu"
 snapToGrid
 endScreenProperties
 
@@ -171,7 +171,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc0 1"
+  0 "caput istf:fc0 1"
 }
 endObjectProperties
 
@@ -193,7 +193,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc0 0"
+  0 "caput istf:fc0 0"
 }
 endObjectProperties
 
@@ -215,7 +215,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc2 0"
+  0 "caput istf:fc2 0"
 }
 endObjectProperties
 
@@ -237,7 +237,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc2 1"
+  0 "caput istf:fc2 1"
 }
 endObjectProperties
 
@@ -256,11 +256,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC2"
+buttonLabel "ISTF:FC2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc2.edl"
+  0 "istf_fc2.edl"
 }
 endObjectProperties
 
@@ -297,7 +297,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc4a 0"
+  0 "caput istf:fc4a 0"
 }
 endObjectProperties
 
@@ -319,7 +319,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc4a 1"
+  0 "caput istf:fc4a 1"
 }
 endObjectProperties
 
@@ -401,7 +401,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc4b 0"
+  0 "caput istf:fc4b 0"
 }
 endObjectProperties
 
@@ -423,7 +423,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc4b 1"
+  0 "caput istf:fc4b 1"
 }
 endObjectProperties
 
@@ -496,7 +496,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:iv0 1"
+  0 "caput istf:iv0 1"
 }
 endObjectProperties
 
@@ -518,7 +518,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:iv0 0"
+  0 "caput istf:iv0 0"
 }
 endObjectProperties
 
@@ -607,11 +607,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4B"
+buttonLabel "ISTF:FC4B"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc4b.edl"
+  0 "istf_fc4b.edl"
 }
 endObjectProperties
 
@@ -914,11 +914,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4A"
+buttonLabel "ISTF:FC4A"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc4a.edl"
+  0 "istf_fc4a.edl"
 }
 endObjectProperties
 
@@ -1069,7 +1069,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:q1 1"
+  0 "caput istf:q1 1"
 }
 endObjectProperties
 
@@ -1091,7 +1091,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:q1 0"
+  0 "caput istf:q1 0"
 }
 endObjectProperties
 
@@ -1110,11 +1110,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q1"
+buttonLabel "ISTF:Q1"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_details.edl"
+  0 "istf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1159,7 +1159,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:q2 1"
+  0 "caput istf:q2 1"
 }
 endObjectProperties
 
@@ -1181,7 +1181,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:q2 0"
+  0 "caput istf:q2 0"
 }
 endObjectProperties
 
@@ -1200,11 +1200,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q2"
+buttonLabel "ISTF:Q2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_details.edl"
+  0 "istf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1223,11 +1223,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q3"
+buttonLabel "ISTF:Q3"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_details.edl"
+  0 "istf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1249,7 +1249,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:q3 0"
+  0 "caput istf:q3 0"
 }
 endObjectProperties
 
@@ -1271,7 +1271,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:q3 1"
+  0 "caput istf:q3 1"
 }
 endObjectProperties
 
@@ -1290,11 +1290,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q4"
+buttonLabel "ISTF:Q4"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_details.edl"
+  0 "istf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1316,7 +1316,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput itsf:q4 0"
+  0 "caput istf:q4 0"
 }
 endObjectProperties
 
@@ -1338,7 +1338,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput itsf:q4 1"
+  0 "caput istf:q4 1"
 }
 endObjectProperties
 
@@ -1361,7 +1361,7 @@ buttonLabel "SKIMMER MENU"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_skimmer_menu.edl"
+  0 "istf_skimmer_menu.edl"
 }
 endObjectProperties
 
@@ -1384,7 +1384,7 @@ buttonLabel "CORRECTIVE BENDER MENU"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_optics_details.edl"
+  0 "istf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1403,11 +1403,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC1"
+buttonLabel "ISTF:FC0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc1.edl"
+  0 "istf_fc0.edl"
 }
 endObjectProperties
 
@@ -1426,11 +1426,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:IV0"
+buttonLabel "ISTF:IV0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_iv0.edl"
+  0 "istf_iv0.edl"
 }
 endObjectProperties
 

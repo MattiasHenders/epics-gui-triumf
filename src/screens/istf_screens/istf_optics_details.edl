@@ -19,10 +19,65 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "ITSF Optics Details"
-snapToGrid
+title "ISTF Optics Details"
 gridSize 5
 endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 725
+w 130
+h 40
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 305
+y 720
+w 515
+h 50
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 255
+w 130
+h 40
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 305
+y 250
+w 515
+h 50
+lineColor index 14
+fillColor index 19
+endObjectProperties
 
 # (Symbol)
 object activeSymbolClass
@@ -90,7 +145,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF Optics Details"
+  "ISTF Optics Details"
 }
 autoSize
 endObjectProperties
@@ -110,11 +165,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC0"
+buttonLabel "ISTF:FC0"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc0.edl"
+  0 "istf_fc0.edl"
 }
 endObjectProperties
 
@@ -152,11 +207,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q1"
+buttonLabel "ISTF:Q1"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q1.edl"
+  0 "istf_q1.edl"
 }
 endObjectProperties
 
@@ -175,11 +230,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q2"
+buttonLabel "ISTF:Q2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q2.edl"
+  0 "istf_q2.edl"
 }
 endObjectProperties
 
@@ -198,11 +253,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC2"
+buttonLabel "ISTF:FC2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc2.edl"
+  0 "istf_fc2.edl"
 }
 endObjectProperties
 
@@ -276,11 +331,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2T"
+buttonLabel "ISTF:CB2T"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2t.edl"
+  0 "istf_cb2t.edl"
 }
 endObjectProperties
 
@@ -299,11 +354,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2B"
+buttonLabel "ISTF:CB2B"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2b.edl"
+  0 "istf_cb2b.edl"
 }
 endObjectProperties
 
@@ -322,11 +377,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2R"
+buttonLabel "ISTF:CB2R"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2r.edl"
+  0 "istf_cb2r.edl"
 }
 endObjectProperties
 
@@ -363,11 +418,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2L"
+buttonLabel "ISTF:CB2L"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2l.edl"
+  0 "istf_cb2l.edl"
 }
 endObjectProperties
 
@@ -404,11 +459,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q3"
+buttonLabel "ISTF:Q3"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q3.edl"
+  0 "istf_q3.edl"
 }
 endObjectProperties
 
@@ -427,11 +482,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:Q4"
+buttonLabel "ISTF:Q4"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q4.edl"
+  0 "istf_q4.edl"
 }
 endObjectProperties
 
@@ -486,11 +541,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4A"
+buttonLabel "ISTF:FC4A"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc4a.edl"
+  0 "istf_fc4a.edl"
 }
 endObjectProperties
 
@@ -528,11 +583,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2R"
+buttonLabel "ISTF:CB4AR"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2r.edl"
+  0 "istf_cb4ar.edl"
 }
 endObjectProperties
 
@@ -569,11 +624,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2L"
+buttonLabel "ISTF:CB4AL"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2l.edl"
+  0 "istf_cb4al.edl"
 }
 endObjectProperties
 
@@ -610,11 +665,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2B"
+buttonLabel "ISTF:CB4AB"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2b.edl"
+  0 "istf_cb4b.edl"
 }
 endObjectProperties
 
@@ -651,11 +706,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:CB2T"
+buttonLabel "ISTF:CB4AT"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_cb2t.edl"
+  0 "istf_cb4at.edl"
 }
 endObjectProperties
 
@@ -692,11 +747,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC4A"
+buttonLabel "ISTF:FC4B"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_fc4a.edl"
+  0 "istf_fc4b.edl"
 }
 endObjectProperties
 
@@ -751,7 +806,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc0 0"
+  0 "caput istf:fc0 0"
 }
 endObjectProperties
 
@@ -773,7 +828,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc0 1"
+  0 "caput istf:fc0 1"
 }
 endObjectProperties
 
@@ -805,24 +860,6 @@ lineColor index 14
 fillColor index 19
 endObjectProperties
 
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 315
-y 85
-w 120
-h 20
-controlPv "itsf:fc0"
-fgColor index 14
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
@@ -847,40 +884,12 @@ x 315
 y 265
 w 120
 h 20
-controlPv "itsf:fc2"
-fgColor index 14
+controlPv "istf:fc2-voltage"
+fgColor index 29
 fgAlarm
 bgColor index 8
 fill
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 310
-y 255
-w 130
-h 40
-lineColor index 14
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 305
-y 250
-w 515
-h 50
-lineColor index 14
-fillColor index 19
+font "helvetica-medium-r-14.0"
 endObjectProperties
 
 # (Shell Command)
@@ -901,7 +910,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc2 1"
+  0 "caput istf:fc2 1"
 }
 endObjectProperties
 
@@ -923,7 +932,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc2 0"
+  0 "caput istf:fc2 0"
 }
 endObjectProperties
 
@@ -937,40 +946,12 @@ x 315
 y 735
 w 120
 h 20
-controlPv "itsf:fc4a"
-fgColor index 14
+controlPv "istf:fc4a-voltage"
+fgColor index 29
 fgAlarm
 bgColor index 8
 fill
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 310
-y 725
-w 130
-h 40
-lineColor index 14
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 305
-y 720
-w 515
-h 50
-lineColor index 14
-fillColor index 19
+font "helvetica-medium-r-14.0"
 endObjectProperties
 
 # (Shell Command)
@@ -991,7 +972,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc2 1"
+  0 "caput istf:fc4a 1"
 }
 endObjectProperties
 
@@ -1013,7 +994,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc2 0"
+  0 "caput istf:fc4a 0"
 }
 endObjectProperties
 
@@ -1049,7 +1030,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput itsf:fc2 1"
+  0 "caput istf:fc4b 1"
 }
 endObjectProperties
 
@@ -1071,7 +1052,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput itsf:fc2 0"
+  0 "caput istf:fc4b 0"
 }
 endObjectProperties
 
@@ -1099,12 +1080,12 @@ x 315
 y 1085
 w 120
 h 20
-controlPv "itsf:fc4b"
-fgColor index 14
+controlPv "istf:fc4b-voltage"
+fgColor index 29
 fgAlarm
 bgColor index 8
 fill
-font "helvetica-medium-r-12.0"
+font "helvetica-medium-r-14.0"
 endObjectProperties
 
 # (Motif Slider)
@@ -1122,7 +1103,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:q1-voltage"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1146,7 +1127,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:q2-voltage"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1170,7 +1151,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:q4-voltage"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1194,7 +1175,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:q3-voltage"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1213,11 +1194,10 @@ x 410
 y 145
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q1-voltage"
 fgColor index 29
 fgAlarm
 bgColor index 8
-fill
 font "helvetica-medium-r-18.0"
 endObjectProperties
 
@@ -1231,7 +1211,7 @@ x 535
 y 145
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q1-amp"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1249,7 +1229,7 @@ x 410
 y 205
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q2-voltage"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1267,7 +1247,7 @@ x 535
 y 205
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q2-amp"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1299,7 +1279,7 @@ x 535
 y 615
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q3-amp"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1317,7 +1297,7 @@ x 410
 y 615
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q3-voltage"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1349,7 +1329,7 @@ x 535
 y 675
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q4-amp"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1367,7 +1347,7 @@ x 410
 y 675
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:q4-voltage"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1395,29 +1375,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 335
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 335
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb2t"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1440,7 +1402,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb2t"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1469,29 +1431,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 405
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 405
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb2b"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1514,7 +1458,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb2b"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1543,29 +1487,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 475
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 475
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb2l"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1588,7 +1514,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb2l"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1617,29 +1543,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 545
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 545
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb2r"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1662,7 +1570,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb2r"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1691,29 +1599,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 1005
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 1005
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb4ar"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1741,29 +1631,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 945
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 945
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb4al"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1791,29 +1663,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 875
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 875
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb4ab"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1841,29 +1695,11 @@ beginObjectProperties
 major 10
 minor 0
 release 0
-x 535
-y 805
-w 105
-h 20
-controlPv "input:temp"
-fgColor index 29
-fgAlarm
-bgColor index 8
-fill
-font "helvetica-medium-r-18.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
 x 410
 y 805
 w 105
 h 20
-controlPv "input:temp"
+controlPv "istf:cb4at"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1886,7 +1722,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb4at"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1910,7 +1746,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb4ab"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1934,7 +1770,7 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb4al"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
@@ -1958,12 +1794,249 @@ bgColor index 8
 2ndBgColor index 0
 topShadowColor index 8
 botShadowColor index 8
-controlPv "input:temp"
+controlPv "istf:cb4ar"
 controlLabelType "pvName"
 font "helvetica-medium-r-12.0"
 scaleMin 0
 scaleMax 5000
 showLimits
 showValue
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 315
+y 85
+w 120
+h 20
+controlPv "istf:fc0-voltage"
+fgColor index 29
+bgColor index 8
+fill
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 765
+y 146
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:q1 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 715
+y 146
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:q1 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 764
+y 675
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:q4 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 714
+y 675
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:q4 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 764
+y 616
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:q3 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 714
+y 616
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:q3 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 1614
+y 889
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:q2 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 1564
+y 889
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:q2 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 765
+y 208
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:q2 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 715
+y 208
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:q2 0"
+}
 endObjectProperties
 

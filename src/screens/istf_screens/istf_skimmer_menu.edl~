@@ -19,7 +19,7 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "ITSF Skimmer Menu"
+title "ISTF Skimmer Menu"
 snapToGrid
 gridSize 5
 endScreenProperties
@@ -54,7 +54,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF Source Skimmers"
+  "ISTF Source Skimmers"
 }
 autoSize
 endObjectProperties
@@ -88,7 +88,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK1A"
+  "ISTF:SK1A"
 }
 autoSize
 endObjectProperties
@@ -103,7 +103,7 @@ x 115
 y 85
 w 140
 h 16
-controlPv "itsf:sk1a"
+controlPv "istf:sk1a"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -200,7 +200,7 @@ w 705
 h 40
 lineColor index 29
 fillColor index 19
-alarmPv "itsf:sk1a"
+alarmPv "istf:sk1a"
 endObjectProperties
 
 # (Bar)
@@ -234,7 +234,7 @@ x 115
 y 135
 w 140
 h 16
-controlPv "itsf:sk1b"
+controlPv "istf:sk1b"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -637,7 +637,7 @@ x 115
 y 185
 w 140
 h 16
-controlPv "itsf:sk2a"
+controlPv "istf:sk2a"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -662,7 +662,7 @@ x 115
 y 235
 w 140
 h 16
-controlPv "itsf:sk2b"
+controlPv "istf:sk2b"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -687,7 +687,7 @@ x 115
 y 285
 w 140
 h 16
-controlPv "itsf:sk2c"
+controlPv "istf:sk2c"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -712,7 +712,7 @@ x 115
 y 335
 w 140
 h 16
-controlPv "itsf:sk2d"
+controlPv "istf:sk2d"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -737,7 +737,7 @@ x 115
 y 385
 w 140
 h 16
-controlPv "itsf:sk3a"
+controlPv "istf:sk3a"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -762,7 +762,7 @@ x 115
 y 435
 w 140
 h 16
-controlPv "itsf:sk3b"
+controlPv "istf:sk3b"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -787,7 +787,7 @@ x 115
 y 485
 w 140
 h 16
-controlPv "itsf:sk4a"
+controlPv "istf:sk4a"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -812,7 +812,7 @@ x 115
 y 535
 w 140
 h 16
-controlPv "itsf:sk4b"
+controlPv "istf:sk4b"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -837,7 +837,7 @@ x 115
 y 585
 w 140
 h 16
-controlPv "itsf:sk4c"
+controlPv "istf:sk4c"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -862,7 +862,7 @@ x 115
 y 635
 w 140
 h 16
-controlPv "itsf:sk4d"
+controlPv "istf:sk4d"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -887,7 +887,7 @@ x 115
 y 685
 w 140
 h 16
-controlPv "itsf:sk4e"
+controlPv "istf:sk4e"
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
@@ -931,7 +931,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK1B"
+  "ISTF:SK1B"
 }
 autoSize
 endObjectProperties
@@ -965,7 +965,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK2A"
+  "ISTF:SK2A"
 }
 autoSize
 endObjectProperties
@@ -985,7 +985,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK2B"
+  "ISTF:SK2B"
 }
 autoSize
 endObjectProperties
@@ -1033,7 +1033,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK2C"
+  "ISTF:SK2C"
 }
 autoSize
 endObjectProperties
@@ -1053,7 +1053,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK2D"
+  "ISTF:SK2D"
 }
 autoSize
 endObjectProperties
@@ -1087,7 +1087,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK3A"
+  "ISTF:SK3A"
 }
 autoSize
 endObjectProperties
@@ -1135,7 +1135,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK3B"
+  "ISTF:SK3B"
 }
 autoSize
 endObjectProperties
@@ -1169,7 +1169,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK4A"
+  "ISTF:SK4A"
 }
 autoSize
 endObjectProperties
@@ -1189,7 +1189,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK4B"
+  "ISTF:SK4B"
 }
 autoSize
 endObjectProperties
@@ -1237,7 +1237,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK4C"
+  "ISTF:SK4C"
 }
 autoSize
 endObjectProperties
@@ -1257,7 +1257,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK4D"
+  "ISTF:SK4D"
 }
 autoSize
 endObjectProperties
@@ -1305,7 +1305,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ITSF:SK4E"
+  "ISTF:SK4E"
 }
 autoSize
 endObjectProperties
