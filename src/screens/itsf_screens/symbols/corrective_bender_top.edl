@@ -4,8 +4,8 @@ major 4
 minor 0
 release 1
 x 100
-y 500
-w 400
+y 100
+w 500
 h 200
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
@@ -29,10 +29,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 28
-y 46
-w 64
-h 95
+x 30
+y 75
+w 95
+h 50
 
 beginGroup
 
@@ -42,10 +42,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 28
-y 46
-w 64
-h 95
+x 30
+y 75
+w 95
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -58,102 +58,54 @@ major 4
 minor 0
 release 1
 x 40
-y 50
-w 40
-h 85
+y 100
+w 75
+h 15
 lineColor index 14
 fill
-fillColor index 15
+fillColor index 4
 closePolygon
-numPoints 8
+numPoints 4
 xPoints {
   0 40
-  1 40
-  2 65
-  3 65
-  4 40
-  5 40
-  6 80
-  7 80
+  1 70
+  2 115
+  3 85
 }
 yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
-}
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 105
-y 45
-w 64
-h 95
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 105
-y 45
-w 64
-h 95
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 115
-y 50
-w 40
-h 85
-lineColor index 14
-fill
-fillColor index 15
-closePolygon
-numPoints 8
-xPoints {
-  0 115
+  0 100
   1 115
-  2 140
-  3 140
-  4 115
-  5 115
-  6 155
-  7 155
+  2 115
+  3 100
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 40
+y 90
+w 75
+h 15
+lineColor index 14
+fill
+fillColor index 15
+closePolygon
+numPoints 4
+xPoints {
+  0 40
+  1 70
+  2 115
+  3 85
 }
 yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
+  0 90
+  1 105
+  2 105
+  3 90
 }
 endObjectProperties
 
@@ -167,10 +119,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 185
-y 45
-w 64
-h 95
+x 140
+y 75
+w 95
+h 50
 
 beginGroup
 
@@ -180,10 +132,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 185
-y 45
-w 64
-h 95
+x 140
+y 75
+w 95
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -195,34 +147,55 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 200
-y 50
-w 40
-h 85
+x 150
+y 100
+w 75
+h 15
 lineColor index 14
 fill
-fillColor index 15
+fillColor index 4
 closePolygon
-numPoints 8
+numPoints 4
 xPoints {
-  0 200
-  1 200
+  0 150
+  1 180
   2 225
-  3 225
-  4 200
-  5 200
-  6 240
-  7 240
+  3 195
 }
 yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
+  0 100
+  1 115
+  2 115
+  3 100
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 150
+y 90
+w 75
+h 15
+lineColor index 14
+fill
+fillColor index 15
+closePolygon
+numPoints 4
+xPoints {
+  0 150
+  1 180
+  2 225
+  3 195
+}
+yPoints {
+  0 90
+  1 105
+  2 105
+  3 90
 }
 endObjectProperties
 
@@ -236,10 +209,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 265
-y 45
-w 64
-h 95
+x 245
+y 80
+w 95
+h 50
 
 beginGroup
 
@@ -249,10 +222,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 265
-y 45
-w 64
-h 95
+x 245
+y 80
+w 95
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -264,34 +237,145 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 275
-y 50
-w 40
-h 85
+x 255
+y 105
+w 75
+h 15
+lineColor index 14
+fill
+fillColor index 4
+closePolygon
+numPoints 4
+xPoints {
+  0 255
+  1 285
+  2 330
+  3 300
+}
+yPoints {
+  0 105
+  1 120
+  2 120
+  3 105
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 255
+y 95
+w 75
+h 15
 lineColor index 14
 fill
 fillColor index 15
 closePolygon
-numPoints 8
+numPoints 4
 xPoints {
-  0 275
-  1 275
-  2 300
+  0 255
+  1 285
+  2 330
   3 300
-  4 275
-  5 275
-  6 315
-  7 315
 }
 yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
+  0 95
+  1 110
+  2 110
+  3 95
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 355
+y 80
+w 95
+h 50
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 355
+y 80
+w 95
+h 50
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 365
+y 105
+w 75
+h 15
+lineColor index 14
+fill
+fillColor index 4
+closePolygon
+numPoints 4
+xPoints {
+  0 365
+  1 395
+  2 440
+  3 410
+}
+yPoints {
+  0 105
+  1 120
+  2 120
+  3 105
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 365
+y 95
+w 75
+h 15
+lineColor index 14
+fill
+fillColor index 15
+closePolygon
+numPoints 4
+xPoints {
+  0 365
+  1 395
+  2 440
+  3 410
+}
+yPoints {
+  0 95
+  1 110
+  2 110
+  3 95
 }
 endObjectProperties
 

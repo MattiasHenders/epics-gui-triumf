@@ -4,7 +4,7 @@ major 4
 minor 0
 release 1
 x 100
-y 100
+y 35
 w 1400
 h 750
 font "helvetica-medium-r-18.0"
@@ -190,7 +190,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 530
+x 580
 y 520
 w 40
 h 20
@@ -212,7 +212,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 580
+x 530
 y 520
 w 40
 h 20
@@ -554,7 +554,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 580
+x 530
 y 680
 w 40
 h 20
@@ -576,7 +576,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 530
+x 580
 y 680
 w 40
 h 20
@@ -643,5 +643,68 @@ h 400
 lineColor index 14
 fillColor index 19
 lineStyle "dash"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 680
+y 590
+w 0
+h 0
+lineColor index 14
+fillColor index 19
+numPoints 1
+xPoints {
+  0 680
+}
+yPoints {
+  0 590
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 680
+y 580
+w 100
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 680
+  1 780
+}
+yPoints {
+  0 580
+  1 580
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 750
+y 530
+w 80
+h 90
+file "symbols/convectron_gauge.edl"
+numStates 2
+numPvs 0
+useOriginalColors
+fgColor index 0
+bgColor index 19
 endObjectProperties
 

@@ -4,8 +4,8 @@ major 4
 minor 0
 release 1
 x 100
-y 500
-w 400
+y 100
+w 500
 h 200
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
@@ -19,31 +19,20 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
+snapToGrid
+gridSize 5
 endScreenProperties
 
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 28
-y 46
-w 64
-h 95
-
-beginGroup
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 28
-y 46
-w 64
-h 95
+x 20
+y 65
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -55,13 +44,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 42
-y 119
-w 40
-h 13
-lineColor index 19
+x 30
+y 75
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 4
 endObjectProperties
 
 # (Rectangle)
@@ -70,13 +59,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 69
-y 52
-w 13
-h 80
-lineColor index 19
+x 45
+y 85
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -85,42 +74,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 42
-y 52
-w 40
-h 13
-lineColor index 19
-fill
-fillColor index 19
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 119
-y 46
-w 64
-h 95
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 119
-y 46
-w 64
-h 95
+x 115
+y 55
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -132,13 +89,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 133
-y 119
-w 40
-h 13
-lineColor index 19
+x 125
+y 65
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 4
 endObjectProperties
 
 # (Rectangle)
@@ -147,13 +104,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
-y 52
-w 13
-h 80
-lineColor index 19
+x 140
+y 75
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -162,42 +119,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 133
-y 52
-w 40
-h 13
-lineColor index 19
-fill
-fillColor index 19
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 205
-y 46
-w 64
-h 95
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 205
-y 46
-w 64
-h 95
+x 215
+y 55
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -209,13 +134,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 219
-y 119
-w 40
-h 13
-lineColor index 19
+x 225
+y 65
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 4
 endObjectProperties
 
 # (Rectangle)
@@ -224,13 +149,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 246
-y 52
-w 13
-h 80
-lineColor index 19
+x 240
+y 75
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -239,42 +164,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 219
-y 52
-w 40
-h 13
-lineColor index 19
-fill
-fillColor index 19
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 290
-y 47
-w 64
-h 95
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 290
-y 47
-w 64
-h 95
+x 315
+y 65
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
@@ -286,13 +179,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 304
-y 120
-w 40
-h 13
-lineColor index 19
+x 325
+y 75
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 4
 endObjectProperties
 
 # (Rectangle)
@@ -301,31 +194,12 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 331
-y 53
-w 13
-h 80
-lineColor index 19
+x 340
+y 85
+w 45
+h 25
+lineColor index 14
 fill
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 304
-y 53
-w 40
-h 13
-lineColor index 19
-fill
-fillColor index 19
-endObjectProperties
-
-endGroup
-
+fillColor index 15
 endObjectProperties
 

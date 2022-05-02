@@ -66,19 +66,50 @@ fill
 fillColor index 19
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 45
-y 75
-w 40
-h 40
+release 1
+x 70
+y 85
+w 15
+h 30
 lineColor index 14
-fill
 fillColor index 19
+numPoints 2
+xPoints {
+  0 85
+  1 70
+}
+yPoints {
+  0 85
+  1 115
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 44
+y 85
+w 15
+h 30
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 44
+  1 59
+}
+yPoints {
+  0 85
+  1 115
+}
 endObjectProperties
 
 endGroup
@@ -91,7 +122,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 125
+x 120
 y 55
 w 80
 h 80
@@ -104,7 +135,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 125
+x 120
 y 55
 w 80
 h 80
@@ -119,7 +150,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 135
+x 130
 y 65
 w 60
 h 60
@@ -128,19 +159,50 @@ fill
 fillColor index 19
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 145
-y 75
-w 40
-h 40
+release 1
+x 165
+y 85
+w 15
+h 30
 lineColor index 14
-fill
 fillColor index 19
+numPoints 2
+xPoints {
+  0 180
+  1 165
+}
+yPoints {
+  0 85
+  1 115
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 140
+y 85
+w 15
+h 30
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 140
+  1 155
+}
+yPoints {
+  0 85
+  1 115
+}
 endObjectProperties
 
 endGroup
@@ -153,7 +215,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 230
+x 215
 y 55
 w 80
 h 80
@@ -166,7 +228,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 230
+x 215
 y 55
 w 80
 h 80
@@ -181,7 +243,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 240
+x 225
 y 65
 w 60
 h 60
@@ -190,19 +252,50 @@ fill
 fillColor index 19
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 250
-y 75
-w 40
-h 40
+release 1
+x 260
+y 85
+w 15
+h 30
 lineColor index 14
-fill
 fillColor index 19
+numPoints 2
+xPoints {
+  0 275
+  1 260
+}
+yPoints {
+  0 85
+  1 115
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 235
+y 85
+w 15
+h 30
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 235
+  1 250
+}
+yPoints {
+  0 85
+  1 115
+}
 endObjectProperties
 
 endGroup
@@ -215,8 +308,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 330
-y 55
+x 315
+y 60
 w 80
 h 80
 
@@ -228,8 +321,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 330
-y 55
+x 315
+y 60
 w 80
 h 80
 lineColor index 0
@@ -243,8 +336,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 340
-y 65
+x 325
+y 70
 w 60
 h 60
 lineColor index 14
@@ -252,19 +345,50 @@ fill
 fillColor index 19
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 350
-y 75
-w 40
-h 40
+release 1
+x 360
+y 90
+w 15
+h 30
 lineColor index 14
-fill
 fillColor index 19
+numPoints 2
+xPoints {
+  0 375
+  1 360
+}
+yPoints {
+  0 90
+  1 120
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 335
+y 90
+w 15
+h 30
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 335
+  1 350
+}
+yPoints {
+  0 90
+  1 120
+}
 endObjectProperties
 
 endGroup

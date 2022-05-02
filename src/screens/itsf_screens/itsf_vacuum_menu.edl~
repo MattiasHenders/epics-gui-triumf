@@ -4,7 +4,7 @@ major 4
 minor 0
 release 1
 x 100
-y 100
+y 35
 w 1400
 h 750
 font "helvetica-medium-r-18.0"
@@ -190,7 +190,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 530
+x 580
 y 520
 w 40
 h 20
@@ -212,7 +212,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 580
+x 530
 y 520
 w 40
 h 20
@@ -479,52 +479,6 @@ value {
 autoSize
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 20
-y 640
-w 180
-h 40
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "SKIMMER MENU"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "itsf_skimmer_menu.edl"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 20
-y 690
-w 290
-h 40
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "CORRECTIVE BENDER MENU"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "itsf_corrective_bender_menu.edl"
-}
-endObjectProperties
-
 # (Symbol)
 object activeSymbolClass
 beginObjectProperties
@@ -600,7 +554,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 580
+x 530
 y 680
 w 40
 h 20
@@ -622,7 +576,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 530
+x 580
 y 680
 w 40
 h 20

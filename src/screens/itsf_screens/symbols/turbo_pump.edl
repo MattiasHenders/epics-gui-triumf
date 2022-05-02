@@ -63,7 +63,7 @@ w 60
 h 60
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Circle)
@@ -78,7 +78,7 @@ w 40
 h 40
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 endGroup
@@ -91,8 +91,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 125
-y 55
+x 115
+y 60
 w 80
 h 80
 
@@ -104,13 +104,28 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 125
-y 55
+x 115
+y 60
 w 80
 h 80
 lineColor index 0
 fillColor index 19
 invisible
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 70
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 15
 endObjectProperties
 
 # (Circle)
@@ -120,27 +135,12 @@ major 4
 minor 0
 release 0
 x 135
-y 65
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 19
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 145
-y 75
+y 80
 w 40
 h 40
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 endGroup
@@ -153,8 +153,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 230
-y 55
+x 210
+y 65
 w 80
 h 80
 
@@ -166,8 +166,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 230
-y 55
+x 210
+y 65
 w 80
 h 80
 lineColor index 0
@@ -181,13 +181,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 240
-y 65
+x 220
+y 75
 w 60
 h 60
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Circle)
@@ -196,13 +196,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 250
-y 75
+x 230
+y 85
 w 40
 h 40
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 endGroup
@@ -215,8 +215,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 330
-y 55
+x 305
+y 60
 w 80
 h 80
 
@@ -228,8 +228,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 330
-y 55
+x 305
+y 60
 w 80
 h 80
 lineColor index 0
@@ -243,13 +243,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 340
-y 65
+x 315
+y 70
 w 60
 h 60
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Circle)
@@ -258,13 +258,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 350
-y 75
+x 325
+y 80
 w 40
 h 40
 lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 endGroup

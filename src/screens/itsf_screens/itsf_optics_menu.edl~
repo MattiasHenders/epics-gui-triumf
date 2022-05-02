@@ -4,7 +4,7 @@ major 4
 minor 0
 release 1
 x 100
-y 100
+y 35
 w 1400
 h 750
 font "helvetica-medium-r-18.0"
@@ -123,29 +123,6 @@ value {
 autoSize
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 160
-y 370
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:FC0"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "itsf_fc0.edl"
-}
-endObjectProperties
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
@@ -182,7 +159,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
+x 210
 y 410
 w 40
 h 20
@@ -204,7 +181,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 210
+x 160
 y 410
 w 40
 h 20
@@ -226,7 +203,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 460
+x 410
 y 410
 w 40
 h 20
@@ -248,7 +225,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 410
+x 460
 y 410
 w 40
 h 20
@@ -308,7 +285,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 980
+x 930
 y 90
 w 40
 h 20
@@ -330,7 +307,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 930
+x 980
 y 90
 w 40
 h 20
@@ -412,7 +389,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 1020
+x 970
 y 620
 w 40
 h 20
@@ -434,7 +411,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 970
+x 1020
 y 620
 w 40
 h 20
@@ -542,29 +519,6 @@ buttonLabel "0"
 numCmds 1
 command {
   0 "caput itsf:iv0 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 800
-y 370
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ITSF:IV0"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "itsf_iv0.edl"
 }
 endObjectProperties
 
@@ -978,9 +932,9 @@ x 280
 y 260
 w 10
 h 50
-lineColor index 19
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -993,9 +947,9 @@ x 370
 y 260
 w 10
 h 50
-lineColor index 19
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -1008,9 +962,9 @@ x 560
 y 260
 w 10
 h 50
-lineColor index 19
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Rectangle)
@@ -1023,9 +977,9 @@ x 660
 y 260
 w 10
 h 50
-lineColor index 19
+lineColor index 14
 fill
-fillColor index 19
+fillColor index 15
 endObjectProperties
 
 # (Lines)
@@ -1160,7 +1114,7 @@ buttonLabel "ITSF:Q1"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q1.edl"
+  0 "itsf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1250,7 +1204,7 @@ buttonLabel "ITSF:Q2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q2.edl"
+  0 "itsf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1273,7 +1227,7 @@ buttonLabel "ITSF:Q3"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q3.edl"
+  0 "itsf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1340,7 +1294,7 @@ buttonLabel "ITSF:Q4"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_q4.edl"
+  0 "itsf_optics_details.edl"
 }
 endObjectProperties
 
@@ -1430,7 +1384,53 @@ buttonLabel "CORRECTIVE BENDER MENU"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "itsf_corrective_bender_menu.edl"
+  0 "itsf_optics_details.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 160
+y 370
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:FC1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_fc1.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 800
+y 370
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ITSF:IV0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "itsf_iv0.edl"
 }
 endObjectProperties
 

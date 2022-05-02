@@ -4,8 +4,8 @@ major 4
 minor 0
 release 1
 x 100
-y 500
-w 400
+y 100
+w 500
 h 200
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
@@ -23,18 +23,20 @@ snapToGrid
 gridSize 5
 endScreenProperties
 
-# (Group)
-object activeGroupClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 28
-y 46
-w 64
-h 95
-
-beginGroup
+x 20
+y 65
+w 80
+h 50
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -42,68 +44,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 28
-y 46
-w 64
-h 95
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 40
-y 50
-w 40
-h 85
+x 30
+y 75
+w 45
+h 25
 lineColor index 14
 fill
 fillColor index 15
-closePolygon
-numPoints 8
-xPoints {
-  0 40
-  1 40
-  2 65
-  3 65
-  4 40
-  5 40
-  6 80
-  7 80
-}
-yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
-}
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 105
-y 45
-w 64
-h 95
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -111,68 +59,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 105
-y 45
-w 64
-h 95
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 115
-y 50
-w 40
-h 85
+x 45
+y 85
+w 45
+h 25
 lineColor index 14
 fill
-fillColor index 15
-closePolygon
-numPoints 8
-xPoints {
-  0 115
-  1 115
-  2 140
-  3 140
-  4 115
-  5 115
-  6 155
-  7 155
-}
-yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
-}
+fillColor index 4
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 185
-y 45
-w 64
-h 95
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -180,68 +74,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 185
-y 45
-w 64
-h 95
+x 110
+y 65
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
 endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 200
-y 50
-w 40
-h 85
-lineColor index 14
-fill
-fillColor index 15
-closePolygon
-numPoints 8
-xPoints {
-  0 200
-  1 200
-  2 225
-  3 225
-  4 200
-  5 200
-  6 240
-  7 240
-}
-yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
-}
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 265
-y 45
-w 64
-h 95
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -249,53 +89,117 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 265
-y 45
-w 64
-h 95
+x 120
+y 75
+w 45
+h 25
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 85
+w 45
+h 25
+lineColor index 14
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 205
+y 65
+w 80
+h 50
 lineColor index 0
 fillColor index 19
 invisible
 endObjectProperties
 
-# (Lines)
-object activeLineClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
-release 1
-x 275
-y 50
-w 40
-h 85
+release 0
+x 215
+y 75
+w 45
+h 25
 lineColor index 14
 fill
 fillColor index 15
-closePolygon
-numPoints 8
-xPoints {
-  0 275
-  1 275
-  2 300
-  3 300
-  4 275
-  5 275
-  6 315
-  7 315
-}
-yPoints {
-  0 50
-  1 65
-  2 65
-  3 120
-  4 120
-  5 135
-  6 135
-  7 50
-}
 endObjectProperties
 
-endGroup
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 85
+w 45
+h 25
+lineColor index 14
+fill
+fillColor index 4
+endObjectProperties
 
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 65
+w 80
+h 50
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 75
+w 45
+h 25
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 85
+w 45
+h 25
+lineColor index 14
+fill
+fillColor index 4
 endObjectProperties
 
