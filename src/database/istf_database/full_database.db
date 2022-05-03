@@ -480,3 +480,110 @@ field(ZNAM, "CLOSED")
 field(ONAM, "OPEN")
 field(SCAN, ".1 second")
 }
+
+
+############################################################################
+# ISTF Faraday Cage
+############################################################################
+############################################################################
+# BIAS
+############################################################################
+record(ai, "istf:bias"){
+
+   field(DESC, "BIAS In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# SE
+############################################################################
+record(ai, "istf:se"){
+
+   field(DESC, "SE In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# OVEN
+############################################################################
+record(ai, "istf:oven"){
+
+   field(DESC, "Oven In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# DIS
+############################################################################
+record(ai, "istf:dis"){
+
+   field(DESC, "DIS In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# FIL
+############################################################################
+record(ai, "istf:fil"){
+
+   field(DESC, "FIL In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# SPUT
+############################################################################
+record(ai, "istf:sput"){
+
+   field(DESC, "SPUT In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+############################################################################
+# FG1
+############################################################################
+record(ai, "istf:fg1"){
+
+   field(DESC, "FG1 In Faraday Cage")
+   field(SCAN, ".1 second")
+   field(INP, "0")
+   field(HIGH, "20")
+   field(LOW, "-20")
+   field(HSV, "MAJOR")
+   field(LSV, "MAJOR")
+}
+
+
+
+
+
