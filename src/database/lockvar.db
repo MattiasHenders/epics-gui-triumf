@@ -1,0 +1,13 @@
+record(bi, "$(IOC):lock"){
+field(INP, "0")
+field(ZNAM, "CLOSED")
+field(ONAM, "OPEN")
+field(ZSV, "MAJOR")
+field(OSV, "NO_ALARM")
+field(SCAN, ".1 second")
+}
+
+record(stringin, "$(IOC):device"){
+field(VAL, "LOCK")
+}
+

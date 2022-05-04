@@ -1,0 +1,8 @@
+#!/bin/bash
+echo $1 $2
+IP=cainfo $2 | grep Host: | last -i | grep -Pom 1 '[0-9.]{7,15}'
+echo $IP
+echo "Pushing config to IOC"
+cainfo input:temp | grep Host: | last -i | grep -Pom 1 '[0-9.]{7,15}'
+sshpass -p "root" scp ../database/${1} root@192.168.1.65:~
+
