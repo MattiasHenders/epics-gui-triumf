@@ -776,8 +776,8 @@ commandLabel {
   1 "Reassign to IOC 3"
 }
 command {
-  0 "bash ../scripts/assign_db.sh IOC_1 IOC_2"
-  1 "bash ../scripts/assign_db.sh IOC_1 IOC_3"
+  0 "bash ../scripts/server/assign_db.sh IOC_1 IOC_2"
+  1 "bash ../scripts/server/assign_db.sh IOC_1 IOC_3"
 }
 endObjectProperties
 
@@ -803,8 +803,8 @@ commandLabel {
   1 "Reassign to IOC 3"
 }
 command {
-  0 "bash ../scripts/assign_db.sh IOC_2 IOC_1"
-  1 "bash ../scripts/assign_db.sh IOC_2 IOC_3"
+  0 "bash ../scripts/server/assign_db.sh IOC_2 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh IOC_2 IOC_3"
 }
 endObjectProperties
 
@@ -830,8 +830,8 @@ commandLabel {
   1 "Reassign to IOC 2"
 }
 command {
-  0 "bash ../scripts/assign_db.sh IOC_3 IOC_1"
-  1 "bash ../scripts/assign_db.sh IOC_3 IOC_2"
+  0 "bash ../scripts/server/assign_db.sh IOC_3 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh IOC_3 IOC_2"
 }
 endObjectProperties
 
@@ -885,7 +885,7 @@ x 67
 y 25
 w 51
 h 13
-controlPv "IOC_1:device"
+controlPv "IOC_1:device.DESC"
 font "helvetica-medium-r-10.0"
 fgColor index 0
 fgAlarm
@@ -970,7 +970,7 @@ x 67
 y 81
 w 51
 h 13
-controlPv "IOC_2:device"
+controlPv "IOC_2:device.DESC"
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -1054,8 +1054,8 @@ release 0
 x 68
 y 132
 w 51
-h 12
-controlPv "IOC_3:device"
+h 13
+controlPv "IOC_3:device.DESC"
 font "helvetica-medium-r-10.0"
 fgColor index 0
 bgColor index 19
@@ -1094,57 +1094,60 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 61
-y 20
-w 126
-h 21
-font "helvetica-medium-r-10.0"
-fgColor index 20
-bgColor index 19
-visPv "IOC_1:device"
-value {
-  "     IOC OFFLINE"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 58
-y 77
-w 129
-h 18
-font "helvetica-medium-r-10.0"
-fgColor index 20
-bgColor index 19
-visPv "IOC_2:device"
-value {
-  "     IOC OFFLINE"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
 x 62
 y 127
-w 127
+w 126
 h 20
 font "helvetica-medium-r-10.0"
-fgColor index 20
-bgColor index 19
-visPv "IOC_3:device"
+fgColor index 0
+bgColor index 14
+visPv "IOC_3:status"
+visMin "0"
+visMax "1"
 value {
   "     IOC OFFLINE"
 }
-autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 77
+w 126
+h 17
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_2:status"
+visMin "0"
+visMax "1"
+value {
+  "     IOC OFFLINE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 21
+w 126
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_1:status"
+visMin "0"
+visMax "1"
+value {
+  "     IOC OFFLINE"
+}
 endObjectProperties
 
