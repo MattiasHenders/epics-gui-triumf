@@ -7,6 +7,7 @@ field(OSV, "NO_ALARM")
 field(SCAN, ".1 second")
 }
 
-record(stringin, "$(IOC):device"){
-field(VAL, "LOCK")
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "LOCK")
 }

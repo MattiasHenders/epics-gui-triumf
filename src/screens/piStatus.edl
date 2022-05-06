@@ -56,8 +56,8 @@ minor 1
 release 1
 x 80
 y 192
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -135,8 +135,8 @@ minor 1
 release 1
 x 80
 y 249
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -214,8 +214,8 @@ minor 1
 release 1
 x 80
 y 306
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -293,8 +293,8 @@ minor 1
 release 1
 x 80
 y 363
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -372,8 +372,8 @@ minor 1
 release 1
 x 80
 y 420
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -451,8 +451,8 @@ minor 1
 release 1
 x 80
 y 477
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -530,8 +530,8 @@ minor 1
 release 1
 x 80
 y 534
-w 34
-h 12
+w 36
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -609,8 +609,8 @@ minor 1
 release 1
 x 80
 y 591
-w 34
-h 12
+w 36
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -688,8 +688,8 @@ minor 1
 release 1
 x 80
 y 648
-w 34
-h 12
+w 36
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -761,7 +761,7 @@ major 4
 minor 3
 release 0
 x 196
-y 10
+y 22
 w 51
 h 17
 fgColor index 0
@@ -776,8 +776,8 @@ commandLabel {
   1 "Reassign to IOC 3"
 }
 command {
-  0 "bash ../scripts/assign_db.sh LOCK_IOC.db IOC_2"
-  1 "bash ../scripts/assign_db.sh LOCK_IOC.db IOC_3"
+  0 "bash ../scripts/assign_db.sh IOC_1 IOC_2"
+  1 "bash ../scripts/assign_db.sh IOC_1 IOC_3"
 }
 endObjectProperties
 
@@ -787,31 +787,53 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 196
-y 31
-w 52
+x 194
+y 77
+w 51
 h 17
 fgColor index 0
-bgColor index 12
+bgColor index 11
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-bold-r-10.0"
-buttonLabel "ID"
-numCmds 0
+buttonLabel "Device"
+numCmds 2
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/assign_db.sh IOC_2 IOC_1"
+  1 "bash ../scripts/assign_db.sh IOC_2 IOC_3"
+}
 endObjectProperties
 
-# (Group)
-object activeGroupClass
+# (Shell Command)
+object shellCmdClass
 beginObjectProperties
 major 4
-minor 0
+minor 3
 release 0
-x 16
-y 10
-w 174
-h 37
-
-beginGroup
+x 195
+y 126
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 2
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 2"
+}
+command {
+  0 "bash ../scripts/assign_db.sh IOC_3 IOC_1"
+  1 "bash ../scripts/assign_db.sh IOC_3 IOC_2"
+}
+endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -836,10 +858,10 @@ release 0
 x 135
 y 24
 w 51
-h 16
+h 13
 controlPv "IOC_1:lock"
 font "helvetica-medium-r-10.0"
-fgColor index 0
+fgColor index 16
 fgAlarm
 bgColor index 19
 useDisplayBg
@@ -862,14 +884,16 @@ release 0
 x 67
 y 25
 w 51
-h 12
+h 13
 controlPv "IOC_1:device"
 font "helvetica-medium-r-10.0"
 fgColor index 0
+fgAlarm
 bgColor index 19
 useDisplayBg
 autoHeight
 limitsFromDb
+nullPv "IOC_1:device"
 nullColor index 7
 useHexPrefix
 newPos
@@ -884,8 +908,8 @@ minor 1
 release 1
 x 22
 y 25
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -895,23 +919,6 @@ value {
 }
 autoSize
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 16
-y 66
-w 174
-h 37
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -936,21 +943,19 @@ release 0
 x 135
 y 80
 w 51
-h 16
-controlPv "IOC_2:lock"
+h 13
+controlPv "IOC_2:FC"
 font "helvetica-medium-r-10.0"
-fgColor index 0
+fgColor index 16
 fgAlarm
 bgColor index 19
 useDisplayBg
 autoHeight
-motifWidget
 limitsFromDb
 nullColor index 7
 smartRefresh
 fastUpdate
 useHexPrefix
-showUnits
 newPos
 objType "monitors"
 endObjectProperties
@@ -964,7 +969,7 @@ release 0
 x 67
 y 81
 w 51
-h 12
+h 13
 controlPv "IOC_2:device"
 font "helvetica-medium-r-10.0"
 fgColor index 0
@@ -973,6 +978,8 @@ useDisplayBg
 autoHeight
 limitsFromDb
 nullColor index 7
+smartRefresh
+fastUpdate
 useHexPrefix
 newPos
 objType "monitors"
@@ -986,8 +993,8 @@ minor 1
 release 1
 x 22
 y 81
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -997,69 +1004,6 @@ value {
 }
 autoSize
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 194
-y 87
-w 52
-h 17
-fgColor index 0
-bgColor index 12
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "ID"
-numCmds 0
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 194
-y 66
-w 51
-h 17
-fgColor index 0
-bgColor index 11
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Device"
-numCmds 2
-commandLabel {
-  0 "Reassign to IOC 1"
-  1 "Reassign to IOC 3"
-}
-command {
-  0 "bash ../scripts/assign_db.sh LOCK_IOC.db IOC_1"
-  1 "bash ../scripts/assign_db.sh LOCK_IOC IOC_3"
-}
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 17
-y 117
-w 174
-h 37
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -1084,21 +1028,19 @@ release 0
 x 136
 y 131
 w 51
-h 16
+h 13
 controlPv "IOC_3:lock"
 font "helvetica-medium-r-10.0"
-fgColor index 0
+fgColor index 16
 fgAlarm
 bgColor index 19
 useDisplayBg
 autoHeight
-motifWidget
 limitsFromDb
 nullColor index 7
 smartRefresh
 fastUpdate
 useHexPrefix
-showUnits
 newPos
 objType "monitors"
 endObjectProperties
@@ -1134,8 +1076,8 @@ minor 1
 release 1
 x 23
 y 132
-w 28
-h 12
+w 30
+h 13
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 19
@@ -1146,34 +1088,63 @@ value {
 autoSize
 endObjectProperties
 
-endGroup
-
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
 major 4
-minor 3
-release 0
-x 195
-y 126
-w 51
-h 17
+minor 1
+release 1
+x 62
+y 127
+w 128
+h 20
+font "helvetica-medium-r-10.0"
 fgColor index 0
-bgColor index 11
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Device"
-numCmds 2
-commandLabel {
-  0 "Reassign to IOC 1"
-  1 "Reassign to IOC 2"
+bgColor index 14
+visPv "IOC_3:device"
+value {
+  "     IOC OFFLINE"
 }
-command {
-  0 "bash ../scripts/assign_db.sh LOCK_IOC.db IOC_1"
-  1 "bash ../scripts/assign_db.sh LOCK_IOC IOC_2"
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 77
+w 128
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_2:device"
+value {
+  "     IOC OFFLINE"
 }
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 21
+w 127
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_1:device"
+value {
+  "     IOC OFFLINE"
+}
+autoSize
 endObjectProperties
 

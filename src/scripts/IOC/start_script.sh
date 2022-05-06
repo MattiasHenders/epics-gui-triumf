@@ -4,8 +4,7 @@ source ./env/IOC_CONFIG
 
 echo "Starting IOC with ID: ${ID}"
 
-(softIoc -m IOC=$ID -d dbconfig.db)
-
+screen -d -m softIoc -m IOC=${ID} -d dbconfig.db
 
 
 
