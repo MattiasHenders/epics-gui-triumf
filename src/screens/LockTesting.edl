@@ -11,7 +11,7 @@ font "helvetica-medium-r-10.0"
 ctlFont "helvetica-medium-r-10.0"
 btnFont "helvetica-bold-r-10.0"
 fgColor index 5
-bgColor index 5
+bgColor index 12
 textColor index 0
 ctlFgColor1 index 1
 ctlFgColor2 index 7
