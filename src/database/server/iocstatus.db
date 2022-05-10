@@ -1,11 +1,11 @@
 record(calcout, "IOC_1:status") {
-field(SCAN, "1 second")
+field(SCAN, ".5 second")
 field(INPA, "IOC_1:device")
 field(CALC, "A=1?1:0")
 }
 
 record(calcout, "IOC_2:status") {
-field(SCAN, "1 second")
+field(SCAN, ".5 second")
 field(INPA, "IOC_2:device")
 field(CALC, "A=1?1:0")
 }
@@ -13,5 +13,5 @@ field(CALC, "A=1?1:0")
 record(calcout, "IOC_3:status"){
 field(INPA, "IOC_3:device")
 field(CALC, "A=1?1:0")
-field(SCAN, "1 second")
+field(SCAN, ".5 second")
 }
