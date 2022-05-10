@@ -1,0 +1,5 @@
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ND")
+}
+
