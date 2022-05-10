@@ -5,13 +5,13 @@ minor 0
 release 1
 x 100
 y 100
-w 500
-h 200
+w 850
+h 600
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-bold-r-14.0"
 fgColor index 0
-bgColor index 21
+bgColor index 8
 textColor index 0
 ctlFgColor1 index 1
 ctlFgColor2 index 7
@@ -19,22 +19,53 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
+title "ISTF Cage Menu - Vacuum"
 snapToGrid
-gridSize 5
 endScreenProperties
 
-# (Group)
-object activeGroupClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 25
-y 55
-w 80
-h 80
+x 10
+y 10
+w 260
+h 40
+lineColor index 14
+fillColor index 19
+endObjectProperties
 
-beginGroup
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 380
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 120
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -42,61 +73,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 25
-y 55
-w 80
-h 80
-lineColor index 0
+x 100
+y 130
+w 700
+h 300
+lineColor index 14
 fillColor index 19
-invisible
 endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 35
-y 65
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 45
-y 75
-w 40
-h 40
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 115
-y 60
-w 80
-h 80
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -104,61 +87,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 115
-y 60
-w 80
-h 80
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 125
-y 70
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 135
-y 80
-w 40
+x 0
+y 130
+w 100
 h 40
 lineColor index 14
 fill
-fillColor index 15
+fillColor index 8
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 210
-y 65
-w 80
-h 80
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -166,61 +102,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 210
-y 65
-w 80
-h 80
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 220
-y 75
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 230
-y 85
-w 40
+x 0
+y 390
+w 100
 h 40
 lineColor index 14
 fill
-fillColor index 15
+fillColor index 8
 endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 305
-y 60
-w 80
-h 80
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -228,46 +117,106 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 305
-y 60
-w 80
-h 80
-lineColor index 0
+x 10
+y 170
+w 10
+h 220
+lineColor index 14
 fillColor index 19
-invisible
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 315
-y 70
-w 60
-h 60
+x 105
+y 135
+w 690
+h 290
 lineColor index 14
-fill
-fillColor index 15
+fillColor index 19
+lineStyle "dash"
 endObjectProperties
 
-# (Circle)
-object activeCircleClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 325
-y 80
-w 40
+x 425
+y 135
+w 15
+h 290
+lineColor index 14
+fillColor index 19
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 795
+y 205
+w 55
+h 50
+lineColor index 29
+fill
+fillColor index 29
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 700
+y 210
+w 95
 h 40
-lineColor index 14
+lineColor index 29
 fill
-fillColor index 15
+fillColor index 29
 endObjectProperties
 
-endGroup
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 670
+y 185
+w 55
+h 95
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
 
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 20
+w 245
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF Faraday Cage - Vacuum"
+}
+autoSize
 endObjectProperties
 

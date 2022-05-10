@@ -1294,3 +1294,49 @@ fillColor index 19
 lineStyle "dash"
 endObjectProperties
 
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 40
+y 480
+w 0
+h 60
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 40
+  1 40
+}
+yPoints {
+  0 540
+  1 480
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 20
+y 540
+w 160
+h 40
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "CAGE VACUUM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf_cage_vacuum.edl"
+}
+endObjectProperties
+

@@ -91,8 +91,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 115
-y 60
+x 125
+y 55
 w 80
 h 80
 
@@ -104,28 +104,13 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 115
-y 60
+x 125
+y 55
 w 80
 h 80
 lineColor index 0
 fillColor index 19
 invisible
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 125
-y 70
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 15
 endObjectProperties
 
 # (Circle)
@@ -135,44 +120,12 @@ major 4
 minor 0
 release 0
 x 135
-y 80
-w 40
-h 40
+y 65
+w 60
+h 60
 lineColor index 14
 fill
 fillColor index 15
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 210
-y 65
-w 80
-h 80
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 210
-y 65
-w 80
-h 80
-lineColor index 0
-fillColor index 19
-invisible
 endObjectProperties
 
 # (Circle)
@@ -181,23 +134,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 220
+x 145
 y 75
-w 60
-h 60
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Circle)
-object activeCircleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 230
-y 85
 w 40
 h 40
 lineColor index 14
@@ -215,8 +153,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 305
-y 60
+x 225
+y 55
 w 80
 h 80
 
@@ -228,8 +166,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 305
-y 60
+x 225
+y 55
 w 80
 h 80
 lineColor index 0
@@ -243,8 +181,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 315
-y 70
+x 235
+y 65
 w 60
 h 60
 lineColor index 14
@@ -254,12 +192,74 @@ endObjectProperties
 
 # (Circle)
 object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 75
+w 40
+h 40
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
 beginObjectProperties
 major 4
 minor 0
 release 0
 x 325
-y 80
+y 55
+w 80
+h 80
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 55
+w 80
+h 80
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 65
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 345
+y 75
 w 40
 h 40
 lineColor index 14

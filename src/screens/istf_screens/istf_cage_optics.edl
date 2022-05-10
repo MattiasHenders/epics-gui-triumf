@@ -1,0 +1,537 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 30
+w 850
+h 600
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 0
+bgColor index 8
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "ISTF Cage Menu - Optics"
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y 130
+w 700
+h 300
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 140
+w 680
+h 280
+lineColor index 14
+fillColor index 19
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 170
+w 220
+h 210
+lineColor index 14
+fillColor index 19
+lineWidth 3
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 360
+y 110
+w 0
+h 60
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 360
+  1 360
+}
+yPoints {
+  0 110
+  1 170
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 250
+h 40
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 380
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 120
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 130
+w 100
+h 40
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 390
+w 100
+h 40
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 170
+w 10
+h 220
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 440
+y 140
+w 10
+h 280
+lineColor index 14
+fillColor index 19
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 800
+y 210
+w 60
+h 60
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 710
+y 220
+w 95
+h 40
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 670
+y 190
+w 55
+h 95
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 20
+w 233
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF Faraday Cage - Optics"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 450
+y 50
+w 90
+h 20
+controlPv "istf:cage-status"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 350
+y 80
+w 150
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ISTF:CAGE-STATUS"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf_cage_details.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 400
+y 50
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput istf:cage-status 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 350
+y 50
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput istf:cage-status 0"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 330
+y 280
+w 0
+h 220
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 330
+  1 330
+}
+yPoints {
+  0 280
+  1 500
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 220
+y 330
+w 0
+h 170
+lineColor index 14
+fillColor index 19
+numPoints 2
+xPoints {
+  0 220
+  1 220
+}
+yPoints {
+  0 330
+  1 500
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 260
+w 30
+h 110
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 170
+y 610
+w 200
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 370
+  1 170
+}
+yPoints {
+  0 610
+  1 610
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 200
+y 280
+w 130
+h 0
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 330
+  1 200
+}
+yPoints {
+  0 280
+  1 280
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 200
+y 330
+w 20
+h 0
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 220
+  1 200
+}
+yPoints {
+  0 330
+  1 330
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 200
+y 500
+w 150
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ISTF:CAGE"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf_cage_details.edl"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 300
+y 540
+w 90
+h 20
+controlPv "istf:cage-amps"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 180
+y 540
+w 90
+h 20
+controlPv "istf:cage-voltage"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
