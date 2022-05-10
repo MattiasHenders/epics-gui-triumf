@@ -1,0 +1,179 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1699
+y 624
+w 60
+h 60
+fgColor index 1
+bgColor index 0
+pixmapFlag "perEnvVar"
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+font "helvetica-medium-r-12.0"
+fontAlign "left"
+ctlFont "helvetica-medium-r-10.0"
+ctlFontAlign "left"
+btnFont "helvetica-bold-r-12.0"
+btnFontAlign "left"
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 17
+w 25
+h 27
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 33
+y 34
+w 10
+h 10
+lineColor index 10
+fill
+fillColor index 10
+visPv "$(D):CALIB"
+visMin "-0.5"
+visMax "0.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 21
+y 26
+w 11
+h 6
+lineStyle "solid"
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):NEGLIM"
+visInvert
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 18
+y 35
+w 18
+h 6
+lineStyle "solid"
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):NEGLIM"
+visInvert
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 18
+y 17
+w 18
+h 6
+lineStyle "solid"
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):NEGLIM"
+visInvert
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 22
+y 26
+w 11
+h 6
+lineStyle "dash"
+lineColor index 63
+fillColor index 0
+alarmPv "CALC\\intok($(D):STATINT)"
+visPv "$(D):NEGLIM"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 18
+y 35
+w 18
+h 6
+lineStyle "dash"
+lineColor index 63
+fillColor index 0
+alarmPv "CALC\\intok($(D):STATINT)"
+visPv "$(D):NEGLIM"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties 
+major 4
+minor 0
+release 0
+x 18
+y 17
+w 18
+h 6
+lineStyle "dash"
+lineColor index 63
+fillColor index 0
+alarmPv "CALC\\intok($(D):STATINT)"
+visPv "$(D):NEGLIM"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

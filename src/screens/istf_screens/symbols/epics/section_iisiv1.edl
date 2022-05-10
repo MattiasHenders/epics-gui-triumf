@@ -1,0 +1,700 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 558
+y 559
+w 860
+h 211
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 106
+y 35
+w 670
+h 30
+lineColor index 1
+fillColor index 0
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 106
+y 35
+w 670
+h 30
+lineColor index 2
+fillColor index 0
+numPoints 3
+xPoints {
+  0 106
+  1 776
+  2 776
+}
+yPoints {
+  0 65
+  1 65
+  2 35
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 66
+y 36
+w 22
+h 28
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+numPoints 10
+xPoints {
+  0 66
+  1 77
+  2 88
+  3 83
+  4 77
+  5 74
+  6 79
+  7 74
+  8 69
+  9 66
+}
+yPoints {
+  0 42
+  1 36
+  2 56
+  3 59
+  4 64
+  5 59
+  6 54
+  7 44
+  8 48
+  9 42
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 66
+y 36
+w 22
+h 28
+lineColor index 12
+fill
+fillColor index 12
+visPv "IIS:FC2:STATOFF"
+visMin "0.5"
+visMax "1.5"
+numPoints 10
+xPoints {
+  0 66
+  1 76
+  2 88
+  3 83
+  4 77
+  5 74
+  6 80
+  7 74
+  8 69
+  9 66
+}
+yPoints {
+  0 42
+  1 36
+  2 56
+  3 59
+  4 64
+  5 59
+  6 54
+  7 44
+  8 48
+  9 42
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 66
+y 36
+w 22
+h 28
+lineColor index 9
+fill
+fillColor index 9
+visPv "IIS:FC2:STATINT"
+visMin "-0.5"
+visMax "0.5"
+numPoints 10
+xPoints {
+  0 66
+  1 76
+  2 88
+  3 83
+  4 77
+  5 74
+  6 80
+  7 74
+  8 69
+  9 66
+}
+yPoints {
+  0 43
+  1 36
+  2 56
+  3 59
+  4 64
+  5 58
+  6 54
+  7 44
+  8 48
+  9 43
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 76
+y 70
+w 700
+h 30
+lineColor index 1
+fillColor index 0
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 76
+y 70
+w 700
+h 30
+lineColor index 2
+fillColor index 0
+numPoints 3
+xPoints {
+  0 76
+  1 776
+  2 776
+}
+yPoints {
+  0 100
+  1 100
+  2 70
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 266
+y 80
+w 62
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 1
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "IMS:IG33"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 486
+y 80
+w 55
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 1
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "IIS:IGP1"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 23
+y 60
+w 45
+h 45
+lineColor index 54
+fill
+fillColor index 54
+alarmPv "CALC\\fill(IIS:IV1)"
+numPoints 5
+xPoints {
+  0 51
+  1 68
+  2 23
+  3 39
+  4 51
+}
+yPoints {
+  0 60
+  1 88
+  2 74
+  3 105
+  4 60
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 23
+y 60
+w 45
+h 45
+lineColor index 53
+fillColor index 0
+alarmPv "CALC\\outline(IIS:IV1)"
+numPoints 5
+xPoints {
+  0 51
+  1 68
+  2 23
+  3 39
+  4 51
+}
+yPoints {
+  0 60
+  1 88
+  2 74
+  3 105
+  4 60
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 303
+y 42
+w 93
+h 17
+controlPv "IIS:FC2:SCALECUR"
+format "exponential"
+font "helvetica-medium-r-14.0"
+fontAlign "right"
+fgColor index 22
+fgAlarm
+bgColor index 0
+useDisplayBg
+precision 2
+nullColor index 21
+nullCondition "disabled"
+useHexPrefix
+showUnits
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 301
+y 40
+w 97
+h 21
+lineColor index 4
+fillColor index 0
+lineWidth 3
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 301
+y 40
+w 97
+h 21
+lineColor index 3
+fillColor index 0
+lineWidth 3
+numPoints 3
+xPoints {
+  0 301
+  1 398
+  2 398
+}
+yPoints {
+  0 61
+  1 61
+  2 40
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 176
+y 75
+w 37
+h 17
+fgColor index 1
+onColor index 76
+offColor index 76
+topShadowColor index 3
+botShadowColor index 4
+controlPv "IIS:IV1:DRVON"
+pressValue "on"
+onLabel "Open"
+offLabel "Open"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "CALC\\byporfrc(IIS:IV1)"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 221
+y 75
+w 37
+h 17
+fgColor index 1
+onColor index 76
+offColor index 76
+topShadowColor index 3
+botShadowColor index 4
+controlPv "IIS:IV1:DRVOFF"
+pressValue "on"
+onLabel "Shut"
+offLabel "Shut"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "CALC\\byporfrc(IIS:IV1)"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 551
+y 80
+w 120
+h 15
+controlPv "IIS:IGP1:RDVAC"
+format "exponential"
+font "helvetica-medium-r-14.0"
+fgColor index 22
+fgAlarm
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 21
+nullCondition "disabled"
+useHexPrefix
+showUnits
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 341
+y 80
+w 120
+h 15
+controlPv "IMS:IG33:RDVAC"
+format "exponential"
+font "helvetica-medium-r-14.0"
+fgColor index 22
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 21
+nullCondition "disabled"
+useHexPrefix
+showUnits
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 111
+y 40
+w 85
+h 20
+fgColor index 2
+bgColor index 1
+topShadowColor index 3
+botShadowColor index 4
+font "helvetica-bold-r-12.0"
+yPosOffset 10
+buttonLabel "IIS:FC2  "
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "iisfc2cp.edl"
+}
+menuLabel {
+  0 "IIS:FC2  "
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "D=IIS:FC2,A=IIS:BIAS1,D2=IIS:IGP1,D3=IIS:INTFC2"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+helpCommand "$EDMWEBBROWSER $\{TRIUMFHELPURL\}?D=\\$(!label)"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 686
+y 40
+w 85
+h 20
+fgColor index 0
+bgColor index 1
+topShadowColor index 3
+botShadowColor index 4
+font "helvetica-bold-r-12.0"
+yPosOffset 10
+buttonLabel "IIS Optics"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "iis_optics1.edl"
+}
+menuLabel {
+  0 "IIS Optics"
+}
+setPosition {
+  0 "parentWindow"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 81
+y 75
+w 85
+h 20
+fgColor index 0
+bgColor index 1
+topShadowColor index 3
+botShadowColor index 4
+font "helvetica-bold-r-12.0"
+yPosOffset 10
+buttonLabel "IIS:IV1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "iisiv1cp.edl"
+}
+menuLabel {
+  0 "IISIV1  "
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "D=IIS:IV1"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+helpCommand "$EDMWEBBROWSER $\{TRIUMFHELPURL\}?D=\\$(!label)"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 686
+y 75
+w 85
+h 20
+fgColor index 0
+bgColor index 1
+topShadowColor index 3
+botShadowColor index 4
+font "helvetica-bold-r-12.0"
+yPosOffset 10
+buttonLabel "IMS Vacuum"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "ims_vacuum3.edl"
+  1 "iis_vacuum1.edl"
+}
+menuLabel {
+  0 "IMS(3) Vacuum"
+  1 "IIS Vacuum"
+}
+setPosition {
+  0 "parentWindow"
+  1 "parentWindow"
+}
+symbols {
+  0 "1 "
+}
+replaceSymbols {
+  0 1
+  1 1
+}
+propagateMacros {
+  0 0
+  1 0
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 66
+y 36
+w 22
+h 28
+lineColor index 1
+fillColor index 26
+visPv "IIS:FC2:STATON"
+visMin "-0.5"
+visMax "0.5"
+numPoints 10
+xPoints {
+  0 66
+  1 76
+  2 88
+  3 84
+  4 77
+  5 74
+  6 80
+  7 74
+  8 69
+  9 66
+}
+yPoints {
+  0 43
+  1 36
+  2 56
+  3 59
+  4 64
+  5 58
+  6 54
+  7 44
+  8 48
+  9 43
+}
+endObjectProperties
+

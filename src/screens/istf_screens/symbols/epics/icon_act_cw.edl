@@ -1,0 +1,73 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1757
+y 89
+w 131
+h 127
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 47
+w 26
+h 19
+lineColor index 1
+fillColor index 0
+visPv "$(D):STATON"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 49
+y 47
+w 26
+h 19
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):STATON"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 47
+w 29
+h 19
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+endObjectProperties
+

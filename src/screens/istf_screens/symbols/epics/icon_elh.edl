@@ -1,0 +1,93 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1524
+y 437
+w 104
+h 79
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 34
+w 22
+h 20
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 35
+y 34
+w 22
+h 17
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+closePolygon
+numPoints 4
+xPoints {
+  0 35
+  1 39
+  2 51
+  3 55
+}
+yPoints {
+  0 34
+  1 49
+  2 49
+  3 34
+}
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 39
+y 44
+w 12
+h 10
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+startAngle 180
+totalAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

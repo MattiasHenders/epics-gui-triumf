@@ -1,0 +1,150 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 311
+y 110
+w 112
+h 108
+font helvetica-medium-r-8.0
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 21
+y 14
+w 21
+h 24
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 30
+y 22
+w 12
+h 15
+lineColor index 71
+fill
+fillColor index 72
+alarmPv "CALC\\fillsmall2($(D):POS,$(D))"
+closePolygon
+numPoints 16
+xPoints {
+  0 30
+  1 31
+  2 33
+  3 34
+  4 38
+  5 41
+  6 42
+  7 42
+  8 39
+  9 38
+  10 36
+  11 35
+  12 35
+  13 34
+  14 33
+  15 31
+}
+yPoints {
+  0 36
+  1 32
+  2 27
+  3 25
+  4 23
+  5 22
+  6 23
+  7 25
+  8 27
+  9 27
+  10 29
+  11 31
+  12 33
+  13 36
+  14 38
+  15 38
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 21
+y 14
+w 20
+h 24
+lineColor index 71
+fill
+fillColor index 72
+alarmPv "CALC\\fillsmall2($(D):NEG,$(D))"
+closePolygon
+numPoints 17
+xPoints {
+  0 21
+  1 23
+  2 25
+  3 29
+  4 35
+  5 39
+  6 42
+  7 42
+  8 38
+  9 33
+  10 30
+  11 27
+  12 27
+  13 26
+  14 26
+  15 24
+  16 22
+}
+yPoints {
+  0 36
+  1 28
+  2 23
+  3 18
+  4 15
+  5 14
+  6 15
+  7 17
+  8 18
+  9 21
+  10 25
+  11 29
+  12 32
+  13 35
+  14 36
+  15 38
+  16 38
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

@@ -1,0 +1,194 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 504
+y 385
+w 60
+h 60
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 15
+w 33
+h 27
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 44
+y 21
+w 4
+h 21
+lineColor index 72
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+numPoints 18
+xPoints {
+  0 44
+  1 44
+  2 45
+  3 46
+  4 47
+  5 47
+  6 48
+  7 48
+  8 48
+  9 48
+  10 47
+  11 46
+  12 46
+  13 45
+  14 45
+  15 44
+  16 44
+  17 44
+}
+yPoints {
+  0 42
+  1 42
+  2 42
+  3 42
+  4 42
+  5 42
+  6 42
+  7 37
+  8 21
+  9 21
+  10 21
+  11 21
+  12 21
+  13 21
+  14 21
+  15 21
+  16 21
+  17 37
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 17
+y 15
+w 20
+h 21
+lineColor index 72
+lineAlarm
+fillColor index 0
+fillAlarm
+lineWidth 5
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 15
+w 20
+h 21
+lineColor index 72
+lineAlarm
+fillColor index 0
+fillAlarm
+lineWidth 5
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 15
+y 21
+w 4
+h 21
+lineColor index 72
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+numPoints 18
+xPoints {
+  0 15
+  1 15
+  2 16
+  3 17
+  4 18
+  5 18
+  6 19
+  7 19
+  8 19
+  9 19
+  10 18
+  11 17
+  12 17
+  13 16
+  14 16
+  15 15
+  16 15
+  17 15
+}
+yPoints {
+  0 42
+  1 42
+  2 42
+  3 42
+  4 42
+  5 42
+  6 42
+  7 37
+  8 21
+  9 21
+  10 21
+  11 21
+  12 21
+  13 21
+  14 21
+  15 21
+  16 21
+  17 37
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

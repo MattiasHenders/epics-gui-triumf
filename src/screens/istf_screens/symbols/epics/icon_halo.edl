@@ -1,0 +1,114 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 72
+y 367
+w 237
+h 205
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 56
+y 58
+w 34
+h 28
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 62
+y 64
+w 22
+h 16
+lineColor index 1
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 58
+w 14
+h 5
+lineColor index 1
+fill
+fillColor index 12
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 81
+w 14
+h 5
+lineColor index 1
+fill
+fillColor index 12
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 56
+y 65
+w 5
+h 14
+lineColor index 1
+fill
+fillColor index 12
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 85
+y 65
+w 5
+h 14
+lineColor index 1
+fill
+fillColor index 12
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

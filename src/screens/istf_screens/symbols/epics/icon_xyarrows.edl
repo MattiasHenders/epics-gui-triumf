@@ -1,0 +1,140 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1351
+y 296
+w 148
+h 198
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 24
+w 56
+h 41
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 61
+y 49
+w 9
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 1
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "X"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 62
+y 24
+w 10
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 1
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Y"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 16
+y 27
+w 45
+h 6
+lineColor index 1
+fillColor index 0
+numPoints 5
+xPoints {
+  0 16
+  1 61
+  2 46
+  3 46
+  4 58
+}
+yPoints {
+  0 30
+  1 30
+  2 33
+  3 27
+  4 30
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 17
+y 30
+w 36
+h 27
+lineColor index 1
+fillColor index 0
+numPoints 5
+xPoints {
+  0 17
+  1 53
+  2 44
+  3 39
+  4 50
+}
+yPoints {
+  0 30
+  1 57
+  2 45
+  3 50
+  4 55
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

@@ -1,0 +1,168 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2860
+y 205
+w 211
+h 189
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 49
+w 28
+h 28
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 49
+w 28
+h 28
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+visPv "$(D):STATOFF"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 49
+w 28
+h 28
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 49
+w 28
+h 28
+lineColor index 1
+fill
+fillColor index 11
+visPv "$(D):STATPP"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 54
+y 53
+w 20
+h 20
+lineColor index 1
+fillColor index 12
+lineStyle "dash"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 57
+w 8
+h 12
+lineColor index 1
+fillColor index 12
+lineStyle "dash"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 53
+y 58
+w 22
+h 10
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):STATBST"
+visMin "0.5"
+visMax "1.5"
+numPoints 9
+xPoints {
+  0 53
+  1 75
+  2 75
+  3 70
+  4 70
+  5 58
+  6 58
+  7 53
+  8 53
+}
+yPoints {
+  0 58
+  1 58
+  2 68
+  3 68
+  4 64
+  5 64
+  6 68
+  7 68
+  8 58
+}
+endObjectProperties
+

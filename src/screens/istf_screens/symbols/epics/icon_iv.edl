@@ -1,0 +1,54 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2077
+y 291
+w 500
+h 600
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 42
+y 42
+w 28
+h 27
+lineColor index 69
+fill
+fillColor index 70
+alarmPv "CALC\\fill2($(D))"
+numPoints 5
+xPoints {
+  0 42
+  1 68
+  2 42
+  3 70
+  4 42
+}
+yPoints {
+  0 42
+  1 42
+  2 69
+  3 69
+  4 42
+}
+endObjectProperties
+

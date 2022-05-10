@@ -1,0 +1,130 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1548
+y 106
+w 180
+h 185
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 37
+y 44
+w 25
+h 29
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 37
+y 44
+w 25
+h 10
+lineColor index 1
+fill
+fillColor index 12
+numPoints 4
+xPoints {
+  0 62
+  1 62
+  2 37
+  3 37
+}
+yPoints {
+  0 44
+  1 54
+  2 54
+  3 44
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 37
+y 55
+w 25
+h 10
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):STATCLOSED"
+visMin "0.5"
+visMax "1.5"
+numPoints 4
+xPoints {
+  0 62
+  1 62
+  2 37
+  3 37
+}
+yPoints {
+  0 65
+  1 55
+  2 55
+  3 65
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 37
+y 63
+w 25
+h 10
+lineColor index 1
+fill
+fillColor index 12
+visPv "$(D):STATCLOSED"
+visMin "-0.5"
+visMax "0.5"
+numPoints 4
+xPoints {
+  0 62
+  1 62
+  2 37
+  3 37
+}
+yPoints {
+  0 73
+  1 63
+  2 63
+  3 73
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

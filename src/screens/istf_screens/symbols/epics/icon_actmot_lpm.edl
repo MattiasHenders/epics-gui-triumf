@@ -1,0 +1,344 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 989
+y 206
+w 198
+h 293
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 68
+w 23
+h 12
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 76
+  1 80
+  2 76
+  3 68
+  4 68
+  5 76
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 46
+y 62
+w 23
+h 12
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+numPoints 6
+xPoints {
+  0 46
+  1 58
+  2 69
+  3 69
+  4 46
+  5 46
+}
+yPoints {
+  0 70
+  1 74
+  2 70
+  3 62
+  4 62
+  5 70
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 75
+w 23
+h 10
+lineColor index 1
+fillColor index 0
+lineStyle "dash"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 76
+  1 80
+  2 76
+  3 85
+  4 85
+  5 76
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 74
+y 71
+w 16
+h 8
+lineColor index 14
+fill
+fillColor index 14
+visPv "$(D):CALIB"
+visMin "-0.5"
+visMax "0.5"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 68
+w 23
+h 11
+lineColor index 1
+fillColor index 0
+visPv "$(D):POSLIM"
+visMin "0.5"
+visMax "1.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 76
+  1 79
+  2 76
+  3 68
+  4 68
+  5 76
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 68
+w 23
+h 12
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):POSLIM"
+visMin "0.5"
+visMax "1.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 75
+  1 79
+  2 75
+  3 69
+  4 69
+  5 75
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 63
+w 23
+h 11
+lineColor index 1
+fillColor index 0
+visPv "$(D):NEGLIM"
+visMin "0.5"
+visMax "1.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 71
+  1 74
+  2 71
+  3 63
+  4 63
+  5 71
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 74
+w 23
+h 10
+lineColor index 1
+fillColor index 0
+visPv "$(D):NEGLIM"
+visMin "0.5"
+visMax "1.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 76
+  1 80
+  2 76
+  3 84
+  4 84
+  5 76
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 46
+y 62
+w 23
+h 12
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):NEGLIM"
+visMin "-0.5"
+visMax "0.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 69
+  3 69
+  4 47
+  5 47
+}
+yPoints {
+  0 69
+  1 73
+  2 69
+  3 63
+  4 63
+  5 69
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 75
+w 23
+h 10
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):NEGLIM"
+visMin "-0.5"
+visMax "0.5"
+numPoints 6
+xPoints {
+  0 47
+  1 58
+  2 70
+  3 70
+  4 47
+  5 47
+}
+yPoints {
+  0 77
+  1 81
+  2 77
+  3 85
+  4 85
+  5 77
+}
+endObjectProperties
+

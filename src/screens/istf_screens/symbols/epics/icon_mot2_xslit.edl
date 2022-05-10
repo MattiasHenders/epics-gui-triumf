@@ -1,0 +1,253 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 8
+y 30
+w 212
+h 207
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 41
+w 49
+h 19
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 41
+w 13
+h 18
+lineColor index 1
+fillColor index 0
+numPoints 4
+xPoints {
+  0 47
+  1 60
+  2 60
+  3 47
+}
+yPoints {
+  0 41
+  1 41
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 47
+y 42
+w 13
+h 17
+lineColor index 12
+fill
+fillColor index 12
+numPoints 4
+xPoints {
+  0 48
+  1 60
+  2 60
+  3 47
+}
+yPoints {
+  0 42
+  1 42
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 65
+y 41
+w 11
+h 18
+lineColor index 1
+fillColor index 0
+visPv "$(D):MOTOR1.LLS"
+visMin "-0.5"
+visMax "0.5"
+numPoints 4
+xPoints {
+  0 76
+  1 65
+  2 65
+  3 75
+}
+yPoints {
+  0 41
+  1 41
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 66
+y 42
+w 12
+h 17
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):MOTOR1.LLS"
+visMin "-0.5"
+visMax "0.5"
+numPoints 4
+xPoints {
+  0 78
+  1 66
+  2 66
+  3 78
+}
+yPoints {
+  0 42
+  1 42
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 60
+y 41
+w 11
+h 18
+lineColor index 1
+fillColor index 0
+visPv "$(D):MOTOR1.LLS"
+visMin "0.5"
+visMax "1.5"
+numPoints 4
+xPoints {
+  0 71
+  1 60
+  2 60
+  3 70
+}
+yPoints {
+  0 41
+  1 41
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 61
+y 42
+w 12
+h 17
+lineColor index 12
+fill
+fillColor index 12
+visPv "$(D):MOTOR1.LLS"
+visMin "0.5"
+visMax "1.5"
+numPoints 4
+xPoints {
+  0 73
+  1 61
+  2 61
+  3 73
+}
+yPoints {
+  0 42
+  1 42
+  2 59
+  3 59
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 43
+w 16
+h 8
+lineColor index 14
+fill
+fillColor index 14
+visPv "$(D):MOTOR1_CAL"
+visMin "-0.5"
+visMax "0.5"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 52
+w 16
+h 8
+lineColor index 14
+fill
+fillColor index 14
+visPv "$(D):MOTOR2_CAL"
+visMin "-0.5"
+visMax "0.5"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

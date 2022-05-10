@@ -1,0 +1,38 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1400
+y 248
+w 171
+h 141
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 37
+y 46
+w 35
+h 25
+lineColor index 1
+fill
+fillColor index 12
+endObjectProperties
+

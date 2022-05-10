@@ -1,0 +1,80 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1213
+y 308
+w 111
+h 106
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 45
+y 53
+w 23
+h 8
+lineColor index 56
+lineAlarm
+fillColor index 0
+fillAlarm
+lineWidth 7
+alarmPv "CALC\\fillsmall($(D),$(D))"
+startAngle 0
+totalAngle 371.297
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 41
+y 51
+w 33
+h 13
+lineColor index 53
+fillColor index 0
+alarmPv "CALC\\outline($(D),$(D))"
+startAngle 0
+totalAngle 383.016
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 55
+w 18
+h 5
+lineColor index 53
+fillColor index 0
+alarmPv "CALC\\outline($(D),$(D))"
+startAngle 0
+totalAngle 383.016
+fillMode "pie"
+endObjectProperties
+

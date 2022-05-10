@@ -1,0 +1,124 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2562
+y 401
+w 111
+h 65
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 28
+w 30
+h 15
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 28
+w 30
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D):TR,$(D):TR)"
+startAngle 0
+totalAngle 90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 28
+w 30
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D):BR,$(D):BR)"
+startAngle 270
+totalAngle 90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 28
+w 30
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D):BL,$(D):BL)"
+startAngle 180
+totalAngle 90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 28
+w 30
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D):TL,$(D):TL)"
+startAngle 90
+totalAngle 90
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

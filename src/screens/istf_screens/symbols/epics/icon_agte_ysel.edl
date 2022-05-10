@@ -1,0 +1,89 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1568
+y 456
+w 116
+h 112
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 28
+y 27
+w 7
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($(D),$(D))"
+numPoints 5
+xPoints {
+  0 28
+  1 34
+  2 34
+  3 28
+  4 28
+}
+yPoints {
+  0 27
+  1 31
+  2 46
+  3 42
+  4 27
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 42
+y 27
+w 6
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2(AGTE:CCB39,AGTE:CCB39))"
+numPoints 5
+xPoints {
+  0 42
+  1 48
+  2 48
+  3 42
+  4 42
+}
+yPoints {
+  0 27
+  1 31
+  2 46
+  3 42
+  4 27
+}
+endObjectProperties
+

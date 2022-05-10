@@ -1,0 +1,165 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2537
+y 560
+w 79
+h 50
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 6
+y 19
+w 10
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 1
+bgColor index 0
+useDisplayBg
+value {
+  "D"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 68
+y 19
+w 9
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 1
+bgColor index 0
+useDisplayBg
+value {
+  "S"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 20
+y 19
+w 7
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($D:BPOS,$D)"
+numPoints 5
+xPoints {
+  0 20
+  1 27
+  2 27
+  3 20
+  4 20
+}
+yPoints {
+  0 19
+  1 22
+  2 34
+  3 31
+  4 19
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 31
+w 15
+h 10
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($D:ANEG,$D)"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 56
+y 20
+w 7
+h 15
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($D:APOS,$D)"
+numPoints 5
+xPoints {
+  0 56
+  1 63
+  2 63
+  3 56
+  4 56
+}
+yPoints {
+  0 20
+  1 23
+  2 35
+  3 32
+  4 20
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 17
+w 15
+h 10
+lineColor index 71
+lineAlarm
+fill
+fillColor index 72
+fillAlarm
+alarmPv "CALC\\fillsmall2($D:BNEG,$D)"
+endObjectProperties
+

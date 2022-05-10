@@ -1,0 +1,115 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 870
+y 248
+w 217
+h 175
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-12.0"
+fgColor index 1
+bgColor index 0
+textColor index 1
+ctlFgColor1 index 1
+ctlFgColor2 index 22
+ctlBgColor1 index 0
+ctlBgColor2 index 2
+topShadowColor index 3
+botShadowColor index 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 56
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 14
+visPv "$(D):CALIB"
+visMin "-0.5"
+visMax "0.5"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 99
+y 47
+w 29
+h 37
+lineColor index 1
+fill
+fillColor index 8
+visPv "CALC\\\{A?0:1\}($D:NEGLIM)"
+visMin "0.5"
+visMax "1.5"
+numPoints 7
+xPoints {
+  0 116
+  1 99
+  2 115
+  3 100
+  4 128
+  5 112
+  6 117
+}
+yPoints {
+  0 47
+  1 62
+  2 60
+  3 84
+  4 54
+  5 57
+  6 48
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 99
+y 47
+w 29
+h 37
+lineColor index 53
+fill
+fillColor index 0
+alarmPv "CALC\\outlinesimple($(D):NEGLIM)"
+visMin "0.5"
+visMax "1.5"
+numPoints 7
+xPoints {
+  0 116
+  1 99
+  2 115
+  3 100
+  4 128
+  5 112
+  6 117
+}
+yPoints {
+  0 47
+  1 62
+  2 60
+  3 84
+  4 54
+  5 57
+  6 48
+}
+endObjectProperties
+
