@@ -1,5 +1,5 @@
 record(bi, "$(IOC):device"){
 field(INP, "1")
-field(DESC, "ND")
+field(DESC, "NO DEVICE INITIALIZED")
 }
 
