@@ -2,7 +2,7 @@
 # Turbo Pump V2 Controller
 #=========================
 
-record(bi, "ISTF:TP${IOC_NUM}:RP"){
+record(bi, "$(IOC):RP"){
 
    field(DESC, "Roughing Pump ON or OFF")
    field(INP, "0")
@@ -11,7 +11,7 @@ record(bi, "ISTF:TP${IOC_NUM}:RP"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:TP"){
+record(bi, "$(IOC):TP"){
 
    field(DESC, "Turbo Pump ON or OFF")
    field(INP, "0")
@@ -20,7 +20,7 @@ record(bi, "ISTF:TP${IOC_NUM}:TP"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:VV1"){
+record(bi, "$(IOC):VV1"){
 
    field(DESC, "Turbo Pump Isolation From Roughing Pump ON or OFF")
    field(INP, "1")
@@ -29,7 +29,7 @@ record(bi, "ISTF:TP${IOC_NUM}:VV1"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:VV2"){
+record(bi, "$(IOC):VV2"){
 
    field(DESC, "Roughing Pump Isolation Valve ON or OFF")
    field(INP, "1")
@@ -38,11 +38,16 @@ record(bi, "ISTF:TP${IOC_NUM}:VV2"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:VV3"){
+record(bi, "$(IOC):VV3"){
 
    field(DESC, "Roughing Valve For Entire System ON or OFF")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
    field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF TP")
 }
