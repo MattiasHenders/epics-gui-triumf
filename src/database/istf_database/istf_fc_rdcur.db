@@ -1,0 +1,12 @@
+#========================
+# Faraday Cup Beam Sensor
+#========================
+
+record(ai, "ISTF:FC${IOC_NUM}:RDCUR"){
+
+   field(DESC, "Analog Voltage Read of the Beam Current")
+   field(INP, "0")
+   field(SCAN, ".1 second")
+   field(EGU, "V")
+}
+

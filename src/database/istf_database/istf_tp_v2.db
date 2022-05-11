@@ -1,0 +1,48 @@
+#=========================
+# Turbo Pump V2 Controller
+#=========================
+
+record(bi, "ISTF:TP${IOC_NUM}:RP"){
+
+   field(DESC, "Roughing Pump ON or OFF")
+   field(INP, "0")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:TP"){
+
+   field(DESC, "Turbo Pump ON or OFF")
+   field(INP, "0")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:VV1"){
+
+   field(DESC, "Turbo Pump Isolation From Roughing Pump ON or OFF")
+   field(INP, "1")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:VV2"){
+
+   field(DESC, "Roughing Pump Isolation Valve ON or OFF")
+   field(INP, "1")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:VV3"){
+
+   field(DESC, "Roughing Valve For Entire System ON or OFF")
+   field(INP, "1")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}

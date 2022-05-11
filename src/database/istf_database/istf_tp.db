@@ -1,0 +1,31 @@
+#========================
+# Turbo Pump Controller
+#========================
+
+record(bi, "ISTF:TP${IOC_NUM}:RP"){
+
+   field(DESC, "Roughing Pump ON or OFF")
+   field(INP, "0")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:TP"){
+
+   field(DESC, "Turbo Pump ON or OFF")
+   field(INP, "0")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "ISTF:TP${IOC_NUM}:VV"){
+
+   field(DESC, "Vacuum Valve ON or OFF")
+   field(INP, "1")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+

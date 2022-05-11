@@ -1,0 +1,12 @@
+#============================
+# Ionization Gague Controller
+#============================
+
+record(bi, "ISTF:IG${IOC_NUM}:RDVAC"){
+
+   field(DESC, "Read Ionization From Gauge ON or OFF")
+   field(INP, "0")
+   field(ZNAM, "LOW")
+   field(ONAM, "HIGH")
+   field(SCAN, ".1 second")
+}
