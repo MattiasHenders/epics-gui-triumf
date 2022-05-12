@@ -30,13 +30,12 @@ boolPrevList = []
 # Alarms and callbacks
 def turnOnSOL():
     if pv1.get() == 0 and pv2.get() == 1:
-        pv0.put(1)
-        controlGPIO(0, True)
+        controlGPIO(gpioList[0], True)
     else:
         pv0.put(0)
-        controlGPIO(0, False)
+        controlGPIO(gpioList[0], False)
 
-SOL_ALARM = Alarm(pvname = pv2.pvname,
+SOL_ALARM = Alarm(pvname = pv0.pvname,
         comparison = "==",
         callback = turnOnSOL,
         trip_point = 1,
@@ -52,11 +51,11 @@ def setup():
         boolPrevList.append(False)
 
 def controlGPIO(GPIO_Pin, boolStatus):
+
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
-
 
 def loop():
     try:
@@ -64,6 +63,9 @@ def loop():
 
             # Loop through each PV
             for i in range(len(gpioList)):
+
+                if i == 0:
+                    continue
 
                 # Check the PV value
                 boolPV = pvList[i].get() == 1
