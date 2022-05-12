@@ -37,7 +37,7 @@ def setup():
         boolPrevList.append(False)
 
 def controlGPIO(GPIO_Pin, boolStatus):
-    if boolStatus:
+    if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
