@@ -2,7 +2,7 @@
 # Faraday Cup Beam Sensor
 #========================
 
-record(ai, "ISTF:FC${IOC_NUM}:RDCUR"){
+record(ai, "$(IOC)"){
 
    field(DESC, "Analog Voltage Read of the Beam Current")
    field(INP, "0")
@@ -10,3 +10,7 @@ record(ai, "ISTF:FC${IOC_NUM}:RDCUR"){
    field(EGU, "V")
 }
 
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF FC RDCUR")
+}

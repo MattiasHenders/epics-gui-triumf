@@ -2,7 +2,7 @@
 # Turbo Pump Controller
 #========================
 
-record(bi, "ISTF:TP${IOC_NUM}:RP"){
+record(bi, "$(IOC):RP"){
 
    field(DESC, "Roughing Pump ON or OFF")
    field(INP, "0")
@@ -11,7 +11,7 @@ record(bi, "ISTF:TP${IOC_NUM}:RP"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:TP"){
+record(bi, "$(IOC):TP"){
 
    field(DESC, "Turbo Pump ON or OFF")
    field(INP, "0")
@@ -20,7 +20,7 @@ record(bi, "ISTF:TP${IOC_NUM}:TP"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:TP${IOC_NUM}:VV"){
+record(bi, "$(IOC):VV"){
 
    field(DESC, "Vacuum Valve ON or OFF")
    field(INP, "1")
@@ -29,3 +29,7 @@ record(bi, "ISTF:TP${IOC_NUM}:VV"){
    field(SCAN, ".1 second")
 }
 
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF TP")
+}

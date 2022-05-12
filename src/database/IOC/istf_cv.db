@@ -2,11 +2,16 @@
 # Vacuum Gague Controller
 #========================
 
-record(bi, "ISTF:CV${IOC_NUM}:RDVAC"){
+record(bi, "$(IOC):RDVAC"){
 
    field(DESC, "Read Vacuum From Gauge ON or OFF")
    field(INP, "0")
    field(ZNAM, "LOW")
    field(ONAM, "MEDIUM")
    field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF CV")
 }

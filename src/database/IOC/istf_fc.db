@@ -2,7 +2,7 @@
 # Faraday Cup Controller
 #========================
 
-record(bi, "ISTF:FC${IOC_NUM}:SOL"){
+record(bi, "$(IOC):SOL"){
 
    field(DESC, "Controller of the Faraday Cup - IN or OUT via Compressed Air")
    field(INP, "0")
@@ -11,7 +11,7 @@ record(bi, "ISTF:FC${IOC_NUM}:SOL"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:FC${IOC_NUM}:IN"){
+record(bi, "$(IOC):IN"){
 
    field(DESC, "Sensor for if the Faraday Cup is IN all the way")
    field(INP, "0")
@@ -20,7 +20,7 @@ record(bi, "ISTF:FC${IOC_NUM}:IN"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:FC${IOC_NUM}:OUT"){
+record(bi, "$(IOC):OUT"){
 
    field(DESC, "Sensor for if the Faraday Cup is OUT all the way")
    field(INP, "1")
@@ -29,11 +29,16 @@ record(bi, "ISTF:FC${IOC_NUM}:OUT"){
    field(SCAN, ".1 second")
 }
 
-record(bi, "ISTF:FC${IOC_NUM}:HWR"){
+record(bi, "$(IOC):HWR"){
 
    field(DESC, "Sensor if the Cooling Water is flowing or not")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
    field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF FC")
 }
