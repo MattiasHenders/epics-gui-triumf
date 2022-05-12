@@ -1,5 +1,5 @@
 import sys
-from epics import PV
+from epics import PV, Alarm
 import time
 import RPi.GPIO as GPIO
 
@@ -26,6 +26,21 @@ pvList= [pv0, pv1, pv2, pv3]
 
 # List to track previous states
 boolPrevList = []
+    
+# Alarms and callbacks
+def turnOnSOL():
+    if pv1.get() == 0 and pv2.get() == 1:
+        pv0.put(1)
+        controlGPIO(0, True)
+    else:
+        pv0.put(0)
+        controlGPIO(0, False)
+
+SOL_ALARM = Alarm(pvname = pv2.pvname,
+        comparison = "==",
+        callback = turnOnSOL,
+        trip_point = 1,
+        alert_delay = 500)
 
 def setup():
 
