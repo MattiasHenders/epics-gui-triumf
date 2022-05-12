@@ -28,7 +28,6 @@ gpioList = [5]
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV("ISTF:FC" + pvID + ":RDCUR")
-pvList= [pv0]
 
 def setup():
 
@@ -52,9 +51,10 @@ def loop():
             # Read from the ADC
             ldr_value = readadc(ldr_channel)
             print("LDR Value: %d" % ldr_value)
-                
-            # Wait a short amount of secs
-            time.sleep(sleepTimeShort)
+            pv0.put(ldr_value)
+
+            # Wait a long amount of secs
+            time.sleep(sleepTimeLong)
 
     # End program cleanly with keyboard
     except KeyboardInterrupt:
