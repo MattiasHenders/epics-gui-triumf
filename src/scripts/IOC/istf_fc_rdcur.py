@@ -2,6 +2,15 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
+import spidev
+
+#Define Variables
+delay = 0.5
+ldr_channel = 0
+
+#Create SPI
+spi = spidev.SpiDev()
+spi.open(0, 0)
 
 # Sleep time variables
 sleepTimeShort = 0.25
@@ -21,39 +30,28 @@ gpioList = [5]
 pv0 = PV("ISTF:FC" + pvID + ":RDCUR")
 pvList= [pv0]
 
-# List to track previous states
-boolPrevList = []
-
 def setup():
 
     GPIO.setmode(GPIO.BCM)
 
     for i in gpioList:
-        GPIO.setup(i, GPIO.OUT)
-        GPIO.output(i, GPIO.HIGH)
-        boolPrevList.append(False)
+        GPIO.setup(i, GPIO.IN)
 
-def controlGPIO(GPIO_Pin, boolStatus):
-    if boolStatus:
-        GPIO.output(GPIO_Pin, GPIO.HIGH)
-    else:
-        GPIO.output(GPIO_Pin, GPIO.LOW)
-
+def readadc(adcnum):
+    # read SPI data from the MCP3008, 8 channels in total
+    if adcnum > 7 or adcnum < 0:
+        return -1
+    r = spi.xfer2([1, 8 + adcnum << 4, 0])
+    data = ((r[1] & 3) << 8) + r[2]
+    return data
 
 def loop():
     try:
         while True:
 
-            # Loop through each PV
-            for i in range(len(gpioList)):
-
-                # Check the PV value
-                boolPV = pvList[i].get() == 1
-
-                # Act only if there is a change
-                if boolPrevList[i] != boolPV:
-                    controlGPIO(gpioList[i], boolPV)
-                    boolPrevList[i] = boolPV
+            # Read from the ADC
+            ldr_value = readadc(ldr_channel)
+            print("LDR Value: %d" % ldr_value)
                 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
