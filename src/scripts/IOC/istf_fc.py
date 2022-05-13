@@ -42,7 +42,7 @@ SOL_ALARM = Alarm(pvname = pv0.pvname,
         comparison = "==",
         callback = turnOnSOL,
         trip_point = 1,
-        alert_delay = 500)
+        alert_delay = 5)
 
 def setup():
 
