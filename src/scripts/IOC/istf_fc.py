@@ -19,8 +19,8 @@ gpioList = [5, 6, 13, 19]
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV("ISTF:FC" + pvID + ":SOL")
-pv1 = PV("ISTF:FC" + pvID + ":RDPOS:IN")
-pv2 = PV("ISTF:FC" + pvID + ":RDPOS:OUT")
+pv1 = PV("ISTF:FC" + pvID + ":IN")
+pv2 = PV("ISTF:FC" + pvID + ":OUT")
 pv3 = PV("ISTF:FC" + pvID + ":HWR")
 pvList= [pv0, pv1, pv2, pv3]
 
@@ -71,7 +71,7 @@ def loop():
                     continue
 
                 # Check the PV value
-                boolPV = pvList[i].get() == 1
+                boolPV = pvList[i].get() != 0
 
                 # Act only if there is a change
                 if boolPrevList[i] != boolPV:
