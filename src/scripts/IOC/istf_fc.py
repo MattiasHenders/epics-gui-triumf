@@ -53,7 +53,6 @@ def setup():
     pv2.add_callback(turnOnSOL)
 
 def controlGPIO(GPIO_Pin, boolStatus):
-    print("Set " + str(GPIO_Pin) + " to " + str(boolStatus))
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:

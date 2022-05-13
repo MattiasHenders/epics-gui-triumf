@@ -4,7 +4,7 @@
 
 record(bi, "$(IOC):RDVAC"){
 
-   field(DESC, "Read Ionization From Gauge ON or OFF")
+   field(DESC, "Ionization Gauge ON OFF")
    field(INP, "0")
    field(ZNAM, "LOW")
    field(ONAM, "HIGH")
