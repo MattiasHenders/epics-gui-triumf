@@ -54,7 +54,7 @@ def setup():
         boolPrevList.append(False)
 
 def controlGPIO(GPIO_Pin, boolStatus):
-
+    print("Set " + str(GPIO_Pin) + " to " + str(boolStatus))
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
