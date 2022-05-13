@@ -35,7 +35,7 @@ def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
         controlGPIO(gpioList[0], True)
     else:
         print("Turning OFF SOL")
-        pv0.put(False) # Critical
+        pv0.value = 0 # Critical
         controlGPIO(gpioList[0], False)
 
 def setup():
