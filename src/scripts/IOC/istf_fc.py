@@ -30,7 +30,7 @@ boolPrevList = []
 # Alarms and callbacks
 def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
     print("Change Detected")
-    if pv1.get() == 0 and pv2.get() == 1:
+    if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
         print("Turning ON SOL")
         controlGPIO(gpioList[0], True)
     else:
