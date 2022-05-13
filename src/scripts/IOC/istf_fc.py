@@ -28,7 +28,7 @@ pvList= [pv0, pv1, pv2, pv3]
 boolPrevList = []
     
 # Alarms and callbacks
-def turnOnSOL():
+def turnOnSOL(pvname=None, char_value=None, **kw):
     if pv1.get() == 0 and pv2.get() == 1:
         controlGPIO(gpioList[0], True)
     else:
