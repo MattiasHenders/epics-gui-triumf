@@ -1,4 +1,4 @@
-record(bi, "$(IOC):lock"){
+record(bi, "$(IOC):FC"){
 field(INP, "0")
 field(ZNAM, "CLOSED")
 field(ONAM, "OPEN")
@@ -9,5 +9,5 @@ field(SCAN, ".1 second")
 
 record(bi, "$(IOC):device"){
 field(INP, "1")
-field(DESC, "LOCK")
+field(DESC, "FC")
 }

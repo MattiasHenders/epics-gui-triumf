@@ -1,13 +1,25 @@
 #!/bin/bash
 
 echo $1 $2
-source ../database/IOC/IOC_DEVICE_ASSOCIATIONS
+#mapfile -t arr ~/epics-gui-triumf/src/database/IOC/IOC_DEVICE_ASSOCIATIONS.txt
 
-IOC_TYPE=${!2}
+
+IOC_TYPE=""
 TARGET_IOC=$1
 IOC_ID_UPDATE=$2
-echo $2
+
+# Parses the correct DB file for the IOC we want to re-assign to
+while IFS= read -r line; do
+elementPV=$(echo $line | cut -d "=" -f 1)
+elementDB=$(echo $line | cut -d "=" -f 2)
+if [ $elementPV == $IOC_ID_UPDATE ]
+then
+IOC_TYPE=$elementDB
 echo $IOC_TYPE
+fi
+done < ~/epics-gui-triumf/src/database/IOC/IOC_DEVICE_ASSOCIATIONS.txt
+
+
 #Get the IP address of PV $1
 echo "Determining IOC IP Address..."
 IP=$(echo $(cainfo $TARGET_IOC:device) | grep Host: | grep -Pom 1 '[0-9.]{7,15}')
@@ -15,6 +27,7 @@ SCRIPT_DIR=${IOC_TYPE::-2}py
 IOC_IN_USE=$(caget $2:status.INAV)
 echo ${IOC_IN_USE: -2}
 echo ${IP}
+
 if [ ! -z $IP -a ${IOC_IN_USE: -2} == "NC" ]
 then 
 

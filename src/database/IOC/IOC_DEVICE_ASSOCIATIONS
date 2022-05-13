@@ -1,4 +1,4 @@
-#ISTF:FCO=istf_fc.db
+ISTF:FCO=istf_fc.db
 #ISTF:FC0:RDCUR=istf_fc_rdcur.db
 #ISTF:TP1=istf_tp_v2.db
 #ISTF:CV1=istf_cv.db

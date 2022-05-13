@@ -1,0 +1,14 @@
+ISTF:FCO=istf_fc.db
+ISTF:FC0:RDCUR=istf_fc_rdcur.db
+ISTF:TP1=istf_tp_v2.db
+ISTF:CV1=istf_cv.db
+ISTF:CV2=istf_cv.db
+ISTF:IG1=istf_ig.db
+ISTF:FC1=istf_fc.db
+ISTF:FC1:RDCUR=istf_db_rdcur.db
+ISTF:GV1=istf_gv.db
+ISTF:CV3=istf_cv.db
+ISTF:TP2=istf_tp_v2.db
+IOC_1=LOCK_IOC.db
+IOC_2=FC_IOC.db
+IOC_3=LOCK_IOC.db

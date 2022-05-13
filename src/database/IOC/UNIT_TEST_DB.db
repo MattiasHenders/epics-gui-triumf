@@ -1,0 +1,4 @@
+record(bi, $(IOC):test){
+field(INP, 1)
+field(DESC, "A record used to test our file transfer scripts")
+}
