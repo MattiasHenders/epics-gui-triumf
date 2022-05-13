@@ -35,7 +35,7 @@ def turnOnSOL(pvname=None, char_value=None, **kw):
         controlGPIO(gpioList[0], True)
     else:
         print("Rejected")
-        pv0.put(0)
+        pv0.put(0, wait=True) # Critical
         controlGPIO(gpioList[0], False)
 
 SOL_ALARM = Alarm(pvname = pv0.pvname,
