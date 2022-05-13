@@ -28,21 +28,15 @@ pvList= [pv0, pv1, pv2, pv3]
 boolPrevList = []
     
 # Alarms and callbacks
-def turnOnSOL(pvname=None, char_value=None, **kw):
-    print("Attempt to turn on SOL")
+def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
+    print("Change Detected")
     if pv1.get() == 0 and pv2.get() == 1:
-        print("Accepted")
+        print("Turning ON SOL")
         controlGPIO(gpioList[0], True)
     else:
-        print("Rejected")
+        print("Turning OFF SOL")
         pv0.put(0) # Critical
         controlGPIO(gpioList[0], False)
-
-SOL_ALARM = Alarm(pvname = pv0.pvname,
-        comparison = "==",
-        callback = turnOnSOL,
-        trip_point = 1,
-        alert_delay = 2) # seconds of delay each alarm
 
 def setup():
 
@@ -52,6 +46,11 @@ def setup():
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
         boolPrevList.append(False)
+    
+    # Set the interlock devices change function
+    pv0.add_callback(turnOnSOL)
+    pv1.add_callback(turnOnSOL)
+    pv2.add_callback(turnOnSOL)
 
 def controlGPIO(GPIO_Pin, boolStatus):
     print("Set " + str(GPIO_Pin) + " to " + str(boolStatus))
