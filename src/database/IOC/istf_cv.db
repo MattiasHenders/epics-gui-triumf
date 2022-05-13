@@ -4,7 +4,7 @@
 
 record(bi, "$(IOC):RDVAC"){
 
-   field(DESC, "Read Vacuum From Gauge ON or OFF")
+   field(DESC, "Read Vacuum From Gauge")
    field(INP, "0")
    field(ZNAM, "LOW")
    field(ONAM, "MEDIUM")
