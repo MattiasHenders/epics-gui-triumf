@@ -29,9 +29,12 @@ boolPrevList = []
     
 # Alarms and callbacks
 def turnOnSOL(pvname=None, char_value=None, **kw):
+    print("Attempt to turn on SOL")
     if pv1.get() == 0 and pv2.get() == 1:
+        print("Accepted")
         controlGPIO(gpioList[0], True)
     else:
+        print("Rejected")
         pv0.put(0)
         controlGPIO(gpioList[0], False)
 
