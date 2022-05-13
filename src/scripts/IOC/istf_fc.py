@@ -35,14 +35,14 @@ def turnOnSOL(pvname=None, char_value=None, **kw):
         controlGPIO(gpioList[0], True)
     else:
         print("Rejected")
-        pv0.put(0, wait=True) # Critical
+        pv0.put(0) # Critical
         controlGPIO(gpioList[0], False)
 
 SOL_ALARM = Alarm(pvname = pv0.pvname,
         comparison = "==",
         callback = turnOnSOL,
         trip_point = 1,
-        alert_delay = 5)
+        alert_delay = 2) # seconds of delay each alarm
 
 def setup():
 
