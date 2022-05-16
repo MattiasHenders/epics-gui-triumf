@@ -12,7 +12,7 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:IG0"
 
 # List to track previous states
 boolPrevList = []
@@ -21,7 +21,7 @@ boolPrevList = []
 # EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:IG" + pvID + ":RDVAC")
+pv0 = PV(pvID + ":RDVAC")
 
 pvList= [pv0]  # List of PVs in order for this device
 gpioList = [5] # List of GPIO pins for this device
@@ -63,7 +63,7 @@ def loop():
 
                 if pvList[i] in lockedPVs:
                     continue
-                
+
                 # Check the PV value
                 boolPV = pvList[i].get() == 1
 

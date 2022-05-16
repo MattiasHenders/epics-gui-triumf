@@ -12,7 +12,7 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "ISTF:FC0"
+    pvID = "ISTF:GV0"
 
 # List to track previous states
 boolPrevList = []

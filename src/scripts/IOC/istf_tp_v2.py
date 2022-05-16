@@ -12,7 +12,7 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:TP0"
 
 # List to track previous states
 boolPrevList = []
@@ -21,11 +21,11 @@ boolPrevList = []
 # EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:TP" + pvID + ":RP")
-pv1 = PV("ISTF:TP" + pvID + ":TP")
-pv2 = PV("ISTF:TP" + pvID + ":VV1")
-pv3 = PV("ISTF:TP" + pvID + ":VV2")
-pv4 = PV("ISTF:TP" + pvID + ":VV3")
+pv0 = PV(pvID + ":RP")
+pv1 = PV(pvID + ":TP")
+pv2 = PV(pvID + ":VV1")
+pv3 = PV(pvID + ":VV2")
+pv4 = PV(pvID + ":VV3")
 
 pvList= [pv0, pv1, pv2, pv3, pv4] # List of PVs in order for this device
 gpioList = [5, 6, 13, 19, 26]     # List of GPIO pins for this device
