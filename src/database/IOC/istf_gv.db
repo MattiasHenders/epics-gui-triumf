@@ -1,0 +1,35 @@
+#============================
+# Gague Vacuum Controller
+#============================
+
+record(bi, "$(IOC):SOL"){
+
+   field(DESC, "Gague Vacuum Compressed Air")
+   field(INP, "0")
+   field(ZNAM, "LOW")
+   field(ONAM, "HIGH")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):IN"){
+
+   field(DESC, "Gague Vacuum is IN")
+   field(INP, "0")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):OUT"){
+
+   field(DESC, "Gague Vacuum is OUT")
+   field(INP, "1")
+   field(ZNAM, "OFF")
+   field(ONAM, "ON")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF GV")
+}

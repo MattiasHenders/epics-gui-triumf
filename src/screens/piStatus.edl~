@@ -1,0 +1,1330 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 100
+w 500
+h 800
+font "helvetica-medium-r-10.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-10.0"
+fgColor index 0
+bgColor index 8
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 179
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 179
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 192
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 4"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 190
+w 48
+h 16
+controlPv "Ioc4"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 236
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 236
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 249
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 5"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 247
+w 48
+h 16
+controlPv "Ioc5"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 293
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 293
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 306
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 6"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 304
+w 48
+h 16
+controlPv "Ioc6"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 350
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 350
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 363
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 7"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 361
+w 48
+h 16
+controlPv "Ioc7"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 407
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 407
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 420
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 8"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 418
+w 48
+h 16
+controlPv "Ioc8"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 464
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 464
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 477
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 9"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 475
+w 48
+h 16
+controlPv "Ioc9"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 521
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 521
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 534
+w 34
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 10"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 532
+w 48
+h 16
+controlPv "Ioc10"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 578
+w 105
+h 37
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 71
+y 578
+w 105
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 591
+w 34
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 11"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 121
+y 589
+w 48
+h 16
+controlPv "Ioc11"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 14
+y 66
+w 31
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 196
+y 22
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 2
+commandLabel {
+  0 "Reassign to IOC 2"
+  1 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh IOC_1 IOC_2"
+  1 "bash ../scripts/server/assign_db.sh IOC_1 IOC_3"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 194
+y 77
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 2
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh IOC_2 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh IOC_2 IOC_3"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 195
+y 126
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 2
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 2"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh IOC_3 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh IOC_3 IOC_2"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 10
+w 174
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 24
+w 51
+h 12
+controlPv "IOC_1:lock"
+font "helvetica-medium-r-10.0"
+fgColor index 16
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 67
+y 25
+w 51
+h 13
+controlPv "IOC_1:device.DESC"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+limitsFromDb
+nullColor index 7
+nullCondition "disabled"
+smartRefresh
+fastUpdate
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 22
+y 25
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 1"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 66
+w 174
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 135
+y 80
+w 51
+h 12
+controlPv "IOC_2:FC"
+font "helvetica-medium-r-10.0"
+fgColor index 16
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 67
+y 81
+w 51
+h 12
+controlPv "IOC_2:device.DESC"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 22
+y 81
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 2"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 17
+y 117
+w 174
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 131
+w 51
+h 13
+controlPv "IOC_3:lock"
+font "helvetica-medium-r-10.0"
+fgColor index 16
+fgAlarm
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 68
+y 132
+w 51
+h 13
+controlPv "IOC_3:device.DESC"
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+nullPv "IOC_3:device.DESC"
+nullColor index 7
+smartRefresh
+fastUpdate
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 23
+y 132
+w 28
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "IOC 3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 62
+y 127
+w 126
+h 20
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_3:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "     IOC OFFLINE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 77
+w 126
+h 17
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_2:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "     IOC OFFLINE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 61
+y 21
+w 126
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "IOC_1:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "     IOC OFFLINE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 635
+w 200
+h 37
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 181
+y 644
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 3
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 2"
+  2 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh ND_IOC1 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh ND_IOC1 IOC_2"
+  2 "bash ../scripts/server/assign_db.sh ND_IOC1 IOC_3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 57
+y 649
+w 76
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Unassigned IOC"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 635
+w 134
+h 37
+lineColor index 14
+fillColor index 19
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+visPv "ND_IOC1:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 684
+w 200
+h 37
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 181
+y 693
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 3
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 2"
+  2 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh ND_IOC2 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh ND_IOC2 IOC_2"
+  2 "bash ../scripts/server/assign_db.sh ND_IOC2 IOC_3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 57
+y 698
+w 76
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Unassigned IOC"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 684
+w 134
+h 37
+lineColor index 14
+fillColor index 19
+visPv "ND_IOC2:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+visPv "ND_IOC2:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 738
+w 200
+h 37
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 181
+y 747
+w 51
+h 17
+fgColor index 0
+bgColor index 11
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Device"
+numCmds 3
+commandLabel {
+  0 "Reassign to IOC 1"
+  1 "Reassign to IOC 2"
+  2 "Reassign to IOC 3"
+}
+command {
+  0 "bash ../scripts/server/assign_db.sh ND_IOC3 IOC_1"
+  1 "bash ../scripts/server/assign_db.sh ND_IOC3 IOC_2"
+  2 "bash ../scripts/server/assign_db.sh ND_IOC3 IOC_3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 57
+y 752
+w 76
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Unassigned IOC"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 738
+w 134
+h 37
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+endGroup
+
+visPv "ND_IOC3:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+

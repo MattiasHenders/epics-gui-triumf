@@ -1,0 +1,16 @@
+#========================
+# Faraday Cup Beam Sensor
+#========================
+
+record(ai, "$(IOC)"){
+
+   field(DESC, "Voltage Read of Beam")
+   field(INP, "0")
+   field(SCAN, ".1 second")
+   field(EGU, "V")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, "1")
+field(DESC, "ISTF FC RDCUR")
+}

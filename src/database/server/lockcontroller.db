@@ -1,0 +1,41 @@
+record(calc, "lock1-2_link"){
+field(SCAN, ".1 second)
+field(HIGH, "2")
+field(LOW, "0")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+field(INPA, "lock1")
+field(INPB, "lock2")
+field(CALC, "A + B")
+}
+
+record(calc, "lock2-3_link"){
+field(SCAN, ".1 second")
+field(INPB, "lock2")
+field(INPC, "lock3")
+field(CALC, "B + C")
+field(HIGH, "2")
+field(LOW, "1")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+record(calc, "lock1-2-3_link"){
+field(SCAN, ".1 second")
+field(INPA, "lock1")
+field(INPB, "lock2")
+field(INPC, "lock3")
+field(CALC, "A + B + C")
+field(HIGH, "3")
+field(LOW, "2")
+field(HSV, "NO_ALARM")
+field(LSV, "MAJOR")
+}
+
+
+record(bi, "demo_locked_procedure"){
+field(INP, "0")
+field(ZNAM, "ON")
+field(ONAM, "OFF")
+field(SCAN, ".1 second")
+}

@@ -1,0 +1,802 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 100
+w 1000
+h 800
+font "helvetica-medium-r-10.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-bold-r-10.0"
+fgColor index 5
+bgColor index 12
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 696
+y 492
+w 282
+h 250
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 733
+y 465
+w 2
+h 0
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 799
+y 518
+w 45
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 5
+value {
+  "Interlocks"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 720
+y 565
+w 31
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 718
+y 624
+w 31
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 716
+y 678
+w 31
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 3"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 562
+w 115
+h 16
+lineColor index 0
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 617
+w 115
+h 16
+lineColor index 0
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 675
+w 115
+h 16
+lineColor index 0
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock3"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 150
+y 283
+w 53
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "IOC Lock 1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 315
+y 286
+w 53
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "IOC Lock 2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 480
+y 286
+w 53
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "IOC Lock 3"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 154
+y 676
+w 54
+h 25
+fgColor index 0
+bgColor index 8
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-bold-r-10.0"
+numCmds 1
+command {
+  0 "echo $PWD"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 547
+y 355
+w 84
+h 29
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock1-2-3_link"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 334
+w 77
+h 76
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock3"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 385
+y 355
+w 84
+h 29
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock2-3_link"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 307
+y 331
+w 77
+h 76
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 222
+y 356
+w 84
+h 29
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock1-2_link"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 145
+y 330
+w 77
+h 76
+lineColor index 19
+lineAlarm
+fill
+fillColor index 19
+fillAlarm
+alarmPv "lock1"
+visInvert
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 162
+y 454
+w 35
+h 25
+fgColor index 0
+onColor index 19
+offColor index 7
+inconsistentColor index 21
+topShadowColor index 12
+botShadowColor index 14
+controlPv "lock1"
+onLabel "Open"
+offLabel "Closed"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+visPv "demo_locked_procedure"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 131
+y 718
+w 88
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "Shell Script Button"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 127
+y 499
+w 99
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 1 Toggle Button"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 500
+w 99
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 1 Toggle Button"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 452
+y 499
+w 99
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "Lock 1 Toggle Button"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 451
+w 35
+h 25
+fgColor index 0
+onColor index 19
+offColor index 7
+inconsistentColor index 21
+topShadowColor index 12
+botShadowColor index 14
+controlPv "lock2"
+onLabel "Open"
+offLabel "Closed"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+visPv "demo_locked_procedure"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 488
+y 448
+w 35
+h 25
+fgColor index 0
+onColor index 19
+offColor index 7
+inconsistentColor index 21
+topShadowColor index 12
+botShadowColor index 14
+controlPv "lock3"
+onLabel "Open"
+offLabel "Closed"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+visPv "demo_locked_procedure"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (PNG Image)
+object activePngClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 639
+y 86
+w 136
+h 70
+file "../../images/light.png"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 582
+y 147
+w 250
+h 55
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 582
+y 147
+w 250
+h 55
+lineColor index 20
+fill
+fillColor index 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 597
+y 169
+w 178
+h 12
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "Potentially Harmful Procedure Running"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "demo_locked_procedure"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 329
+w 141
+h 83
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 630
+y 329
+w 141
+h 83
+fgColor index 0
+onColor index 35
+offColor index 8
+inconsistentColor index 35
+topShadowColor index 13
+botShadowColor index 14
+controlPv "demo_locked_procedure"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+visPv "lock1-2-3_link"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 644
+y 356
+w 93
+h 24
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+visPv "lock1-2-3_link"
+visMin "3"
+visMax "4"
+value {
+  "Unlocked Activation"
+  "      Button"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "lock1-2-3_link"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 329
+w 141
+h 83
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 630
+y 329
+w 141
+h 83
+fgColor index 0
+onColor index 35
+offColor index 8
+inconsistentColor index 20
+topShadowColor index 13
+botShadowColor index 14
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+visPv "lock1-2-3_link"
+visInvert
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 644
+y 356
+w 86
+h 24
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+visPv "lock1-2-3_link"
+visInvert
+visMin "3"
+visMax "4"
+value {
+  " Locked Activation"
+  "      Button"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "lock1-2-3_link"
+visInvert
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 89
+y 22
+w 791
+h 75
+font "times-medium-r-72.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "TRIUMF Pi Cluster Demo"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 277
+y 674
+w 85
+h 26
+fgColor index 0
+bgColor index 10
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-bold-r-10.0"
+buttonLabel "IOC Status"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "piStatus"
+}
+menuLabel {
+  0 "IOC Status"
+}
+allowDups {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
