@@ -21,7 +21,10 @@ gpioList = [5, 6, 13, 19]
 pv0 = PV("ISTF:GV" + pvID + ":SOL")
 pv1 = PV("ISTF:GV" + pvID + ":IN")
 pv2 = PV("ISTF:GV" + pvID + ":OUT")
-pvList= [pv0, pv1, pv2]
+pvList = [pv0, pv1, pv2]
+
+#Declare which PVs can only be turned on by interlock logic
+lockedPVs = [pv0]
 
 # List to track previous states
 boolPrevList = []
@@ -65,7 +68,7 @@ def loop():
             # Loop through each PV
             for i in range(len(gpioList)):
 
-                if i == 0:
+                if pvList[i] in lockedPVs:
                     continue
 
                 # Check the PV value
