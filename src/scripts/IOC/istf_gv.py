@@ -1,5 +1,5 @@
 import sys
-from epics import PV, Alarm
+from epics import PV
 import time
 import RPi.GPIO as GPIO
 
@@ -12,25 +12,29 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
-
-# List of GPIO pins for this device
-gpioList = [5, 6, 13, 19]
-
-# PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:GV" + pvID + ":SOL")
-pv1 = PV("ISTF:GV" + pvID + ":IN")
-pv2 = PV("ISTF:GV" + pvID + ":OUT")
-pvList = [pv0, pv1, pv2]
-
-#Declare which PVs can only be turned on by interlock logic
-lockedPVs = [pv0]
+    pvID = "ISTF:FC0"
 
 # List to track previous states
 boolPrevList = []
 
-# Alarms and callbacks
+####################################################
+# EDIT PVS and GPIO pins HERE 
+
+# PVs Used IN ORDER OF GPIO_LIST
+pv0 = PV(pvID + ":SOL")
+pv1 = PV(pvID + ":IN")
+pv2 = PV(pvID + ":OUT")
+
+pvList= [pv0, pv1, pv2] # List of PVs in order for this device
+gpioList = [5, 6, 13]   # List of GPIO pins for this device
+
+#Declare which PVs can only be turned on by interlock logic
+lockedPVs = []
+#########################
+
+# Function for Interlock logic
 def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
+    
     print("Change Detected")
     if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
         print("Turning ON SOL")
@@ -39,6 +43,9 @@ def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
         print("Turning OFF SOL")
         pv0.put(0) # Critical
         controlGPIO(gpioList[0], False)
+
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def setup():
 
@@ -49,10 +56,15 @@ def setup():
         GPIO.output(i, GPIO.HIGH)
         boolPrevList.append(False)
     
-    # Set the interlock devices change function
-    pv0.add_callback(turnOnSOL)
-    pv1.add_callback(turnOnSOL)
-    pv2.add_callback(turnOnSOL)
+    # Set the interlock devices change function 
+    
+    ####################################################
+    # SET the interlock devices and interlocks
+
+    # pv0.add_callback(turnOnSOL)
+
+    # BE CAREFUL EDITING PAST HERE! 
+    ####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
 

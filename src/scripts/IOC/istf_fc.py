@@ -1,5 +1,5 @@
 import sys
-from epics import PV, Alarm
+from epics import PV
 import time
 import RPi.GPIO as GPIO
 
@@ -12,26 +12,30 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
-
-# List of GPIO pins for this device
-gpioList = [5, 6, 13, 19]
-
-# PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:FC" + pvID + ":SOL")
-pv1 = PV("ISTF:FC" + pvID + ":IN")
-pv2 = PV("ISTF:FC" + pvID + ":OUT")
-pv3 = PV("ISTF:FC" + pvID + ":HWR")
-pvList= [pv0, pv1, pv2, pv3]
-
-#Declare which PVs can only be turned on by interlock logic
-lockedPVs = [pv0]
+    pvID = "ISTF:FC0"
 
 # List to track previous states
 boolPrevList = []
-    
-# Alarms and callbacks
+
+####################################################
+# EDIT PVS and GPIO pins HERE 
+
+# PVs Used IN ORDER OF GPIO_LIST
+pv0 = PV(pvID + ":SOL")
+pv1 = PV(pvID + ":IN")
+pv2 = PV(pvID + ":OUT")
+pv3 = PV(pvID + ":HWR")
+
+pvList= [pv0, pv1, pv2, pv3] # List of PVs in order for this device
+gpioList = [5, 6, 13, 19]    # List of GPIO pins for this device
+
+#Declare which PVs can only be turned on by interlock logic
+lockedPVs = [pv0]
+#########################
+
+# Function for Interlock logic
 def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
+    
     print("Change Detected")
     if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
         print("Turning ON SOL")
@@ -41,6 +45,9 @@ def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
         pv0.put(0) # Critical
         controlGPIO(gpioList[0], False)
 
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
+
 def setup():
 
     GPIO.setmode(GPIO.BCM)
@@ -49,11 +56,15 @@ def setup():
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
         boolPrevList.append(False)
+
+    ####################################################
+    # SET the interlock devices and interlocks
     
-    # Set the interlock devices change function
     pv0.add_callback(turnOnSOL)
-    pv1.add_callback(turnOnSOL)
-    pv2.add_callback(turnOnSOL)
+    pv3.add_callback(turnOnSOL)
+
+    # BE CAREFUL EDITING PAST HERE! 
+    ####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:

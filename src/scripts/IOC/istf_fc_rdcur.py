@@ -2,15 +2,9 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
-import spidev
 
 #Define Variables
-delay = 0.5
-ldr_channel = 0
 
-#Create SPI
-spi = spidev.SpiDev()
-spi.open(0, 0)
 
 # Sleep time variables
 sleepTimeShort = 0.25
@@ -21,13 +15,25 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:FC0:RDCUR"
 
-# List of GPIO pins for this device
-gpioList = [5]
+# List to track previous states
+boolPrevList = []
+
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:FC" + pvID + ":RDCUR")
+pv0 = PV(pvID)
+
+pvList= [pv0] # List of PVs in order for this device
+gpioList = [5] # List of GPIO pins for this device
+
+#Declare which PVs can only be turned on by interlock logic
+lockedPVs = []
+#########################
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def setup():
 
@@ -35,26 +41,40 @@ def setup():
 
     for i in gpioList:
         GPIO.setup(i, GPIO.IN)
+        boolPrevList.append(False)
 
-def readadc(adcnum):
-    # read SPI data from the MCP3008, 8 channels in total
-    if adcnum > 7 or adcnum < 0:
-        return -1
-    r = spi.xfer2([1, 8 + adcnum << 4, 0])
-    data = ((r[1] & 3) << 8) + r[2]
-    return data
+    ####################################################
+    # SET the interlock devices and interlocks
+
+    # BE CAREFUL EDITING PAST HERE! 
+    ####################################################
+
+def controlGPIO(GPIO_Pin, boolStatus):
+    if not boolStatus:
+        GPIO.output(GPIO_Pin, GPIO.HIGH)
+    else:
+        GPIO.output(GPIO_Pin, GPIO.LOW)
 
 def loop():
     try:
         while True:
 
-            # Read from the ADC
-            ldr_value = readadc(ldr_channel)
-            print("LDR Value: %d" % ldr_value)
-            pv0.put(ldr_value)
+            # Loop through each PV
+            for i in range(len(gpioList)):
 
-            # Wait a long amount of secs
-            time.sleep(sleepTimeLong)
+                if pvList[i] in lockedPVs:
+                    continue
+
+                # Check the PV value
+                boolPV = pvList[i].get() != 0
+
+                # Act only if there is a change
+                if boolPrevList[i] != boolPV:
+                    controlGPIO(gpioList[i], boolPV)
+                    boolPrevList[i] = boolPV
+                
+            # Wait a short amount of secs
+            time.sleep(sleepTimeShort)
 
     # End program cleanly with keyboard
     except KeyboardInterrupt:

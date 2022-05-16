@@ -14,8 +14,11 @@ try:
 except:
     pvID = "0"
 
-# List of GPIO pins for this device
-gpioList = [5, 6, 13, 19, 26]
+# List to track previous states
+boolPrevList = []
+
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV("ISTF:TP" + pvID + ":RP")
@@ -23,10 +26,15 @@ pv1 = PV("ISTF:TP" + pvID + ":TP")
 pv2 = PV("ISTF:TP" + pvID + ":VV1")
 pv3 = PV("ISTF:TP" + pvID + ":VV2")
 pv4 = PV("ISTF:TP" + pvID + ":VV3")
-pvList= [pv0, pv1, pv2, pv3, pv4]
 
-# List to track previous states
-boolPrevList = []
+pvList= [pv0, pv1, pv2, pv3, pv4] # List of PVs in order for this device
+gpioList = [5, 6, 13, 19, 26]     # List of GPIO pins for this device
+
+#Declare which PVs can only be turned on by interlock logic
+lockedPVs = []
+#########################
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def setup():
 
@@ -36,6 +44,12 @@ def setup():
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
         boolPrevList.append(False)
+    
+    ####################################################
+    # SET the interlock devices and interlocks
+
+    # BE CAREFUL EDITING PAST HERE! 
+    ####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
@@ -50,6 +64,9 @@ def loop():
 
             # Loop through each PV
             for i in range(len(gpioList)):
+
+                if pvList[i] in lockedPVs:
+                    continue
 
                 # Check the PV value
                 boolPV = pvList[i].get() == 1
