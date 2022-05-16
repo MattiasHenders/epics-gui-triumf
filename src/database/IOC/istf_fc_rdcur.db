@@ -4,7 +4,7 @@
 
 record(ai, "$(IOC)"){
 
-   field(DESC, "Analog Voltage Read of the Beam Current")
+   field(DESC, "Voltage Read of Beam")
    field(INP, "0")
    field(SCAN, ".1 second")
    field(EGU, "V")

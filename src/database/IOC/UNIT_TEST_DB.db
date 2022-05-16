@@ -1,4 +1,9 @@
-record(bi, $(IOC):test){
+record(bi, "$(IOC)"){
 field(INP, 1)
-field(DESC, "A record used to test our file transfer scripts")
+field(DESC, "A test record")
+}
+
+record(bi, "$(IOC):device"){
+field(INP, 1)
+field(DESC, "A test record")
 }

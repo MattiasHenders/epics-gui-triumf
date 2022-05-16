@@ -1,5 +1,5 @@
 import sys
-from epics import PV
+from epics import PV, Alarm
 import time
 import RPi.GPIO as GPIO
 
@@ -19,13 +19,24 @@ gpioList = [5, 6, 13, 19]
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV("ISTF:FC" + pvID + ":SOL")
-pv1 = PV("ISTF:FC" + pvID + ":RDPOS:IN")
-pv2 = PV("ISTF:FC" + pvID + ":RDPOS:OUT")
+pv1 = PV("ISTF:FC" + pvID + ":IN")
+pv2 = PV("ISTF:FC" + pvID + ":OUT")
 pv3 = PV("ISTF:FC" + pvID + ":HWR")
 pvList= [pv0, pv1, pv2, pv3]
 
 # List to track previous states
 boolPrevList = []
+    
+# Alarms and callbacks
+def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
+    print("Change Detected")
+    if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
+        print("Turning ON SOL")
+        controlGPIO(gpioList[0], True)
+    else:
+        print("Turning OFF SOL")
+        pv0.put(0) # Critical
+        controlGPIO(gpioList[0], False)
 
 def setup():
 
@@ -35,13 +46,17 @@ def setup():
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
         boolPrevList.append(False)
+    
+    # Set the interlock devices change function
+    pv0.add_callback(turnOnSOL)
+    pv1.add_callback(turnOnSOL)
+    pv2.add_callback(turnOnSOL)
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
-
 
 def loop():
     try:
@@ -50,8 +65,11 @@ def loop():
             # Loop through each PV
             for i in range(len(gpioList)):
 
+                if i == 0:
+                    continue
+
                 # Check the PV value
-                boolPV = pvList[i].get() == 1
+                boolPV = pvList[i].get() != 0
 
                 # Act only if there is a change
                 if boolPrevList[i] != boolPV:

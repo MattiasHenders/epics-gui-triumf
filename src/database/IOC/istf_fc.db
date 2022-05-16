@@ -4,7 +4,7 @@
 
 record(bi, "$(IOC):SOL"){
 
-   field(DESC, "Controller of the Faraday Cup - IN or OUT via Compressed Air")
+   field(DESC, "Faraday Cup Compressed Air")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -13,7 +13,7 @@ record(bi, "$(IOC):SOL"){
 
 record(bi, "$(IOC):IN"){
 
-   field(DESC, "Sensor for if the Faraday Cup is IN all the way")
+   field(DESC, "Faraday Cup IN")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -22,7 +22,7 @@ record(bi, "$(IOC):IN"){
 
 record(bi, "$(IOC):OUT"){
 
-   field(DESC, "Sensor for if the Faraday Cup is OUT all the way")
+   field(DESC, "Faraday Cup OUT")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -31,7 +31,7 @@ record(bi, "$(IOC):OUT"){
 
 record(bi, "$(IOC):HWR"){
 
-   field(DESC, "Sensor if the Cooling Water is flowing or not")
+   field(DESC, "Cooling Water is flowing")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")

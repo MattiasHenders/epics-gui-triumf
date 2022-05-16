@@ -4,7 +4,7 @@
 
 record(bi, "$(IOC):RP"){
 
-   field(DESC, "Roughing Pump ON or OFF")
+   field(DESC, "Roughing Pump ON OFF")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -13,7 +13,7 @@ record(bi, "$(IOC):RP"){
 
 record(bi, "$(IOC):TP"){
 
-   field(DESC, "Turbo Pump ON or OFF")
+   field(DESC, "Turbo Pump ON OFF")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -22,7 +22,7 @@ record(bi, "$(IOC):TP"){
 
 record(bi, "$(IOC):VV1"){
 
-   field(DESC, "Turbo Pump Isolation From Roughing Pump ON or OFF")
+   field(DESC, "TP Isolation From RP")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -31,7 +31,7 @@ record(bi, "$(IOC):VV1"){
 
 record(bi, "$(IOC):VV2"){
 
-   field(DESC, "Roughing Pump Isolation Valve ON or OFF")
+   field(DESC, "RP Isolation ON OFF")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -40,7 +40,7 @@ record(bi, "$(IOC):VV2"){
 
 record(bi, "$(IOC):VV3"){
 
-   field(DESC, "Roughing Valve For Entire System ON or OFF")
+   field(DESC, "RV For All ON OFF")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")

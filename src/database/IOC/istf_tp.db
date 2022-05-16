@@ -4,7 +4,7 @@
 
 record(bi, "$(IOC):RP"){
 
-   field(DESC, "Roughing Pump ON or OFF")
+   field(DESC, "Roughing Pump ON OFF")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -13,7 +13,7 @@ record(bi, "$(IOC):RP"){
 
 record(bi, "$(IOC):TP"){
 
-   field(DESC, "Turbo Pump ON or OFF")
+   field(DESC, "Turbo Pump ON OFF")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
@@ -22,7 +22,7 @@ record(bi, "$(IOC):TP"){
 
 record(bi, "$(IOC):VV"){
 
-   field(DESC, "Vacuum Valve ON or OFF")
+   field(DESC, "Vacuum Valve ON OFF")
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")

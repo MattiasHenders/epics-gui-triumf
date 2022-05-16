@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $1 $2
+echo "Switching $1 to $2"
 #mapfile -t arr ~/epics-gui-triumf/src/database/IOC/IOC_DEVICE_ASSOCIATIONS.txt
 
 
@@ -15,17 +15,18 @@ elementDB=$(echo $line | cut -d "=" -f 2)
 if [ $elementPV == $IOC_ID_UPDATE ]
 then
 IOC_TYPE=$elementDB
-echo $IOC_TYPE
+echo "Switching $2 database to $IOC_TYPE"
 fi
 done < ~/epics-gui-triumf/src/database/IOC/IOC_DEVICE_ASSOCIATIONS.txt
-
 
 #Get the IP address of PV $1
 echo "Determining IOC IP Address..."
 IP=$(echo $(cainfo $TARGET_IOC:device) | grep Host: | grep -Pom 1 '[0-9.]{7,15}')
 SCRIPT_DIR=${IOC_TYPE::-2}py
 IOC_IN_USE=$(caget $2:status.INAV)
-echo ${IOC_IN_USE: -2}
+
+echo $IOC_IN_USE
+echo $SCRIPT_DIR
 echo ${IP}
 
 if [ ! -z $IP -a ${IOC_IN_USE: -2} == "NC" ]
