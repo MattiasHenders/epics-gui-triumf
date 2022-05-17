@@ -1,33 +1,3 @@
-record(calcout, "IOC_1:status") {
-field(SCAN, ".5 second")
-field(INPA, "IOC_1:device")
-field(CALC, "A=1?1:0")
-}
-
-record(calcout, "IOC_2:status") {
-field(SCAN, ".5 second")
-field(INPA, "IOC_2:device")
-field(CALC, "A=1?1:0")
-}
-
-record(calcout, "IOC_3:status"){
-field(INPA, "IOC_3:device")
-field(CALC, "A=1?1:0")
-field(SCAN, ".5 second")
-}
-
-record(calcout, "IOC_2:status") {
-field(SCAN, ".5 second")
-field(INPA, "IOC_2:device")
-field(CALC, "A=1?1:0")
-}
-
-record(calcout, "IOC_3:status"){
-field(INPA, "IOC_3:device")
-field(CALC, "A=1?1:0")
-field(SCAN, ".5 second")
-}
-
 record(calcout, "ND_IOC1:status"){
 field(INPA, "ND_IOC1:device")
 field(CALC, "A=1?1:0")
@@ -42,6 +12,84 @@ field(SCAN, ".5 second")
 
 record(calcout, "ND_IOC3:status"){
 field(INPA, "ND_IOC3:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:FC0:status"){
+field(INPA, "ISTF:FC0:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:FC0:RDCUR:status"){
+field(INPA, "ISTF:FC0:RDCUR:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:FC1:status"){
+field(INPA, "ISTF:FC1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:FC1:RDCUR:status"){
+field(INPA, "ISTF:FC1:RDCUR:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:TP1:status"){
+field(INPA, "ISTF:TP1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:TP2:status"){
+field(INPA, "ISTF:TP2:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:GV1:status"){
+field(INPA, "ISTF:GV1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:IG1:status"){
+field(INPA, "ISTF:IG1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:CV1:status"){
+field(INPA, "ISTF:CV1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:CV2:status"){
+field(INPA, "ISTF:CV2:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "ISTF:CV3:status"){
+field(INPA, "ISTF:CV3:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "testIoc1:status"){
+field(INPA, "testIoc1:device")
+field(CALC, "A=1?1:0")
+field(SCAN, ".5 second")
+}
+
+record(calcout, "testIoc2:status"){
+field(INPA, "testIoc2:device")
 field(CALC, "A=1?1:0")
 field(SCAN, ".5 second")
 }
