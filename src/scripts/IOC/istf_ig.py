@@ -2,6 +2,7 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
+from threading import Thread
 
 # Sleep time variables
 sleepTimeShort = 0.25
@@ -14,23 +15,28 @@ try:
 except:
     pvID = "ISTF:IG0"
 
-# List to track previous states
-boolPrevList = []
-
 ####################################################
 # EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV(pvID + ":RDVAC")
 
-pvList= [pv0]  # List of PVs in order for this device
-gpioList = [5] # List of GPIO pins for this device
+pvList= [pv0.pvname] # List of PVs in order for this device
+gpioList = [5]    # List of GPIO pins for this device
 
-#Declare which PVs can only be turned on by interlock logic
-lockedPVs = []
 #########################
-# BE CAREFUL EDITING PAST HERE! 
-####################################################
+# Callback Functions for PV/GPIO logic
+def binaryPVChanged(pvname=None, value=None, char_value=None, **kw):
+    
+    boolTurnON = (value == 1)
+    index = pvList.index(pvname)
+
+    if not boolTurnON: 
+        print(pvname + ": Change Detected - Setting OFF")
+    else:
+        print(pvname + ": Change Detected - Setting ON")
+
+    controlGPIO(gpioList[index], boolTurnON)
 
 def setup():
 
@@ -39,13 +45,14 @@ def setup():
     for i in gpioList:
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
-        boolPrevList.append(False)
-    
+
     ####################################################
     # SET the interlock devices and interlocks
+    
+    pv0.add_callback(binaryPVChanged)
 
-    # BE CAREFUL EDITING PAST HERE! 
-    ####################################################
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
@@ -53,24 +60,9 @@ def controlGPIO(GPIO_Pin, boolStatus):
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
 
-
 def loop():
     try:
         while True:
-
-            # Loop through each PV
-            for i in range(len(gpioList)):
-
-                if pvList[i] in lockedPVs:
-                    continue
-
-                # Check the PV value
-                boolPV = pvList[i].get() == 1
-
-                # Act only if there is a change
-                if boolPrevList[i] != boolPV:
-                    controlGPIO(gpioList[i], boolPV)
-                    boolPrevList[i] = boolPV
                 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
