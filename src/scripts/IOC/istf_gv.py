@@ -15,6 +15,8 @@ try:
 except:
     pvID = "ISTF:GV0"
 
+previousList = []
+
 ####################################################
 # EDIT PVS and GPIO pins HERE 
 
@@ -25,6 +27,7 @@ pv2 = PV(pvID + ":OUT")
 
 pvList= [pv0, pv1, pv2] # List of PVs in order for this device
 gpioList = [5, 6, 13]   # List of GPIO pins for this device
+gpioOutputList = [True, False, False] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
@@ -46,9 +49,10 @@ def setup():
     GPIO.setmode(GPIO.BCM)
 
     for i in gpioList:
-        GPIO.setup(i, GPIO.OUT)
-        GPIO.output(i, GPIO.HIGH)
-
+        GPIO.setup(i, (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+        if gpioOutputList[i]:
+            GPIO.output(i, GPIO.HIGH)
+        previousList.append(False)
     ####################################################
     # SET the interlock devices and interlocks
     
@@ -65,9 +69,21 @@ def controlGPIO(GPIO_Pin, boolStatus):
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
 
+def checkBinarySensor(pv, index):
+    
+    pin = gpioList[index]
+    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
+    
+    if boolPinOn != previousList[index]:
+        pv.put((0, 1)[boolPinOn])
+
 def loop():
     try:
         while True:
+            
+            # Check for changes to the binary sensors
+            checkBinarySensor(pv1, 1)
+            checkBinarySensor(pv2, 2)
                 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
