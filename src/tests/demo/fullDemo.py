@@ -12,7 +12,7 @@ sleepTimeLong = 0.75
 # Safety variables
 ledPin = 19       # define ledPin
 buttonPin = 13    # define buttonPin
-ledState = False
+ledState = True
 
 # ID From System args
 pvID = ""
@@ -50,6 +50,7 @@ def buttonEvent(channel): # When button is pressed, this function will be execut
     
     global ledState 
     ledState = not ledState
+
     if ledState:
         Thread(target=turnOnSafety).start()
     else:
@@ -119,6 +120,8 @@ def setup():
         previousList.append(False)
 
     GPIO.setup(ledPin, GPIO.OUT)     # set ledPin to OUTPUT mode
+    GPIO.output(ledPin, GPIO.HIGH)
+    
     GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # set buttonPin to PULL UP INPUT mode
 
     ####################################################
