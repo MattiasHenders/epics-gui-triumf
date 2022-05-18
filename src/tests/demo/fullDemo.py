@@ -128,7 +128,7 @@ def loop():
         while True:
             
             # Check for changes to the binary sensors
-            checkBinarySensor(pv2, 1)
+            checkBinarySensor(pv2, 2)
 
             # Check the analog sensors
             checkAnalogSensor(pv1)
