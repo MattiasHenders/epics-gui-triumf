@@ -2,7 +2,7 @@
 # Faraday Cup Controller
 #========================
 
-record(bo, "$(IOC):PWR"){
+record(bi, "$(IOC):PWR"){
 
     field(DESC, "Demo LED Power")
     field(INP, "0")
