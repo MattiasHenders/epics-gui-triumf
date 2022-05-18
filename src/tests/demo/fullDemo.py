@@ -51,15 +51,16 @@ def checkAnalogSensor(pv):
     voltage = value / 255.0 * 3.3  # calculate the voltage value
     pv.put(voltage) # Write voltage to EPICS
 
-def buttonEvent(channel): # When button is pressed, this function will be executed
+def buttonEvent(): # When button is pressed, this function will be executed
+    
     global ledState 
-    print ('buttonEvent GPIO%d' %channel)
     ledState = not ledState
-    if ledState :
-        print ('Led turned on >>>')
-    else :
-        print ('Led turned off <<<')
-    GPIO.output(ledPin,ledState)
+    if ledState:
+        Thread(target=turnOnSafety).start()
+    else:
+        Thread(target=turnOffSafety).start()
+
+    controlGPIO(ledPin, ledState)
 
 def PWRPVChanged(pvname=None, value=None, char_value=None, **kw):
     
@@ -136,6 +137,12 @@ def setup():
 def turnOffPWR():
     pv0.put(0)
 
+def turnOffSafety():
+    pv1.put(0)
+
+def turnOnSafety():
+    pv1.put(1)
+
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.LOW)
@@ -145,7 +152,7 @@ def controlGPIO(GPIO_Pin, boolStatus):
 def loop():
     try:
 
-        GPIO.add_event_detect(buttonPin,GPIO.FALLING,callback = buttonEvent,bouncetime=300)
+        GPIO.add_event_detect(buttonPin, GPIO.FALLING, callback = buttonEvent,bouncetime=300)
 
         while True:
             
