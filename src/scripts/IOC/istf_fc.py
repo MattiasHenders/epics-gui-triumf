@@ -32,17 +32,13 @@ gpioOutputList = [True, False, False, True] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
-def binaryPVChanged(pvname=None, value=None, char_value=None, **kw):
+def checkBinarySensor(pv, index):
     
-    boolTurnON = (value == 1)
-    index = pvList.index(pvname)
-
-    if not boolTurnON: 
-        print(pvname + ": Change Detected - Setting OFF")
-    else:
-        print(pvname + ": Change Detected - Setting ON")
-
-    controlGPIO(gpioList[index], boolTurnON)
+    pin = gpioList[index]
+    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
+    
+    if boolPinOn != previousList[index]:
+        pv.put((0, 1)[boolPinOn])
 
 def SOLPVChanged(pvname=None, value=None, char_value=None, **kw):
     
@@ -102,8 +98,6 @@ def setup():
     # SET the interlock devices and interlocks
     
     pv0.add_callback(SOLPVChanged)
-    pv1.add_callback(binaryPVChanged)
-    pv2.add_callback(binaryPVChanged)
     pv3.add_callback(HWRPVChanged)
 
 # BE CAREFUL EDITING PAST HERE! 
@@ -116,14 +110,6 @@ def controlGPIO(GPIO_Pin, boolStatus):
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
-
-def checkBinarySensor(pv, index):
-    
-    pin = gpioList[index]
-    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
-    
-    if boolPinOn != previousList[index]:
-        pv.put((0, 1)[boolPinOn])
 
 def loop():
     try:

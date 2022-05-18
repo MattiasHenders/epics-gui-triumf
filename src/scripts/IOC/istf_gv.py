@@ -2,7 +2,6 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
-from threading import Thread
 
 # Sleep time variables
 sleepTimeShort = 0.25
@@ -57,8 +56,6 @@ def setup():
     # SET the interlock devices and interlocks
     
     pv0.add_callback(binaryPVChanged)
-    pv1.add_callback(binaryPVChanged)
-    pv2.add_callback(binaryPVChanged)
 
 # BE CAREFUL EDITING PAST HERE! 
 ####################################################
