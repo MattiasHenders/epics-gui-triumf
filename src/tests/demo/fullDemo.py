@@ -30,10 +30,10 @@ adc = ADCDevice() # Define an ADCDevice class object
 
 # PVs Used IN ORDER OF GPIO_LIST
 pv0 = PV(pvID + ":PWR")
-pv1 = PV(pvID + ":VOLTAGE")
-pv2 = PV(pvID + ":SAFETY")
+pv1 = PV(pvID + ":SAFETY")
+pv2 = PV(pvID + ":VOLTAGE")
 
-pvList= [pv0.pvname, pv2.pvname] # List of PVs in order for this device
+pvList= [pv0.pvname, pv1.pvname] # List of PVs in order for this device
 gpioList = [26, 13]    # List of GPIO pins for this device
 gpioOutputList = [True, False] # False if INPUT / True if Output
 
@@ -153,10 +153,10 @@ def loop():
         while True:
             
             # Check for changes to the binary sensors
-            checkBinarySensor(pv2, 2)
+            checkBinarySensor(pv1, 1)
 
             # Check the analog sensors
-            checkAnalogSensor(pv1)
+            checkAnalogSensor(pv2)
 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
