@@ -39,13 +39,11 @@ gpioOutputList = [True] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
-def checkBinarySensor(pv, index):
+def checkBinarySensor(pv):
     
-    pin = gpioList[index]
-    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
+    boolPinOn = (GPIO.input(buttonPin) == GPIO.HIGH)
     
-    if boolPinOn != previousList[index]:
-        pv.put((0, 1)[boolPinOn])
+    pv.put((0, 1)[boolPinOn])
 
 def checkAnalogSensor(pv):
     
@@ -153,7 +151,7 @@ def loop():
         while True:
             
             # Check for changes to the binary sensors
-            checkBinarySensor(pv1, 1)
+            checkBinarySensor(pv1)
 
             # Check the analog sensors
             checkAnalogSensor(pv2)
