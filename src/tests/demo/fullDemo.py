@@ -69,7 +69,7 @@ def PWRPVChanged(pvname=None, value=None, char_value=None, **kw):
     index = pvList.index(pvname)
 
     #Check status of HWR to check if flowing
-    boolSafetyON = (pv2.get() == 1)
+    boolSafetyON = (pv1.get() == 1)
 
     if not boolSafetyON and boolTurnON: 
         print(pvname + ": Change Detected - Safety OFF")
@@ -132,7 +132,7 @@ def setup():
     # SET the interlock devices and interlocks
     
     pv0.add_callback(PWRPVChanged)
-    pv2.add_callback(SafetyPVChanged)
+    pv1.add_callback(SafetyPVChanged)
 
 # BE CAREFUL EDITING PAST HERE! 
 ####################################################
