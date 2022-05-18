@@ -51,7 +51,7 @@ def checkAnalogSensor(pv):
     voltage = value / 255.0 * 3.3  # calculate the voltage value
     pv.put(voltage) # Write voltage to EPICS
 
-def buttonEvent(): # When button is pressed, this function will be executed
+def buttonEvent(channel): # When button is pressed, this function will be executed
     
     global ledState 
     ledState = not ledState
