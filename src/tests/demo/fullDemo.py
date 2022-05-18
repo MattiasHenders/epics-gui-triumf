@@ -88,17 +88,16 @@ def PWRPVChanged(pvname=None, value=None, char_value=None, **kw):
 def SafetyPVChanged(pvname=None, value=None, char_value=None, **kw):
     
     boolTurnON = (value == 1)
-    index = pvList.index(pvname)
 
     if not boolTurnON: 
         print(pvname + ": Change Detected - Safety OFF")
         print(" > Turning OFF PWR to be safe.")
-        controlGPIO(gpioList[index], False)
+        controlGPIO(ledPin, False)
         Thread(target=turnOffPWR).start()
 
     else:
         print(pvname + ": Change Detected - Safety ON")
-        controlGPIO(gpioList[index], True)
+        controlGPIO(ledPin, True)
 
 def setup():
 
