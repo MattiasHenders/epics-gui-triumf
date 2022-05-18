@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./env/IOC_CONFIG
+source /home/pi/env/IOC_CONFIG
 
 echo "Attempting IOC Startup with ID: ${ID}"
 
@@ -15,7 +15,8 @@ then
 	if [ $status_sub == "NC" ]
 	then
         	echo "Starting IOC with ID: ${ID}"
-        	screen -d -m sh -c "python ~/run_script.py && softIoc -m IOC=${ID} -d dbconfig.db; exec bash"
+        	/usr/bin/screen -d -m sh -c "softIoc -m IOC=${ID} -d dbconfig.db; exec bash"
+                /usr/bin/screen -d -m sh -c "python ~/run_script.py ${ID}; exec bash"
 	else
         	for IOC_PV in $PVS
         	do
@@ -28,8 +29,8 @@ then
                                 	echo $IOC_PV
                                 	sed -i 's/ID=${ID}/ID=${IOC_PV}/' ~/env/IOC_CONFIG
                                 	echo "Starting deviceless IOC with ID: ${IOC_PV}"
-                                	echo ${IOC_PV}
-                                	screen -d -m sh -c "python ~/run_script.py && softIoc -m IOC=${IOC_PV} -d ND_IOC.db; exec bash"
+                                	/usr/bin/screen -d -m sh -c "softIoc -m IOC=${IOC_PV} -d ND_IOC.db; exec bash"
+                                        /usr/bin/screen -d -m sh -c "python ~/run_script.py ${IOC_PV}; exec bash"
 					break
                         	fi
                 	fi

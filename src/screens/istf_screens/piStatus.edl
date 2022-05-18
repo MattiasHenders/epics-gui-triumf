@@ -65,7 +65,7 @@ commandLabel {
   10 "Reassign to ISTF:CV3"
 }
 command {
-  0 "bash ../scripts/server/assign_db.sh ND_IOC1 ISTF:FC0"
+  0 "bash ../../scripts/server/assign_db.sh ND_IOC1 ISTF:FC0"
   1 "bash ../../scripts/server/assign_db.sh ND_IOC1 ISTF:FC0:RDCUR"
   2 "bash ../../scripts/server/assign_db.sh ND_IOC1 ISTF:FC1"
   3 "bash ../../scripts/server/assign_db.sh ND_IOC1 ISTF:FC1:RDCUR"
@@ -1509,7 +1509,7 @@ commandLabel {
 }
 command {
   0 "bash ../../scripts/server/assign_db.sh ISTF:FC0 ISTF:FC0:RDCUR"
-  1 "bash ../../scripts/server/assign_db.sh ISTF:FCO ISTF:FC1"
+  1 "bash ../../scripts/server/assign_db.sh ISTF:FC0 ISTF:FC1"
   2 "bash ../../scripts/server/assign_db.sh ISTF:FC0 ISTF:FC1:RDCUR"
   3 "bash ../../scripts/server/assign_db.sh ISTF:FC0 ISTF:TP1"
   4 "bash ../../scripts/server/assign_db.sh ISTF:FC0 ISTF:TP2"
