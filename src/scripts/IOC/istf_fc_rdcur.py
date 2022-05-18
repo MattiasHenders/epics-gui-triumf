@@ -15,7 +15,7 @@ sleepTimeLong = 0.75
 # ADC variables
 # Create the spi bus
 spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
-# Create the cs (chip select)
+# Create the cs (chip select) NOTE: D5 is the GPIO Pin we are reading from  
 cs = digitalio.DigitalInOut(board.D5)
 # Create the mcp object
 mcp = MCP.MCP3008(spi, cs)
