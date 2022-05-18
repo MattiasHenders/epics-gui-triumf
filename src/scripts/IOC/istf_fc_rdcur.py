@@ -2,59 +2,73 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
-import spidev
-
-#Define Variables
-delay = 0.5
-ldr_channel = 0
-
-#Create SPI
-spi = spidev.SpiDev()
-spi.open(0, 0)
+import busio
+import digitalio
+import board
+import adafruit_mcp3xxx.mcp3008 as MCP
+from adafruit_mcp3xxx.analog_in import AnalogIn
 
 # Sleep time variables
 sleepTimeShort = 0.25
 sleepTimeLong = 0.75
+
+# ADC variables
+# Create the spi bus
+spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
+# Create the cs (chip select) NOTE: D5 is the GPIO Pin we are reading from  
+cs = digitalio.DigitalInOut(board.D5)
+# Create the mcp object
+mcp = MCP.MCP3008(spi, cs)
+# Create an analog input channel on pin 0
+chan = AnalogIn(mcp, MCP.P0)
 
 # ID From System args
 pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:FC0:RDCUR"
 
-# List of GPIO pins for this device
-gpioList = [5]
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:FC" + pvID + ":RDCUR")
+pv0 = PV(pvID)
 
+pvList= [pv0.pvname] # List of PVs in order for this device
+gpioList = [5]    # List of GPIO pins for this device
+
+#########################
+# Callback Functions for PV/GPIO logic
 def setup():
 
     GPIO.setmode(GPIO.BCM)
 
     for i in gpioList:
-        GPIO.setup(i, GPIO.IN)
+        GPIO.setup(i, GPIO.OUT)
+        GPIO.output(i, GPIO.HIGH)
 
-def readadc(adcnum):
-    # read SPI data from the MCP3008, 8 channels in total
-    if adcnum > 7 or adcnum < 0:
-        return -1
-    r = spi.xfer2([1, 8 + adcnum << 4, 0])
-    data = ((r[1] & 3) << 8) + r[2]
-    return data
+    ####################################################
+    # SET the interlock devices and interlocks
+    
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
+
+def controlGPIO(GPIO_Pin, boolStatus):
+    if not boolStatus:
+        GPIO.output(GPIO_Pin, GPIO.HIGH)
+    else:
+        GPIO.output(GPIO_Pin, GPIO.LOW)
 
 def loop():
     try:
         while True:
+            
+            # Write the voltage to EPICS 
+            pv0.put(chan.voltage)
 
-            # Read from the ADC
-            ldr_value = readadc(ldr_channel)
-            print("LDR Value: %d" % ldr_value)
-            pv0.put(ldr_value)
-
-            # Wait a long amount of secs
-            time.sleep(sleepTimeLong)
+            # Wait a short amount of secs
+            time.sleep(sleepTimeShort)
 
     # End program cleanly with keyboard
     except KeyboardInterrupt:

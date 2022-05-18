@@ -1,7 +1,8 @@
 import sys
-from epics import PV, Alarm
+from epics import PV
 import time
 import RPi.GPIO as GPIO
+from threading import Thread
 
 # Sleep time variables
 sleepTimeShort = 0.25
@@ -12,45 +13,97 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:FC0"
 
-# List of GPIO pins for this device
-gpioList = [5, 6, 13, 19]
+previousList = []
+
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:FC" + pvID + ":SOL")
-pv1 = PV("ISTF:FC" + pvID + ":IN")
-pv2 = PV("ISTF:FC" + pvID + ":OUT")
-pv3 = PV("ISTF:FC" + pvID + ":HWR")
-pvList= [pv0, pv1, pv2, pv3]
+pv0 = PV(pvID + ":SOL")
+pv1 = PV(pvID + ":IN")
+pv2 = PV(pvID + ":OUT")
+pv3 = PV(pvID + ":HWR")
 
-# List to track previous states
-boolPrevList = []
+pvList= [pv0.pvname, pv1.pvname, pv2.pvname, pv3.pvname] # List of PVs in order for this device
+gpioList = [5, 6, 13, 19]    # List of GPIO pins for this device
+gpioOutputList = [True, False, False, True] # False if INPUT / True if Output
+
+#########################
+# Callback Functions for PV/GPIO logic
+def checkBinarySensor(pv, index):
     
-# Alarms and callbacks
-def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
-    print("Change Detected")
-    if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
-        print("Turning ON SOL")
-        controlGPIO(gpioList[0], True)
+    pin = gpioList[index]
+    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
+    
+    if boolPinOn != previousList[index]:
+        pv.put((0, 1)[boolPinOn])
+
+def SOLPVChanged(pvname=None, value=None, char_value=None, **kw):
+    
+    boolTurnON = (value == 1)
+    index = pvList.index(pvname)
+
+    #Check status of HWR to check if flowing
+    boolHWRFlowing = (pv3.get() == 1)
+
+    if not boolHWRFlowing and boolTurnON: 
+        print(pvname + ": Change Detected - Water NOT Flowing")
+        print(" > Not turning on SOL, Turn On Water First")
+        controlGPIO(gpioList[index], False)
+        Thread(target=turnOffSOL).start()
+        
+
+    elif boolHWRFlowing and boolTurnON:
+        print(pvname, ": Change Detected - Water IS Flowing")
+        print(" > Turning on SOL!")
+        controlGPIO(gpioList[index], True)
+
     else:
-        print("Turning OFF SOL")
-        pv0.put(0) # Critical
-        controlGPIO(gpioList[0], False)
+        print(pvname, ": Change Detected - Turning OFF")
+        controlGPIO(gpioList[index], False)
+
+def HWRPVChanged(pvname=None, value=None, char_value=None, **kw):
+    
+    boolTurnON = (value == 1)
+    index = pvList.index(pvname)
+
+    #Check status of SOL to check if on
+    boolSOLOn = (pv0.get() == 1)
+
+    if boolSOLOn and not boolTurnON: 
+        print(pvname + ": Change Detected - Water NOT Flowing")
+        print(" > Turning OFF SOL for Safety")
+        Thread(target=turnOffSOL).start()
+
+    elif not boolSOLOn and not boolTurnON:
+        print(pvname + ": Change Detected - Turning OFF")
+
+    else:
+        print(pvname, ": Change Detected - Turning ON")
+
+    controlGPIO(gpioList[index], boolTurnON)
 
 def setup():
 
     GPIO.setmode(GPIO.BCM)
 
     for i in gpioList:
-        GPIO.setup(i, GPIO.OUT)
-        GPIO.output(i, GPIO.HIGH)
-        boolPrevList.append(False)
+        GPIO.setup(i, (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+        if gpioOutputList[i]:
+            GPIO.output(i, GPIO.HIGH)
+        previousList.append(False)
+    ####################################################
+    # SET the interlock devices and interlocks
     
-    # Set the interlock devices change function
-    pv0.add_callback(turnOnSOL)
-    pv1.add_callback(turnOnSOL)
-    pv2.add_callback(turnOnSOL)
+    pv0.add_callback(SOLPVChanged)
+    pv3.add_callback(HWRPVChanged)
+
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
+def turnOffSOL():
+    pv0.put(0)
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
@@ -61,21 +114,11 @@ def controlGPIO(GPIO_Pin, boolStatus):
 def loop():
     try:
         while True:
+            
+            # Check for changes to the binary sensors
+            checkBinarySensor(pv1, 1)
+            checkBinarySensor(pv2, 2)
 
-            # Loop through each PV
-            for i in range(len(gpioList)):
-
-                if i == 0:
-                    continue
-
-                # Check the PV value
-                boolPV = pvList[i].get() != 0
-
-                # Act only if there is a change
-                if boolPrevList[i] != boolPV:
-                    controlGPIO(gpioList[i], boolPV)
-                    boolPrevList[i] = boolPV
-                
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
 

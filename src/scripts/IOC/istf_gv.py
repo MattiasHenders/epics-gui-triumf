@@ -1,5 +1,5 @@
 import sys
-from epics import PV, Alarm
+from epics import PV
 import time
 import RPi.GPIO as GPIO
 
@@ -12,69 +12,75 @@ pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:GV0"
 
-# List of GPIO pins for this device
-gpioList = [5, 6, 13, 19]
+previousList = []
+
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:GV" + pvID + ":SOL")
-pv1 = PV("ISTF:GV" + pvID + ":IN")
-pv2 = PV("ISTF:GV" + pvID + ":OUT")
-pvList= [pv0, pv1, pv2]
+pv0 = PV(pvID + ":SOL")
+pv1 = PV(pvID + ":IN")
+pv2 = PV(pvID + ":OUT")
 
-# List to track previous states
-boolPrevList = []
+pvList= [pv0, pv1, pv2] # List of PVs in order for this device
+gpioList = [5, 6, 13]   # List of GPIO pins for this device
+gpioOutputList = [True, False, False] # False if INPUT / True if Output
 
-# Alarms and callbacks
-def turnOnSOL(pvname=None, value=None, char_value=None, **kw):
-    print("Change Detected")
-    if pv0.get() == 1 and pv1.get() == 0 and pv2.get() == 1:
-        print("Turning ON SOL")
-        controlGPIO(gpioList[0], True)
+#########################
+# Callback Functions for PV/GPIO logic
+def binaryPVChanged(pvname=None, value=None, char_value=None, **kw):
+    
+    boolTurnON = (value == 1)
+    index = pvList.index(pvname)
+
+    if not boolTurnON: 
+        print(pvname + ": Change Detected - Setting OFF")
     else:
-        print("Turning OFF SOL")
-        pv0.put(0) # Critical
-        controlGPIO(gpioList[0], False)
+        print(pvname + ": Change Detected - Setting ON")
+
+    controlGPIO(gpioList[index], boolTurnON)
+
 
 def setup():
 
     GPIO.setmode(GPIO.BCM)
 
     for i in gpioList:
-        GPIO.setup(i, GPIO.OUT)
-        GPIO.output(i, GPIO.HIGH)
-        boolPrevList.append(False)
+        GPIO.setup(i, (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+        if gpioOutputList[i]:
+            GPIO.output(i, GPIO.HIGH)
+        previousList.append(False)
+    ####################################################
+    # SET the interlock devices and interlocks
     
-    # Set the interlock devices change function
-    pv0.add_callback(turnOnSOL)
-    pv1.add_callback(turnOnSOL)
-    pv2.add_callback(turnOnSOL)
+    pv0.add_callback(binaryPVChanged)
+
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
-
     if not boolStatus:
         GPIO.output(GPIO_Pin, GPIO.HIGH)
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
 
+def checkBinarySensor(pv, index):
+    
+    pin = gpioList[index]
+    boolPinOn = (GPIO.input(pin) == GPIO.HIGH)
+    
+    if boolPinOn != previousList[index]:
+        pv.put((0, 1)[boolPinOn])
+
 def loop():
     try:
         while True:
-
-            # Loop through each PV
-            for i in range(len(gpioList)):
-
-                if i == 0:
-                    continue
-
-                # Check the PV value
-                boolPV = pvList[i].get() == 1
-
-                # Act only if there is a change
-                if boolPrevList[i] != boolPV:
-                    controlGPIO(gpioList[i], boolPV)
-                    boolPrevList[i] = boolPV
+            
+            # Check for changes to the binary sensors
+            checkBinarySensor(pv1, 1)
+            checkBinarySensor(pv2, 2)
                 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)

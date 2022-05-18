@@ -2,27 +2,44 @@ import sys
 from epics import PV
 import time
 import RPi.GPIO as GPIO
+import busio
+import digitalio
+import board
+import adafruit_mcp3xxx.mcp3008 as MCP
+from adafruit_mcp3xxx.analog_in import AnalogIn
 
 # Sleep time variables
 sleepTimeShort = 0.25
 sleepTimeLong = 0.75
+
+# ADC variables
+# Create the spi bus
+spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
+# Create the cs (chip select)
+cs = digitalio.DigitalInOut(board.D5)
+# Create the mcp object
+mcp = MCP.MCP3008(spi, cs)
+# Create an analog input channel on pin 0
+chan = AnalogIn(mcp, MCP.P0)
 
 # ID From System args
 pvID = ""
 try:
     pvID = str(sys.argv[1])
 except:
-    pvID = "0"
+    pvID = "ISTF:CV0"
 
-# List of GPIO pins for this device
-gpioList = [5]
+####################################################
+# EDIT PVS and GPIO pins HERE 
 
 # PVs Used IN ORDER OF GPIO_LIST
-pv0 = PV("ISTF:CV" + pvID + ":RDVAC")
-pvList= [pv0]
+pv0 = PV(pvID + ":RDVAC")
 
-# List to track previous states
-boolPrevList = []
+pvList= [pv0.pvname] # List of PVs in order for this device
+gpioList = [5]    # List of GPIO pins for this device
+
+#########################
+# Callback Functions for PV/GPIO logic
 
 def setup():
 
@@ -31,7 +48,13 @@ def setup():
     for i in gpioList:
         GPIO.setup(i, GPIO.OUT)
         GPIO.output(i, GPIO.HIGH)
-        boolPrevList.append(False)
+
+    ####################################################
+    # SET the interlock devices and interlocks
+    
+
+# BE CAREFUL EDITING PAST HERE! 
+####################################################
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
@@ -39,21 +62,12 @@ def controlGPIO(GPIO_Pin, boolStatus):
     else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
 
-
 def loop():
     try:
         while True:
 
-            # Loop through each PV
-            for i in range(len(gpioList)):
-
-                # Check the PV value
-                boolPV = pvList[i].get() == 1
-
-                # Act only if there is a change
-                if boolPrevList[i] != boolPV:
-                    controlGPIO(gpioList[i], boolPV)
-                    boolPrevList[i] = boolPV
+            # Write the voltage to EPICS 
+            pv0.put(chan.voltage)
                 
             # Wait a short amount of secs
             time.sleep(sleepTimeShort)
