@@ -9,6 +9,11 @@ from threading import Thread
 sleepTimeShort = 0.25
 sleepTimeLong = 0.75
 
+# Safety variables
+ledPin = 19       # define ledPin
+buttonPin = 13    # define buttonPin
+ledState = False
+
 # ID From System args
 pvID = ""
 try:
@@ -29,8 +34,8 @@ pv1 = PV(pvID + ":VOLTAGE")
 pv2 = PV(pvID + ":SAFETY")
 
 pvList= [pv0.pvname, pv1.pvname, pv2.pvname] # List of PVs in order for this device
-gpioList = [26, 19, 13]    # List of GPIO pins for this device
-gpioOutputList = [True, False, False] # False if INPUT / True if Output
+gpioList = [26, 19]    # List of GPIO pins for this device
+gpioOutputList = [True, False] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
@@ -47,6 +52,16 @@ def checkAnalogSensor(pv):
     value = adc.analogRead(0)    # read the ADC value of channel 0
     voltage = value / 255.0 * 3.3  # calculate the voltage value
     pv.put(voltage) # Write voltage to EPICS
+
+def buttonEvent(channel): # When button is pressed, this function will be executed
+    global ledState 
+    print ('buttonEvent GPIO%d' %channel)
+    ledState = not ledState
+    if ledState :
+        print ('Led turned on >>>')
+    else :
+        print ('Led turned off <<<')
+    GPIO.output(ledPin,ledState)
 
 def PWRPVChanged(pvname=None, value=None, char_value=None, **kw):
     
@@ -102,11 +117,17 @@ def setup():
 
     GPIO.setmode(GPIO.BCM)
 
+    GPIO.setup(ledPin, GPIO.OUT)     # set ledPin to OUTPUT mode
+    GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # set buttonPin to PULL UP INPUT mode
+
     for i in range(len(gpioList)):
+        
         GPIO.setup(gpioList[i], (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+
         if gpioOutputList[i]:
             GPIO.output(gpioList[i], GPIO.LOW)
         previousList.append(False)
+
     ####################################################
     # SET the interlock devices and interlocks
     
@@ -125,6 +146,9 @@ def controlGPIO(GPIO_Pin, boolStatus):
 
 def loop():
     try:
+
+        GPIO.add_event_detect(buttonPin,GPIO.FALLING,callback = buttonEvent,bouncetime=300)
+
         while True:
             
             # Check for changes to the binary sensors
