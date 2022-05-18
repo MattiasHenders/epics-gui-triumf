@@ -33,9 +33,9 @@ pv0 = PV(pvID + ":PWR")
 pv1 = PV(pvID + ":VOLTAGE")
 pv2 = PV(pvID + ":SAFETY")
 
-pvList= [pv0.pvname, pv1.pvname, pv2.pvname] # List of PVs in order for this device
-gpioList = [26, 19, 13]    # List of GPIO pins for this device
-gpioOutputList = [True, False, False] # False if INPUT / True if Output
+pvList= [pv0.pvname, pv2.pvname] # List of PVs in order for this device
+gpioList = [26, 13]    # List of GPIO pins for this device
+gpioOutputList = [True, False] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
@@ -127,7 +127,7 @@ def setup():
 
     GPIO.setup(ledPin, GPIO.OUT)     # set ledPin to OUTPUT mode
     GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # set buttonPin to PULL UP INPUT mode
-    
+
     ####################################################
     # SET the interlock devices and interlocks
     
