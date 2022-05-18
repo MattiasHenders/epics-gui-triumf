@@ -85,7 +85,9 @@ def PWRPVChanged(pvname=None, value=None, char_value=None, **kw):
 def SafetyPVChanged(pvname=None, value=None, char_value=None, **kw):
     
     boolTurnON = (value == 1)
-
+    global ledState
+    ledState = boolTurnON
+    
     if not boolTurnON: 
         print(pvname + ": Change Detected - Safety OFF")
         print(" > Turning OFF PWR to be safe.")
