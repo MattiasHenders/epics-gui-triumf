@@ -105,7 +105,7 @@ def setup():
     for i in range(len(gpioList)):
         GPIO.setup(gpioList[i], (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
         if gpioOutputList[i]:
-            GPIO.output(i, GPIO.HIGH)
+            GPIO.output(gpioList[i], GPIO.LOW)
         previousList.append(False)
     ####################################################
     # SET the interlock devices and interlocks
@@ -119,9 +119,9 @@ def turnOffPWR():
 
 def controlGPIO(GPIO_Pin, boolStatus):
     if not boolStatus:
-        GPIO.output(GPIO_Pin, GPIO.HIGH)
-    else:
         GPIO.output(GPIO_Pin, GPIO.LOW)
+    else:
+        GPIO.output(GPIO_Pin, GPIO.HIGH)
 
 def loop():
     try:
