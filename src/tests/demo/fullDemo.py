@@ -132,6 +132,7 @@ def setup():
     # SET the interlock devices and interlocks
     
     pv0.add_callback(PWRPVChanged)
+    pv2.add_callback(SafetyPVChanged)
 
 # BE CAREFUL EDITING PAST HERE! 
 ####################################################
