@@ -1813,7 +1813,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_tp0.edl"
+  0 "istf:cv1_details.edl"
 }
 endObjectProperties
 
@@ -1974,7 +1974,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_tp0.edl"
+  0 "istf:cv2_details.edl"
 }
 endObjectProperties
 
@@ -2133,7 +2133,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_tp0.edl"
+  0 "istf:cv3_details.edl"
 }
 endObjectProperties
 

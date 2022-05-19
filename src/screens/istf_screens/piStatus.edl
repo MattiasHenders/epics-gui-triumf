@@ -1740,10 +1740,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 224
-w 214
-h 65
+x 381
+y 388
+w 90
+h 100
 
 beginGroup
 
@@ -1753,12 +1753,383 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 224
-w 77
-h 65
+x 381
+y 388
+w 90
+h 100
 lineColor index 0
 fillColor index 19
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 416
+y 429
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 406
+y 418
+w 40
+h 40
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 406
+  1 446
+}
+yPoints {
+  0 458
+  1 418
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 478
+y 407
+w 110
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:CV3"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 444
+w 127
+h 25
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 526
+y 444
+w 65
+h 24
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Details"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf:cv3_details.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 464
+y 444
+w 60
+h 25
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Configure"
+numCmds 10
+commandLabel {
+  0 "Reassign to ISTF:FC0"
+  1 "Reassign to ISTF:FC0:RDCUR"
+  2 "Reassign to ISTF:FC1"
+  3 "Reassign to ISTF:FC1:RDCUR"
+  4 "Reassign to ISTF:TP1"
+  5 "Reassign to ISTF:TP2"
+  6 "Reassign to ISTF:IG1"
+  7 "Reassign to ISTF:GV1"
+  8 "Reassign to ISTF:CV1"
+  9 "Reassign to ISTF:CV2"
+}
+command {
+  0 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC0"
+  1 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC0:RDCUR"
+  2 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC1"
+  3 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC1:RDCUR"
+  4 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:TP1"
+  5 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:TP2"
+  6 "bash ../../scripts/server/assign_db.sh ISTF:CV3"
+  7 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:GV1"
+  8 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:CV1"
+  9 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:CV2"
+}
+endObjectProperties
+
+endGroup
+
+visPv "ISTF:CV3:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 462
+y 440
+w 134
+h 32
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "ISTF:CV3:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "            IOC OFFLINE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 478
+y 316
+w 110
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:CV2"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 353
+w 127
+h 25
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 526
+y 353
+w 65
+h 24
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Details"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf:cv2_details.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 464
+y 353
+w 60
+h 25
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Configure"
+numCmds 10
+commandLabel {
+  0 "Reassign to ISTF:FC0"
+  1 "Reassign to ISTF:FC0:RDCUR"
+  2 "Reassign to ISTF:FC1"
+  3 "Reassign to ISTF:FC1:RDCUR"
+  4 "Reassign to ISTF:TP1"
+  5 "Reassign to ISTF:TP2"
+  6 "Reassign to ISTF:IG1"
+  7 "Reassign to ISTF:GV1"
+  8 "Reassign to ISTF:CV1"
+  9 "Reassign to ISTF:CV3"
+}
+command {
+  0 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC0"
+  1 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC0:RDCUR"
+  2 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC1"
+  3 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC1:RDCUR"
+  4 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:TP1"
+  5 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:TP2"
+  6 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:IG1"
+  7 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:GV1"
+  8 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:CV1"
+  9 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:CV3"
+}
+endObjectProperties
+
+endGroup
+
+visPv "ISTF:CV2:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 462
+y 349
+w 134
+h 32
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "ISTF:CV2:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "            IOC OFFLINE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 380
+y 299
+w 90
+h 100
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 380
+y 299
+w 90
+h 100
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 415
+y 340
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 405
+y 329
+w 40
+h 40
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 405
+  1 445
+}
+yPoints {
+  0 369
+  1 329
+}
+endObjectProperties
+
+endGroup
+
 endObjectProperties
 
 # (Static Text)
@@ -1891,20 +2262,16 @@ value {
 }
 endObjectProperties
 
-endGroup
-
-endObjectProperties
-
 # (Group)
 object activeGroupClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 316
-w 214
-h 65
+x 380
+y 209
+w 90
+h 100
 
 beginGroup
 
@@ -1914,158 +2281,14 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 316
-w 77
-h 65
+x 380
+y 209
+w 90
+h 100
 lineColor index 0
 fillColor index 19
+invisible
 endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 478
-y 316
-w 110
-h 27
-font "helvetica-bold-r-24.0"
-fgColor index 0
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:CV2"
-}
-autoSize
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 464
-y 353
-w 127
-h 25
-
-beginGroup
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 526
-y 353
-w 65
-h 24
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Details"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf:cv2_details.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 464
-y 353
-w 60
-h 25
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Configure"
-numCmds 10
-commandLabel {
-  0 "Reassign to ISTF:FC0"
-  1 "Reassign to ISTF:FC0:RDCUR"
-  2 "Reassign to ISTF:FC1"
-  3 "Reassign to ISTF:FC1:RDCUR"
-  4 "Reassign to ISTF:TP1"
-  5 "Reassign to ISTF:TP2"
-  6 "Reassign to ISTF:IG1"
-  7 "Reassign to ISTF:GV1"
-  8 "Reassign to ISTF:CV1"
-  9 "Reassign to ISTF:CV3"
-}
-command {
-  0 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC0"
-  1 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC0:RDCUR"
-  2 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC1"
-  3 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:FC1:RDCUR"
-  4 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:TP1"
-  5 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:TP2"
-  6 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:IG1"
-  7 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:GV1"
-  8 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:CV1"
-  9 "bash ../../scripts/server/assign_db.sh ISTF:CV2 ISTF:CV3"
-}
-endObjectProperties
-
-endGroup
-
-visPv "ISTF:CV2:status.INAV"
-visInvert
-visMin "0"
-visMax "1"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 462
-y 349
-w 134
-h 32
-font "helvetica-medium-r-10.0"
-fgColor index 0
-bgColor index 14
-visPv "ISTF:CV2:status.INAV"
-visMin "0"
-visMax "1"
-value {
-  "            IOC OFFLINE"
-}
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 382
-y 407
-w 214
-h 65
-
-beginGroup
 
 # (Rectangle)
 object activeRectangleClass
@@ -2073,139 +2296,36 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 407
-w 77
-h 65
-lineColor index 0
-fillColor index 19
+x 415
+y 250
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 478
-y 407
-w 110
-h 27
-font "helvetica-bold-r-24.0"
-fgColor index 0
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:CV3"
-}
-autoSize
-endObjectProperties
-
-# (Group)
-object activeGroupClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 464
-y 444
-w 127
-h 25
-
-beginGroup
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 526
-y 444
-w 65
-h 24
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Details"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf:cv3_details.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 464
-y 444
-w 60
-h 25
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Configure"
-numCmds 10
-commandLabel {
-  0 "Reassign to ISTF:FC0"
-  1 "Reassign to ISTF:FC0:RDCUR"
-  2 "Reassign to ISTF:FC1"
-  3 "Reassign to ISTF:FC1:RDCUR"
-  4 "Reassign to ISTF:TP1"
-  5 "Reassign to ISTF:TP2"
-  6 "Reassign to ISTF:IG1"
-  7 "Reassign to ISTF:GV1"
-  8 "Reassign to ISTF:CV1"
-  9 "Reassign to ISTF:CV2"
-}
-command {
-  0 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC0"
-  1 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC0:RDCUR"
-  2 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC1"
-  3 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:FC1:RDCUR"
-  4 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:TP1"
-  5 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:TP2"
-  6 "bash ../../scripts/server/assign_db.sh ISTF:CV3"
-  7 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:GV1"
-  8 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:CV1"
-  9 "bash ../../scripts/server/assign_db.sh ISTF:CV3 ISTF:CV2"
-}
-endObjectProperties
-
-endGroup
-
-visPv "ISTF:CV3:status.INAV"
-visInvert
-visMin "0"
-visMax "1"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
 release 1
-x 462
-y 440
-w 134
-h 32
-font "helvetica-medium-r-10.0"
-fgColor index 0
-bgColor index 14
-visPv "ISTF:CV3:status.INAV"
-visMin "0"
-visMax "1"
-value {
-  "            IOC OFFLINE"
+x 405
+y 239
+w 40
+h 40
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 405
+  1 445
+}
+yPoints {
+  0 279
+  1 239
 }
 endObjectProperties
 
