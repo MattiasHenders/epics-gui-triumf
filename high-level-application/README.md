@@ -1,6 +1,7 @@
-# Installation #
-- cd flask-epics-serve-html
+# Installation
+- cd high-level-application
 - pip install -r requirements.txt
+- pip install flask-socketio
 
-# Running the Server #
+# Running the Server
 - enter the following command: "flask run"
