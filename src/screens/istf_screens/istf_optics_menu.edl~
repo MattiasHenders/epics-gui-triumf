@@ -609,6 +609,9 @@ botShadowColor index 0
 font "helvetica-medium-r-12.0"
 buttonLabel "ISTF:FC0"
 numPvs 4
+pv {
+  0 "ISTF:FC0:SOL"
+}
 numDsps 1
 displayFileName {
   0 "istf_fc0.edl"
