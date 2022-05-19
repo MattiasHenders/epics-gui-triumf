@@ -79,9 +79,9 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 220
+x 250
 y 300
-w 240
+w 210
 h 40
 lineColor index 14
 fill
@@ -146,7 +146,7 @@ minor 0
 release 0
 x 130
 y 300
-w 80
+w 120
 h 40
 lineColor index 14
 fill
@@ -159,7 +159,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 210
+x 250
 y 410
 w 40
 h 20
@@ -171,7 +171,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput istf:fc0 1"
+  0 "caput ISTF:FC0:SOL 1"
 }
 endObjectProperties
 
@@ -181,7 +181,7 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
+x 200
 y 410
 w 40
 h 20
@@ -193,51 +193,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput istf:fc0 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 410
-y 410
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:fc2 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 460
-y 410
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:fc2 1"
+  0 "caput ISTF:FC0:SOL 0"
 }
 endObjectProperties
 
@@ -256,11 +212,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:FC2"
+buttonLabel "ISTF:FC1"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_fc2.edl"
+  0 "istf_fc1.edl"
 }
 endObjectProperties
 
@@ -279,50 +235,6 @@ fill
 fillColor index 14
 endObjectProperties
 
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 930
-y 90
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:fc4a 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 980
-y 90
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:fc4a 1"
-}
-endObjectProperties
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
@@ -331,7 +243,7 @@ minor 0
 release 0
 x 880
 y 300
-w 80
+w 90
 h 40
 lineColor index 14
 fill
@@ -383,50 +295,6 @@ fill
 fillColor index 14
 endObjectProperties
 
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 970
-y 620
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:fc4b 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 1020
-y 620
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:fc4b 1"
-}
-endObjectProperties
-
 # (Rectangle)
 object activeRectangleClass
 beginObjectProperties
@@ -436,7 +304,7 @@ release 0
 x 1190
 y 440
 w 40
-h 140
+h 150
 lineColor index 14
 fill
 fillColor index 14
@@ -448,7 +316,7 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 180
+x 220
 y 280
 w 50
 h 80
@@ -478,50 +346,6 @@ fgColor index 0
 bgColor index 19
 endObjectProperties
 
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 850
-y 410
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:iv0 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 800
-y 410
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:iv0 0"
-}
-endObjectProperties
-
 # (Lines)
 object activeLineClass
 beginObjectProperties
@@ -541,77 +365,6 @@ xPoints {
 }
 yPoints {
   0 590
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 1060
-y 590
-w 110
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 1060
-  1 1170
-}
-yPoints {
-  0 590
-  1 590
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 690
-y 340
-w 0
-h 150
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 685
-  1 685
-}
-yPoints {
-  0 335
-  1 485
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 970
-y 580
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:FC4B"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_fc4b.edl"
 }
 endObjectProperties
 
@@ -717,8 +470,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 640
-y 480
+x 560
+y 440
 w 70
 h 70
 lineColor index 0
@@ -732,8 +485,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 640
-y 620
+x 560
+y 580
 w 70
 h 70
 lineColor index 0
@@ -768,8 +521,8 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 680
-y 540
+x 600
+y 500
 w 0
 h 100
 lineColor index 14
@@ -777,12 +530,12 @@ fillColor index 19
 lineWidth 2
 numPoints 2
 xPoints {
-  0 680
-  1 680
+  0 600
+  1 600
 }
 yPoints {
-  0 540
-  1 640
+  0 500
+  1 600
 }
 endObjectProperties
 
@@ -839,562 +592,13 @@ fgColor index 0
 bgColor index 19
 endObjectProperties
 
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 1185
-y 535
-w 50
-h 80
-file "symbols/fc.edl"
-numStates 2
-numPvs 0
-orientation "rotateCW"
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 960
-y 150
-w 0
-h 140
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 960
-  1 960
-}
-yPoints {
-  0 290
-  1 150
-}
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 930
-y 280
-w 50
-h 80
-file "symbols/fc.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
 major 4
 minor 4
 release 0
-x 930
-y 120
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:FC4A"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_fc4a.edl"
-}
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 280
-y 260
-w 10
-h 50
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 370
-y 260
-w 10
-h 50
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 560
-y 260
-w 10
-h 50
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 660
-y 260
-w 10
-h 50
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 670
-y 140
-w 0
-h 120
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 670
-  1 670
-}
-yPoints {
-  0 260
-  1 140
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 560
-y 190
-w 0
-h 70
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 560
-  1 560
-}
-yPoints {
-  0 260
-  1 190
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 380
-y 140
-w 0
-h 120
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 380
-  1 380
-}
-yPoints {
-  0 260
-  1 140
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 260
-y 130
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:q1 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 210
-y 130
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:q1 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 210
-y 160
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:Q1"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_optics_details.edl"
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 280
-y 190
-w 0
-h 70
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 280
-  1 280
-}
-yPoints {
-  0 260
-  1 190
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 410
-y 80
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:q2 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 360
-y 80
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:q2 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 360
-y 110
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:Q2"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_optics_details.edl"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 510
-y 160
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:Q3"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_optics_details.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 510
-y 130
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:q3 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 560
-y 130
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:q3 1"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 660
-y 110
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:Q4"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_optics_details.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 660
-y 80
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:q4 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 710
-y 80
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:q4 1"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 20
-y 640
-w 180
-h 40
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "SKIMMER MENU"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_skimmer_menu.edl"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 20
-y 690
-w 290
-h 40
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "CORRECTIVE BENDER MENU"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_optics_details.edl"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 160
+x 200
 y 370
 w 90
 h 30
@@ -1411,125 +615,17 @@ displayFileName {
 }
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 800
-y 370
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:IV0"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_iv0.edl"
-}
-endObjectProperties
-
 # (Text Update)
 object TextupdateClass
 beginObjectProperties
 major 10
 minor 0
 release 0
-x 210
-y 100
-w 105
-h 20
-controlPv "istf:q1-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 360
-y 50
-w 100
-h 20
-controlPv "istf:q2-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 510
-y 100
-w 100
-h 20
-controlPv "istf:q3-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 660
-y 50
-w 100
-h 20
-controlPv "istf:q4-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 800
-y 440
-w 100
-h 20
-controlPv "istf:iv0"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 160
+x 200
 y 440
 w 105
 h 20
-controlPv "istf:fc0-voltage"
+controlPv "ISTF:FC0:RDCUR"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -1546,68 +642,11 @@ x 410
 y 440
 w 105
 h 20
-controlPv "istf:fc2-voltage"
+controlPv "ISTF:FC1:RDCUR"
 fgColor index 29
 fgAlarm
 bgColor index 8
 font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 970
-y 550
-w 105
-h 20
-controlPv "istf:fc4b-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 930
-y 60
-w 105
-h 20
-controlPv "istf:fc4a-voltage"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 10
-y 540
-w 160
-h 40
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "CAGE OPTICS"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_cage_optics.edl"
-}
 endObjectProperties
 
 # (Lines)
@@ -1631,26 +670,271 @@ yPoints {
 }
 endObjectProperties
 
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 20
+y 690
+w 180
+h 40
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "PI STATUS MENU"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "piStatus.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 460
+y 410
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "IN"
+numCmds 1
+command {
+  0 "caput ISTF:FC1:SOL 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 410
+y 410
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "OUT"
+numCmds 1
+command {
+  0 "caput ISTF:FC1:SOL 0"
+}
+endObjectProperties
+
 # (Lines)
 object activeLineClass
 beginObjectProperties
 major 4
 minor 0
 release 1
-x 60
-y 460
+x 600
+y 330
 w 0
-h 80
+h 120
 lineColor index 14
 fillColor index 19
+lineWidth 2
 numPoints 2
 xPoints {
-  0 60
-  1 60
+  0 600
+  1 600
 }
 yPoints {
-  0 540
-  1 460
+  0 330
+  1 450
 }
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 720
+y 580
+w 70
+h 70
+lineColor index 0
+fill
+fillColor index 14
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 760
+y 500
+w 0
+h 100
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 760
+  1 760
+}
+yPoints {
+  0 500
+  1 600
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 720
+y 440
+w 70
+h 70
+lineColor index 0
+fill
+fillColor index 14
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 760
+y 330
+w 0
+h 120
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 760
+  1 760
+}
+yPoints {
+  0 330
+  1 450
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 660
+y 250
+w 20
+h 60
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 630
+y 180
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "OUT"
+numCmds 1
+command {
+  0 "caput ISTF:GV1:SOL 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 680
+y 180
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "IN"
+numCmds 1
+command {
+  0 "caput ISTF:GV1:SOL 1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 630
+y 210
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ISTF:GV1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf_gv1.edl"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 630
+y 150
+w 100
+h 20
+controlPv "ISTF:GV1:SOL"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
 endObjectProperties
 

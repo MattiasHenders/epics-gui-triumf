@@ -1,0 +1,651 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 100
+w 400
+h 500
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 0
+bgColor index 8
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 205
+y 340
+w 0
+h 85
+lineColor index 14
+fillColor index 19
+lineWidth 2
+closePolygon
+numPoints 2
+xPoints {
+  0 205
+  1 205
+}
+yPoints {
+  0 340
+  1 425
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 280
+w 380
+h 210
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 65
+w 365
+h 40
+lineColor index 12
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 105
+w 365
+h 40
+lineColor index 12
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 145
+w 365
+h 40
+lineColor index 12
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 185
+w 365
+h 40
+lineColor index 12
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 225
+w 365
+h 40
+lineColor index 12
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 60
+w 380
+h 210
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 210
+h 40
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 20
+w 193
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Faraday Cup 0 Details"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 150
+w 130
+h 30
+controlPv "ISTF:FC0:OUT"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 190
+w 130
+h 30
+controlPv "ISTF:FC0:RDCUR"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 110
+w 130
+h 30
+controlPv "ISTF:FC0:IN"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 70
+w 130
+h 30
+controlPv "ISTF:FC0:SOL"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 230
+w 130
+h 30
+controlPv "ISTF:FC0:HWR"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 330
+y 75
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "IN"
+numCmds 1
+command {
+  0 "caput ISTF:FC0:SOL 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 75
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "OUT"
+numCmds 1
+command {
+  0 "caput ISTF:FC0:SOL 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 330
+y 235
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput ISTF:FC0:HWR 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 235
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput ISTF:FC0:HWR 0"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 80
+w 93
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:SOL"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 120
+w 80
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:IN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 160
+w 95
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 200
+w 113
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:RDCUR"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 30
+y 240
+w 99
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:HWR"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 300
+w 99
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:HWR"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 260
+y 360
+w 95
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 70
+y 360
+w 80
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:IN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 160
+y 435
+w 93
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:FC0:SOL"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 75
+y 380
+w 70
+h 25
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+alarmPv "ISTF:FC0:IN"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 380
+w 70
+h 25
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+alarmPv "ISTF:FC0:OUT"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 455
+w 70
+h 25
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+alarmPv "ISTF:FC0:SOL"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 320
+w 70
+h 25
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+alarmPv "ISTF:FC0:HWR"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 145
+y 395
+w 0
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 1
+xPoints {
+  0 145
+}
+yPoints {
+  0 395
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 145
+y 395
+w 125
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+closePolygon
+numPoints 2
+xPoints {
+  0 145
+  1 270
+}
+yPoints {
+  0 395
+  1 395
+}
+endObjectProperties
+

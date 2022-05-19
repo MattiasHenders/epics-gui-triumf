@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script></head>
+
+<body>
+  <h1 style="color: blue">Search for a PV</h1>
+  <form action="/" method="POST">
+    <input name="pv" id="pv" type="text" value="{{request.form['content']}}">
+    <input type="submit">
+  </form>
+  <p>{{info.searched_name}}</p>
+  <p>{{info.searched_pv}}</p>
+
+  <br />
+  <br />
+  <h1 style="color: green">Live PV Updates</h1>
+  <!-- <p>PV list:</p> -->
+  <ul>
+    {%for key, value in info.pv_list.items()%}
+    
+    <li id={{key}}>{{key}} - {{value}}</li>
+    {%endfor%}
+  </ul>
+  <script>
+    $(document).ready(function () {
+      var socket = io.connect('http://' + document.domain + ':' + location.port + '/');
+      socket.on('updatePVs', function (msg) {
+        console.log(msg)
+        for (i in msg.pv_list) {
+
+          console.log(msg.pv_list)
+          console.log(i);
+          document.getElementById(i).innerText = i + " - " + msg.pv_list[i];
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
