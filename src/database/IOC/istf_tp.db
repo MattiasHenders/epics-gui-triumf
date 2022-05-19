@@ -8,6 +8,8 @@ record(bi, "$(IOC):RP"){
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
@@ -17,6 +19,8 @@ record(bi, "$(IOC):TP"){
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
@@ -26,6 +30,8 @@ record(bi, "$(IOC):VV"){
    field(INP, "1")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
