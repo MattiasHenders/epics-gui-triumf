@@ -1,0 +1,100 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 100
+y 100
+w 400
+h 250
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 0
+bgColor index 7
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 7
+ctlBgColor1 index 19
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 23
+y 65
+w 365
+h 109
+lineColor index 80
+fillColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 205
+y 126
+w 161
+h 21
+controlPv "ISTF:CV2:RDVAC"
+font "helvetica-medium-r-18.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 7
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 106
+y 76
+w 215
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 80
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:CV2:RDVAC Details"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 39
+y 126
+w 149
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 80
+bgColor index 19
+useDisplayBg
+value {
+  "Vacuum Pressure:"
+}
+autoSize
+endObjectProperties
+

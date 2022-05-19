@@ -15,8 +15,8 @@ record(bi, "$(IOC):IN"){
 
    field(DESC, "Faraday Cup IN")
    field(INP, "0")
-   field(ZNAM, "OFF")
-   field(ONAM, "ON")
+   field(ZNAM, "OUT")
+   field(ONAM, "IN")
    field(SCAN, ".1 second")
 }
 
@@ -24,8 +24,8 @@ record(bi, "$(IOC):OUT"){
 
    field(DESC, "Faraday Cup OUT")
    field(INP, "1")
-   field(ZNAM, "OFF")
-   field(ONAM, "ON")
+   field(ZNAM, "OUT")
+   field(ONAM, "IN")
    field(SCAN, ".1 second")
 }
 
