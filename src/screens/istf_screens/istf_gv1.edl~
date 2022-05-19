@@ -6,7 +6,7 @@ release 1
 x 100
 y 100
 w 400
-h 500
+h 400
 font "helvetica-medium-r-18.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-bold-r-14.0"
@@ -19,34 +19,23 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "FC0 Menu"
+title "GV1 Menu"
 snapToGrid
 gridSize 5
 endScreenProperties
 
-# (Lines)
-object activeLineClass
+# (Rectangle)
+object activeRectangleClass
 beginObjectProperties
 major 4
 minor 0
-release 1
-x 205
-y 340
-w 0
-h 85
+release 0
+x 15
+y 200
+w 375
+h 190
 lineColor index 14
 fillColor index 19
-lineWidth 2
-closePolygon
-numPoints 2
-xPoints {
-  0 205
-  1 205
-}
-yPoints {
-  0 340
-  1 425
-}
 endObjectProperties
 
 # (Rectangle)
@@ -55,10 +44,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 10
-y 280
-w 380
-h 210
+x 15
+y 60
+w 375
+h 130
 lineColor index 14
 fillColor index 19
 endObjectProperties
@@ -70,7 +59,7 @@ major 4
 minor 0
 release 0
 x 20
-y 65
+y 145
 w 365
 h 40
 lineColor index 12
@@ -98,53 +87,36 @@ major 4
 minor 0
 release 0
 x 20
-y 145
+y 65
 w 365
 h 40
 lineColor index 12
 fillColor index 19
 endObjectProperties
 
-# (Rectangle)
-object activeRectangleClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
 minor 0
-release 0
-x 20
-y 185
-w 365
-h 40
-lineColor index 12
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 20
-y 225
-w 365
-h 40
-lineColor index 12
-fillColor index 19
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 10
-y 60
-w 380
-h 210
+release 1
+x 195
+y 260
+w 0
+h 65
 lineColor index 14
 fillColor index 19
+lineWidth 2
+closePolygon
+numPoints 2
+xPoints {
+  0 195
+  1 195
+}
+yPoints {
+  0 260
+  1 325
+}
 endObjectProperties
 
 # (Rectangle)
@@ -155,7 +127,7 @@ minor 0
 release 0
 x 10
 y 10
-w 210
+w 145
 h 40
 lineColor index 14
 fillColor index 19
@@ -169,7 +141,7 @@ minor 1
 release 1
 x 20
 y 20
-w 193
+w 129
 h 21
 font "helvetica-bold-r-18.0"
 fontAlign "center"
@@ -177,7 +149,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "Faraday Cup 0 Details"
+  "Valve 1 Details"
 }
 autoSize
 endObjectProperties
@@ -192,24 +164,7 @@ x 150
 y 150
 w 130
 h 30
-controlPv "ISTF:FC0:OUT"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 150
-y 190
-w 130
-h 30
-controlPv "ISTF:FC0:RDCUR"
+controlPv "ISTF:GV1:OUT"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -226,7 +181,7 @@ x 150
 y 110
 w 130
 h 30
-controlPv "ISTF:FC0:IN"
+controlPv "ISTF:GV1:IN"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -243,24 +198,7 @@ x 150
 y 70
 w 130
 h 30
-controlPv "ISTF:FC0:SOL"
-fgColor index 29
-fgAlarm
-bgColor index 8
-font "helvetica-medium-r-14.0"
-endObjectProperties
-
-# (Text Update)
-object TextupdateClass
-beginObjectProperties
-major 10
-minor 0
-release 0
-x 150
-y 230
-w 130
-h 30
-controlPv "ISTF:FC0:HWR"
+controlPv "ISTF:GV1:SOL"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -285,7 +223,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:SOL 1"
+  0 "caput ISTF:GV1:SOL 1"
 }
 endObjectProperties
 
@@ -307,51 +245,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:SOL 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 330
-y 235
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput ISTF:FC0:HWR 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 280
-y 235
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput ISTF:FC0:HWR 0"
+  0 "caput ISTF:GV1:SOL 0"
 }
 endObjectProperties
 
@@ -363,14 +257,14 @@ minor 1
 release 1
 x 30
 y 80
-w 93
+w 96
 h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:SOL"
+  "ISTF:GV1:SOL"
 }
 autoSize
 endObjectProperties
@@ -383,14 +277,14 @@ minor 1
 release 1
 x 30
 y 120
-w 80
+w 83
 h 16
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:IN"
+  "ISTF:GV1:IN"
 }
 autoSize
 endObjectProperties
@@ -403,6 +297,26 @@ minor 1
 release 1
 x 30
 y 160
+w 98
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:GV1:OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 245
+y 225
 w 95
 h 16
 font "helvetica-medium-r-14.0"
@@ -421,88 +335,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 30
-y 200
-w 113
-h 16
-font "helvetica-medium-r-14.0"
-fgColor index 14
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:FC0:RDCUR"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 30
-y 240
-w 99
-h 16
-font "helvetica-medium-r-14.0"
-fgColor index 14
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:FC0:HWR"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 155
-y 300
-w 99
-h 16
-font "helvetica-medium-r-14.0"
-fgColor index 14
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:FC0:HWR"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 260
-y 360
-w 95
-h 16
-font "helvetica-medium-r-14.0"
-fgColor index 14
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:FC0:OUT"
-}
-autoSize
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 70
-y 360
+x 55
+y 225
 w 80
 h 16
 font "helvetica-medium-r-14.0"
@@ -521,8 +355,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 435
+x 150
+y 335
 w 93
 h 16
 font "helvetica-medium-r-14.0"
@@ -541,8 +375,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 75
-y 380
+x 60
+y 245
 w 70
 h 25
 lineColor index 14
@@ -558,8 +392,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 270
-y 380
+x 255
+y 245
 w 70
 h 25
 lineColor index 14
@@ -575,8 +409,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 170
-y 455
+x 160
+y 355
 w 70
 h 25
 lineColor index 14
@@ -584,23 +418,6 @@ fill
 fillColor index 15
 fillAlarm
 alarmPv "ISTF:FC0:SOL"
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 170
-y 320
-w 70
-h 25
-lineColor index 14
-fill
-fillColor index 15
-fillAlarm
-alarmPv "ISTF:FC0:HWR"
 endObjectProperties
 
 # (Lines)
@@ -631,8 +448,8 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 145
-y 395
+x 130
+y 260
 w 125
 h 0
 lineColor index 14
@@ -641,12 +458,12 @@ lineWidth 2
 closePolygon
 numPoints 2
 xPoints {
-  0 145
-  1 270
+  0 130
+  1 255
 }
 yPoints {
-  0 395
-  1 395
+  0 260
+  1 260
 }
 endObjectProperties
 

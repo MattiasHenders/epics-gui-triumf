@@ -19,7 +19,7 @@ ctlBgColor1 index 19
 ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
-title "FC0 Menu"
+title "FC1 Menu"
 snapToGrid
 gridSize 5
 endScreenProperties
@@ -192,7 +192,7 @@ x 150
 y 150
 w 130
 h 30
-controlPv "ISTF:FC0:OUT"
+controlPv "ISTF:FC1:OUT"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -209,7 +209,7 @@ x 150
 y 190
 w 130
 h 30
-controlPv "ISTF:FC0:RDCUR"
+controlPv "ISTF:FC1:RDCUR"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -226,7 +226,7 @@ x 150
 y 110
 w 130
 h 30
-controlPv "ISTF:FC0:IN"
+controlPv "ISTF:FC1:IN"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -243,7 +243,7 @@ x 150
 y 70
 w 130
 h 30
-controlPv "ISTF:FC0:SOL"
+controlPv "ISTF:FC1:SOL"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -260,7 +260,7 @@ x 150
 y 230
 w 130
 h 30
-controlPv "ISTF:FC0:HWR"
+controlPv "ISTF:FC1:HWR"
 fgColor index 29
 fgAlarm
 bgColor index 8
@@ -285,7 +285,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "IN"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:SOL 1"
+  0 "caput ISTF:FC1:SOL 1"
 }
 endObjectProperties
 
@@ -307,7 +307,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "OUT"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:SOL 0"
+  0 "caput ISTF:FC1:SOL 0"
 }
 endObjectProperties
 
@@ -329,7 +329,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "1"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:HWR 1"
+  0 "caput ISTF:FC1:HWR 1"
 }
 endObjectProperties
 
@@ -351,7 +351,7 @@ font "helvetica-bold-r-14.0"
 buttonLabel "0"
 numCmds 1
 command {
-  0 "caput ISTF:FC0:HWR 0"
+  0 "caput ISTF:FC1:HWR 0"
 }
 endObjectProperties
 
@@ -370,7 +370,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:SOL"
+  "ISTF:FC1:SOL"
 }
 autoSize
 endObjectProperties
@@ -390,7 +390,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:IN"
+  "ISTF:FC1:IN"
 }
 autoSize
 endObjectProperties
@@ -410,7 +410,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:OUT"
+  "ISTF:FC1:OUT"
 }
 autoSize
 endObjectProperties
@@ -430,7 +430,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:RDCUR"
+  "ISTF:FC1:RDCUR"
 }
 autoSize
 endObjectProperties
@@ -450,7 +450,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:HWR"
+  "ISTF:FC1:HWR"
 }
 autoSize
 endObjectProperties
@@ -470,7 +470,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:HWR"
+  "ISTF:FC1:HWR"
 }
 autoSize
 endObjectProperties
@@ -490,7 +490,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:OUT"
+  "ISTF:FC1:OUT"
 }
 autoSize
 endObjectProperties
@@ -510,7 +510,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:IN"
+  "ISTF:FC1:IN"
 }
 autoSize
 endObjectProperties
@@ -530,7 +530,7 @@ fgColor index 14
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:FC0:SOL"
+  "ISTF:FC1:SOL"
 }
 autoSize
 endObjectProperties
@@ -549,7 +549,7 @@ lineColor index 14
 fill
 fillColor index 15
 fillAlarm
-alarmPv "ISTF:FC0:IN"
+alarmPv "ISTF:FC1:IN"
 endObjectProperties
 
 # (Rectangle)
@@ -566,7 +566,7 @@ lineColor index 14
 fill
 fillColor index 15
 fillAlarm
-alarmPv "ISTF:FC0:OUT"
+alarmPv "ISTF:FC1:OUT"
 endObjectProperties
 
 # (Rectangle)
@@ -583,7 +583,7 @@ lineColor index 14
 fill
 fillColor index 15
 fillAlarm
-alarmPv "ISTF:FC0:SOL"
+alarmPv "ISTF:FC1:SOL"
 endObjectProperties
 
 # (Rectangle)
@@ -600,7 +600,7 @@ lineColor index 14
 fill
 fillColor index 15
 fillAlarm
-alarmPv "ISTF:FC0:HWR"
+alarmPv "ISTF:FC1:HWR"
 endObjectProperties
 
 # (Lines)

@@ -8,6 +8,8 @@ record(bi, "$(IOC):SOL"){
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
@@ -17,6 +19,8 @@ record(bi, "$(IOC):IN"){
    field(INP, "0")
    field(ZNAM, "OUT")
    field(ONAM, "IN")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
@@ -26,6 +30,8 @@ record(bi, "$(IOC):OUT"){
    field(INP, "1")
    field(ZNAM, "OUT")
    field(ONAM, "IN")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
@@ -35,6 +41,8 @@ record(bi, "$(IOC):HWR"){
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
