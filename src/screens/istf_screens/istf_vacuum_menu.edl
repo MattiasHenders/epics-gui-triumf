@@ -20,8 +20,103 @@ ctlBgColor2 index 21
 topShadowColor index 2
 botShadowColor index 0
 title "ISTF Vacuum Menu"
-snapToGrid
 endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 549
+y 143
+w 0
+h 190
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 549
+  1 549
+}
+yPoints {
+  0 143
+  1 333
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 960
+y 130
+w 0
+h 190
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 960
+  1 960
+}
+yPoints {
+  0 130
+  1 320
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 450
+y 530
+w 130
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 450
+  1 580
+}
+yPoints {
+  0 530
+  1 530
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 580
+y 340
+w 0
+h 150
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 580
+  1 580
+}
+yPoints {
+  0 340
+  1 490
+}
+endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -44,31 +139,7 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 990
-y 430
-w 0
-h 110
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 990
-  1 990
-}
-yPoints {
-  0 430
-  1 540
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 590
+x 770
 y 340
 w 0
 h 150
@@ -77,36 +148,12 @@ fillColor index 19
 lineWidth 2
 numPoints 2
 xPoints {
-  0 590
-  1 590
+  0 770
+  1 770
 }
 yPoints {
   0 340
   1 490
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 340
-y 110
-w 40
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 380
-  1 340
-}
-yPoints {
-  0 110
-  1 110
 }
 endObjectProperties
 
@@ -254,8 +301,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 430
-y 480
+x 810
+y 390
 w 90
 h 30
 fgColor index 0
@@ -263,11 +310,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:TP1"
+buttonLabel "ISTF:TP2"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_tp1.edl"
+  0 "istf_tp2.edl"
 }
 endObjectProperties
 
@@ -277,8 +324,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 480
-y 520
+x 860
+y 430
 w 40
 h 20
 fgColor index 14
@@ -286,10 +333,10 @@ bgColor index 7
 topShadowColor index 14
 botShadowColor index 14
 font "helvetica-bold-r-14.0"
-buttonLabel "IN"
+buttonLabel "1"
 numCmds 1
 command {
-  0 "caput istf:tp0 1"
+  0 "caput ISTF:TP2:TP 1"
 }
 endObjectProperties
 
@@ -299,8 +346,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 430
-y 520
+x 810
+y 430
 w 40
 h 20
 fgColor index 14
@@ -308,10 +355,10 @@ bgColor index 7
 topShadowColor index 14
 botShadowColor index 14
 font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
+buttonLabel "0"
 numCmds 1
 command {
-  0 "caput istf:tp0 0"
+  0 "caput ISTF:TP2:TP 0"
 }
 endObjectProperties
 
@@ -358,73 +405,6 @@ h 210
 lineColor index 63
 fill
 fillColor index 63
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 850
-y 220
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "1"
-numCmds 1
-command {
-  0 "caput istf:iv0 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 800
-y 220
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "0"
-numCmds 1
-command {
-  0 "caput istf:iv0 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 800
-y 250
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:IV0"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_iv0.edl"
-}
 endObjectProperties
 
 # (Lines)
@@ -504,8 +484,8 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 580
-y 540
+x 770
+y 490
 w 0
 h 100
 lineColor index 14
@@ -513,12 +493,12 @@ fillColor index 19
 lineWidth 2
 numPoints 2
 xPoints {
-  0 580
-  1 580
+  0 770
+  1 770
 }
 yPoints {
-  0 540
-  1 640
+  0 490
+  1 590
 }
 endObjectProperties
 
@@ -548,8 +528,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 530
-y 470
+x 720
+y 420
 w 90
 h 90
 file "symbols/turbo_pump.edl"
@@ -566,8 +546,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 530
-y 620
+x 720
+y 570
 w 90
 h 90
 file "symbols/backing_pump.edl"
@@ -593,76 +573,14 @@ fill
 fillColor index 28
 endObjectProperties
 
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 810
-y 290
-w 80
-h 60
-file "symbols/valve.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 430
-y 680
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:bp0 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 480
-y 680
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:bp0 1"
-}
-endObjectProperties
-
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
 major 4
 minor 4
 release 0
-x 430
-y 640
+x 810
+y 610
 w 90
 h 30
 fgColor index 0
@@ -670,11 +588,11 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:BP1"
+buttonLabel "ISTF:TP2:RP"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_bp1.edl"
+  0 "istf_tp2.edl"
 }
 endObjectProperties
 
@@ -684,8 +602,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 1110
-y 150
+x 1050
+y 190
 w 330
 h 320
 lineColor index 14
@@ -735,40 +653,22 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 580
-y 580
-w 100
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 580
-  1 680
-}
-yPoints {
-  0 580
-  1 580
-}
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 650
+x 770
 y 530
-w 80
-h 90
-file "symbols/convectron_gauge.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
+w 100
+h 0
+lineColor index 14
+fillColor index 19
+lineWidth 2
+numPoints 2
+xPoints {
+  0 770
+  1 870
+}
+yPoints {
+  0 530
+  1 530
+}
 endObjectProperties
 
 # (Symbol)
@@ -777,8 +677,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 450
-y 100
+x 840
+y 480
 w 80
 h 90
 file "symbols/convectron_gauge.edl"
@@ -787,54 +687,6 @@ numPvs 0
 useOriginalColors
 fgColor index 0
 bgColor index 19
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 380
-y 110
-w 0
-h 190
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 380
-  1 380
-}
-yPoints {
-  0 110
-  1 300
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 380
-y 150
-w 100
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 380
-  1 480
-}
-yPoints {
-  0 150
-  1 150
-}
 endObjectProperties
 
 # (Lines)
@@ -858,17 +710,47 @@ yPoints {
 }
 endObjectProperties
 
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 370
+y 290
+w 240
+h 60
+lineColor index 14
+fillColor index 19
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 290
+w 170
+h 60
+lineColor index 14
+fillColor index 19
+lineStyle "dash"
+endObjectProperties
+
 # (Symbol)
 object activeSymbolClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 280
-y 80
-w 90
-h 90
-file "symbols/backing_pump.edl"
+x 810
+y 290
+w 80
+h 60
+file "symbols/valve.edl"
 numStates 2
 numPvs 0
 useOriginalColors
@@ -876,25 +758,26 @@ fgColor index 0
 bgColor index 19
 endObjectProperties
 
-# (Shell Command)
-object shellCmdClass
+# (Related Display)
+object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 3
+minor 4
 release 0
-x 230
-y 130
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:bp0 1"
+x 20
+y 690
+w 180
+h 40
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-18.0"
+buttonLabel "PI STATUS MENU"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "piStatus.edl"
 }
 endObjectProperties
 
@@ -904,8 +787,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 180
-y 130
+x 490
+y 650
 w 40
 h 20
 fgColor index 14
@@ -913,10 +796,32 @@ bgColor index 7
 topShadowColor index 14
 botShadowColor index 14
 font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
+buttonLabel "1"
 numCmds 1
 command {
-  0 "caput istf:bp0 0"
+  0 "caput ISTF:TP0:RP 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 440
+y 650
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput ISTF:TP0:RP 0"
 }
 endObjectProperties
 
@@ -926,8 +831,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 180
-y 90
+x 440
+y 610
 w 90
 h 30
 fgColor index 0
@@ -935,11 +840,78 @@ bgColor index 14
 topShadowColor index 2
 botShadowColor index 0
 font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:BP0"
+buttonLabel "ISTF:TP1:RP"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_bp0.edl"
+  0 "istf_tp1.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 490
+y 430
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput ISTF:TP0:TP 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 440
+y 430
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput ISTF:TP0:TP 0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 440
+y 390
+w 90
+h 30
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-medium-r-12.0"
+buttonLabel "ISTF:TP1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "istf_tp1.edl"
 }
 endObjectProperties
 
@@ -949,227 +921,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 330
-y 200
-w 90
-h 90
-file "symbols/turbo_pump.edl"
-numStates 2
-numPvs 0
-useOriginalColors
-fgColor index 0
-bgColor index 19
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 290
-y 250
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:tp0 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 240
-y 250
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:tp0 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 240
-y 210
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:TP0"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_tp0.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 940
-y 640
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:bp0 1"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 890
-y 640
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:bp0 0"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 890
-y 600
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:BP2"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_bp2.edl"
-}
-endObjectProperties
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 1020
-y 600
-w 90
-h 30
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-medium-r-12.0"
-buttonLabel "ISTF:TP2"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_tp2.edl"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 1020
-y 640
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "OUT"
-numCmds 1
-command {
-  0 "caput istf:tp0 0"
-}
-endObjectProperties
-
-# (Shell Command)
-object shellCmdClass
-beginObjectProperties
-major 4
-minor 3
-release 0
-x 1070
-y 640
-w 40
-h 20
-fgColor index 14
-bgColor index 7
-topShadowColor index 14
-botShadowColor index 14
-font "helvetica-bold-r-14.0"
-buttonLabel "IN"
-numCmds 1
-command {
-  0 "caput istf:tp0 1"
-}
-endObjectProperties
-
-# (Symbol)
-object activeSymbolClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 950
-y 380
+x 410
+y 480
 w 80
 h 90
 file "symbols/convectron_gauge.edl"
@@ -1186,8 +939,8 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 1080
-y 210
+x 580
+y 490
 w 0
 h 100
 lineColor index 14
@@ -1195,36 +948,12 @@ fillColor index 19
 lineWidth 2
 numPoints 2
 xPoints {
-  0 1075
-  1 1075
+  0 580
+  1 580
 }
 yPoints {
-  0 210
-  1 310
-}
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 960
-y 540
-w 230
-h 0
-lineColor index 14
-fillColor index 19
-lineWidth 2
-numPoints 2
-xPoints {
-  0 1190
-  1 960
-}
-yPoints {
-  0 540
-  1 540
+  0 490
+  1 590
 }
 endObjectProperties
 
@@ -1234,8 +963,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 880
-y 490
+x 530
+y 570
 w 90
 h 90
 file "symbols/backing_pump.edl"
@@ -1252,8 +981,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 1020
-y 490
+x 530
+y 420
 w 90
 h 90
 file "symbols/turbo_pump.edl"
@@ -1264,79 +993,220 @@ fgColor index 0
 bgColor index 19
 endObjectProperties
 
-# (Rectangle)
-object activeRectangleClass
+# (Shell Command)
+object shellCmdClass
 beginObjectProperties
 major 4
-minor 0
+minor 3
 release 0
-x 160
-y 290
-w 280
-h 60
-lineColor index 14
-fillColor index 19
-lineStyle "dash"
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 500
-y 290
-w 250
-h 60
-lineColor index 14
-fillColor index 19
-lineStyle "dash"
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 40
-y 480
-w 0
-h 60
-lineColor index 14
-fillColor index 19
-numPoints 2
-xPoints {
-  0 40
-  1 40
-}
-yPoints {
-  0 540
-  1 480
+x 860
+y 650
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput ISTF:TP2:RP 1"
 }
 endObjectProperties
 
-# (Related Display)
-object relatedDisplayClass
+# (Shell Command)
+object shellCmdClass
 beginObjectProperties
 major 4
-minor 4
+minor 3
 release 0
-x 20
-y 540
-w 160
-h 40
+x 810
+y 650
+w 40
+h 20
+fgColor index 14
+bgColor index 7
+topShadowColor index 14
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "0"
+numCmds 1
+command {
+  0 "caput ISTF:TP2:RP 0"
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 80
+w 80
+h 90
+file "symbols/convectron_gauge.edl"
+numStates 2
+numPvs 0
+useOriginalColors
 fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-18.0"
-buttonLabel "CAGE VACUUM"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_cage_vacuum.edl"
-}
+bgColor index 19
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 370
+y 390
+w 70
+h 30
+controlPv "ISTF:TP1:TP"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 370
+y 610
+w 70
+h 30
+controlPv "ISTF:TP1:RP"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 910
+y 390
+w 70
+h 30
+controlPv "ISTF:TP2:TP"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 910
+y 610
+w 70
+h 30
+controlPv "ISTF:TP2:RP"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 910
+y 510
+w 80
+h 30
+controlPv "ISTF:CV2:RDVAC"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 330
+y 510
+w 80
+h 30
+controlPv "ISTF:CV1:RDVAC"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 850
+y 110
+w 80
+h 30
+controlPv "ISTF:CV3:RDVAC"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 439
+y 123
+w 80
+h 30
+controlPv "ISTF:IG1:RDVAC"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 519
+y 102
+w 60
+h 60
+file "symbols/ionization_gauge.edl"
+numStates 2
+numPvs 0
+useOriginalSize
+useOriginalColors
+fgColor index 0
+bgColor index 19
 endObjectProperties
 
