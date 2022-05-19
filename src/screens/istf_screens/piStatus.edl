@@ -27,8 +27,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 624
+x 402
+y 606
 w 200
 h 37
 
@@ -40,8 +40,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 216
-y 633
+x 551
+y 615
 w 51
 h 17
 fgColor index 0
@@ -85,8 +85,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 92
-y 638
+x 427
+y 620
 w 76
 h 12
 font "helvetica-medium-r-10.0"
@@ -105,8 +105,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 624
+x 402
+y 606
 w 134
 h 37
 lineColor index 14
@@ -129,8 +129,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 680
+x 403
+y 666
 w 200
 h 37
 
@@ -142,8 +142,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 216
-y 689
+x 552
+y 675
 w 51
 h 17
 fgColor index 0
@@ -187,8 +187,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 92
-y 694
+x 428
+y 680
 w 76
 h 12
 font "helvetica-medium-r-10.0"
@@ -207,8 +207,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 680
+x 403
+y 666
 w 134
 h 37
 lineColor index 14
@@ -233,8 +233,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 735
+x 403
+y 726
 w 200
 h 37
 
@@ -246,8 +246,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 216
-y 744
+x 552
+y 735
 w 51
 h 17
 fgColor index 0
@@ -291,8 +291,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 92
-y 749
+x 428
+y 740
 w 76
 h 12
 font "helvetica-medium-r-10.0"
@@ -311,8 +311,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 67
-y 735
+x 403
+y 726
 w 134
 h 37
 lineColor index 14
@@ -438,8 +438,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 40
+x 116
+y 37
 w 217
 h 61
 
@@ -451,8 +451,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 83
-y 30
+x 126
+y 27
 w 60
 h 80
 file "symbols/fc.edl"
@@ -470,8 +470,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 170
-y 41
+x 213
+y 38
 w 107
 h 27
 font "helvetica-bold-r-24.0"
@@ -490,8 +490,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
-y 80
+x 203
+y 77
 w 129
 h 20
 
@@ -503,8 +503,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 224
-y 80
+x 267
+y 77
 w 65
 h 19
 fgColor index 0
@@ -526,8 +526,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
-y 80
+x 203
+y 77
 w 60
 h 20
 fgColor index 0
@@ -577,8 +577,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 156
-y 69
+x 199
+y 66
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -602,8 +602,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 121
+x 116
+y 126
 w 218
 h 61
 
@@ -615,8 +615,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 83
-y 111
+x 126
+y 116
 w 60
 h 80
 file "symbols/fc.edl"
@@ -634,8 +634,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 128
+x 203
+y 133
 w 124
 h 16
 font "helvetica-bold-r-14.0"
@@ -654,8 +654,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
-y 156
+x 203
+y 161
 w 129
 h 25
 
@@ -667,8 +667,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 224
-y 156
+x 267
+y 161
 w 65
 h 24
 fgColor index 0
@@ -690,8 +690,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
-y 156
+x 203
+y 161
 w 60
 h 25
 fgColor index 0
@@ -741,8 +741,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 157
-y 150
+x 200
+y 155
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -766,8 +766,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 203
+x 116
+y 212
 w 218
 h 61
 
@@ -779,8 +779,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 83
-y 193
+x 126
+y 202
 w 60
 h 80
 file "symbols/fc.edl"
@@ -798,8 +798,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 170
-y 204
+x 213
+y 213
 w 107
 h 27
 font "helvetica-bold-r-24.0"
@@ -818,8 +818,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
-y 243
+x 203
+y 252
 w 129
 h 20
 
@@ -831,8 +831,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 224
-y 243
+x 267
+y 252
 w 65
 h 19
 fgColor index 0
@@ -854,8 +854,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
-y 243
+x 203
+y 252
 w 60
 h 20
 fgColor index 0
@@ -905,8 +905,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 157
-y 232
+x 200
+y 241
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -930,8 +930,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 285
+x 116
+y 294
 w 218
 h 61
 
@@ -943,8 +943,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 83
-y 275
+x 126
+y 284
 w 60
 h 80
 file "symbols/fc.edl"
@@ -962,8 +962,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 160
-y 292
+x 203
+y 301
 w 124
 h 16
 font "helvetica-bold-r-14.0"
@@ -982,8 +982,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 160
-y 320
+x 203
+y 329
 w 129
 h 25
 
@@ -995,8 +995,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 224
-y 320
+x 267
+y 329
 w 65
 h 24
 fgColor index 0
@@ -1018,8 +1018,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 160
-y 320
+x 203
+y 329
 w 60
 h 25
 fgColor index 0
@@ -1071,8 +1071,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 157
-y 314
+x 200
+y 323
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1096,8 +1096,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 367
+x 116
+y 376
 w 215
 h 76
 
@@ -1109,8 +1109,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 367
+x 116
+y 376
 w 78
 h 76
 file "symbols/turbo_pump.edl"
@@ -1127,8 +1127,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 171
-y 370
+x 214
+y 385
 w 106
 h 27
 font "helvetica-bold-r-24.0"
@@ -1147,8 +1147,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 156
-y 414
+x 199
+y 423
 w 128
 h 25
 
@@ -1160,8 +1160,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 219
-y 414
+x 262
+y 423
 w 65
 h 24
 fgColor index 0
@@ -1183,8 +1183,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 156
-y 414
+x 199
+y 423
 w 60
 h 25
 fgColor index 0
@@ -1234,8 +1234,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 154
-y 409
+x 197
+y 418
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1259,8 +1259,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 464
+x 116
+y 473
 w 215
 h 76
 
@@ -1272,8 +1272,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 73
-y 464
+x 116
+y 473
 w 78
 h 76
 file "symbols/turbo_pump.edl"
@@ -1290,8 +1290,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 171
-y 467
+x 214
+y 481
 w 106
 h 27
 font "helvetica-bold-r-24.0"
@@ -1310,8 +1310,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 156
-y 511
+x 199
+y 520
 w 128
 h 25
 
@@ -1323,8 +1323,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 219
-y 511
+x 262
+y 520
 w 65
 h 24
 fgColor index 0
@@ -1346,8 +1346,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 156
-y 511
+x 199
+y 520
 w 60
 h 25
 fgColor index 0
@@ -1397,8 +1397,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 154
-y 507
+x 197
+y 516
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1422,10 +1422,10 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 41
-w 213
-h 65
+x 414
+y 126
+w 69
+h 68
 
 beginGroup
 
@@ -1435,139 +1435,51 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 382
-y 41
-w 77
-h 65
+x 414
+y 126
+w 69
+h 68
 lineColor index 0
 fillColor index 19
+invisible
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 478
-y 41
-w 111
-h 27
-font "helvetica-bold-r-24.0"
-fgColor index 0
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:GV1"
-}
-autoSize
-endObjectProperties
-
-# (Group)
-object activeGroupClass
+# (Circle)
+object activeCircleClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 464
-y 78
-w 127
-h 25
-
-beginGroup
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 526
-y 78
-w 65
-h 24
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Details"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf_tp0.edl"
-}
+x 438
+y 148
+w 24
+h 22
+lineColor index 14
+fill
+fillColor index 15
 endObjectProperties
 
-# (Shell Command)
-object shellCmdClass
+# (Lines)
+object activeLineClass
 beginObjectProperties
 major 4
-minor 3
-release 0
-x 464
-y 78
-w 60
-h 25
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Configure"
-numCmds 10
-commandLabel {
-  0 "Reassign to ISTF:FC0"
-  1 "Reassign to ISTF:FC0:RDCUR"
-  2 "Reassign to ISTF:FC1"
-  3 "Reassign to ISTF:FC1:RDCUR"
-  4 "Reassign to ISTF:TP1"
-  5 "Reassign to ISTF:TP2"
-  6 "Reassign to ISTF:IG1"
-  7 "Reassign to ISTF:CV1"
-  8 "Reassign to ISTF:CV2"
-  9 "Reassign to ISTF:CV3"
-}
-command {
-  0 "bash ../../scripts/server/assign_db.sh ISTF:TP2 ISTF:FC0"
-  1 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC0:RDCUR"
-  2 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC1"
-  3 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC1:RDCUR"
-  4 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:TP1"
-  5 "bash ../../scripts.server.assign_db.sh ISTF:GV1 ISTF:TP2"
-  6 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:IG1"
-  7 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV1"
-  8 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV2"
-  9 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV3"
-}
-endObjectProperties
-
-endGroup
-
-visPv "ISTF:GV1:status.INAV"
-visInvert
-visMin "0"
-visMax "1"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
+minor 0
 release 1
-x 461
-y 73
-w 134
-h 32
-font "helvetica-medium-r-10.0"
-fgColor index 0
-bgColor index 14
-visPv "ISTF:GV1:status.INAV"
-visMin "0"
-visMax "1"
-value {
-  "            IOC OFFLINE"
+x 425
+y 137
+w 45
+h 46
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 425
+  1 470
+}
+yPoints {
+  0 183
+  1 137
 }
 endObjectProperties
 
@@ -1575,41 +1487,14 @@ endGroup
 
 endObjectProperties
 
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 382
-y 132
-w 214
-h 65
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 382
-y 132
-w 77
-h 65
-lineColor index 0
-fillColor index 19
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
 release 1
-x 478
-y 132
+x 503
+y 127
 w 100
 h 27
 font "helvetica-bold-r-24.0"
@@ -1628,8 +1513,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 464
-y 169
+x 490
+y 162
 w 127
 h 25
 
@@ -1641,8 +1526,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 526
-y 169
+x 552
+y 162
 w 65
 h 24
 fgColor index 0
@@ -1664,8 +1549,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 464
-y 169
+x 490
+y 162
 w 60
 h 25
 fgColor index 0
@@ -1715,8 +1600,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 462
-y 164
+x 488
+y 157
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1730,97 +1615,22 @@ value {
 }
 endObjectProperties
 
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 381
-y 388
-w 90
-h 100
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 381
-y 388
-w 90
-h 100
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 416
-y 429
-w 20
-h 20
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 406
-y 418
-w 40
-h 40
-lineColor index 14
-fillColor index 19
-arrows "to"
-numPoints 2
-xPoints {
-  0 406
-  1 446
-}
-yPoints {
-  0 458
-  1 418
-}
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
 release 1
-x 478
-y 407
-w 110
+x 500
+y 36
+w 111
 h 27
 font "helvetica-bold-r-24.0"
 fgColor index 0
 bgColor index 19
 useDisplayBg
 value {
-  "ISTF:CV3"
+  "ISTF:GV1"
 }
 autoSize
 endObjectProperties
@@ -1831,8 +1641,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 464
-y 444
+x 490
+y 71
 w 127
 h 25
 
@@ -1844,8 +1654,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 526
-y 444
+x 552
+y 71
 w 65
 h 24
 fgColor index 0
@@ -1857,7 +1667,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf:cv3_details.edl"
+  0 "istf_tp0.edl"
 }
 endObjectProperties
 
@@ -1867,8 +1677,169 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 464
-y 444
+x 490
+y 71
+w 60
+h 25
+fgColor index 0
+bgColor index 14
+topShadowColor index 2
+botShadowColor index 0
+font "helvetica-bold-r-10.0"
+buttonLabel "Configure"
+numCmds 10
+commandLabel {
+  0 "Reassign to ISTF:FC0"
+  1 "Reassign to ISTF:FC0:RDCUR"
+  2 "Reassign to ISTF:FC1"
+  3 "Reassign to ISTF:FC1:RDCUR"
+  4 "Reassign to ISTF:TP1"
+  5 "Reassign to ISTF:TP2"
+  6 "Reassign to ISTF:IG1"
+  7 "Reassign to ISTF:CV1"
+  8 "Reassign to ISTF:CV2"
+  9 "Reassign to ISTF:CV3"
+}
+command {
+  0 "bash ../../scripts/server/assign_db.sh ISTF:TP2 ISTF:FC0"
+  1 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC0:RDCUR"
+  2 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC1"
+  3 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:FC1:RDCUR"
+  4 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:TP1"
+  5 "bash ../../scripts.server.assign_db.sh ISTF:GV1 ISTF:TP2"
+  6 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:IG1"
+  7 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV1"
+  8 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV2"
+  9 "bash ../../scripts/server/assign_db.sh ISTF:GV1 ISTF:CV3"
+}
+endObjectProperties
+
+endGroup
+
+visPv "ISTF:GV1:status.INAV"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 487
+y 66
+w 134
+h 32
+font "helvetica-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+visPv "ISTF:GV1:status.INAV"
+visMin "0"
+visMax "1"
+value {
+  "            IOC OFFLINE"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 419
+y 62
+w 61
+h 25
+lineColor index 0
+fill
+fillColor index 15
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 156
+y 678
+w 157
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 19
+useDisplayBg
+value {
+  "Unassigned IOCS"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 82
+y 580
+w 602
+h 208
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 82
+y 14
+w 602
+h 550
+lineColor index 14
+fillColor index 19
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 403
+y 381
+w 219
+h 100
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 438
+w 60
+h 25
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 491
+y 438
 w 60
 h 25
 fgColor index 0
@@ -1912,14 +1883,105 @@ visMin "0"
 visMax "1"
 endObjectProperties
 
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 403
+y 381
+w 90
+h 100
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 403
+y 381
+w 90
+h 100
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 438
+y 422
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 428
+y 411
+w 40
+h 40
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 428
+  1 468
+}
+yPoints {
+  0 451
+  1 411
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
 release 1
-x 462
-y 440
+x 504
+y 400
+w 110
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:CV3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 488
+y 433
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1933,24 +1995,8 @@ value {
 }
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 478
-y 316
-w 110
-h 27
-font "helvetica-bold-r-24.0"
-fgColor index 0
-bgColor index 19
-useDisplayBg
-value {
-  "ISTF:CV2"
-}
-autoSize
+endGroup
+
 endObjectProperties
 
 # (Group)
@@ -1959,35 +2005,96 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 464
-y 353
-w 127
-h 25
+x 403
+y 292
+w 219
+h 100
 
 beginGroup
 
-# (Related Display)
-object relatedDisplayClass
+# (Group)
+object activeGroupClass
 beginObjectProperties
 major 4
-minor 4
+minor 0
 release 0
-x 526
-y 353
-w 65
-h 24
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Details"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf:cv2_details.edl"
+x 403
+y 292
+w 90
+h 100
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 403
+y 292
+w 90
+h 100
+lineColor index 0
+fillColor index 19
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 438
+y 333
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 428
+y 322
+w 40
+h 40
+lineColor index 14
+fillColor index 19
+arrows "to"
+numPoints 2
+xPoints {
+  0 428
+  1 468
+}
+yPoints {
+  0 362
+  1 322
 }
 endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 347
+w 60
+h 25
+
+beginGroup
 
 # (Shell Command)
 object shellCmdClass
@@ -1995,8 +2102,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 464
-y 353
+x 492
+y 347
 w 60
 h 25
 fgColor index 0
@@ -2046,8 +2153,28 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 462
-y 349
+x 504
+y 309
+w 110
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 0
+bgColor index 19
+useDisplayBg
+value {
+  "ISTF:CV2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 488
+y 342
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -2061,14 +2188,31 @@ value {
 }
 endObjectProperties
 
+endGroup
+
+endObjectProperties
+
 # (Group)
 object activeGroupClass
 beginObjectProperties
 major 4
 minor 0
 release 0
-x 380
-y 299
+x 403
+y 202
+w 219
+h 100
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 403
+y 202
 w 90
 h 100
 
@@ -2080,8 +2224,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 380
-y 299
+x 403
+y 202
 w 90
 h 100
 lineColor index 0
@@ -2095,8 +2239,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 415
-y 340
+x 438
+y 243
 w 20
 h 20
 lineColor index 14
@@ -2110,8 +2254,8 @@ beginObjectProperties
 major 4
 minor 0
 release 1
-x 405
-y 329
+x 428
+y 232
 w 40
 h 40
 lineColor index 14
@@ -2119,12 +2263,12 @@ fillColor index 19
 arrows "to"
 numPoints 2
 xPoints {
-  0 405
-  1 445
+  0 428
+  1 468
 }
 yPoints {
-  0 369
-  1 329
+  0 272
+  1 232
 }
 endObjectProperties
 
@@ -2138,8 +2282,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 478
-y 224
+x 504
+y 221
 w 110
 h 27
 font "helvetica-bold-r-24.0"
@@ -2152,50 +2296,14 @@ value {
 autoSize
 endObjectProperties
 
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 464
-y 261
-w 127
-h 25
-
-beginGroup
-
-# (Related Display)
-object relatedDisplayClass
-beginObjectProperties
-major 4
-minor 4
-release 0
-x 526
-y 261
-w 65
-h 24
-fgColor index 0
-bgColor index 14
-topShadowColor index 2
-botShadowColor index 0
-font "helvetica-bold-r-10.0"
-buttonLabel "Details"
-numPvs 4
-numDsps 1
-displayFileName {
-  0 "istf:cv1_details.edl"
-}
-endObjectProperties
-
 # (Shell Command)
 object shellCmdClass
 beginObjectProperties
 major 4
 minor 3
 release 0
-x 464
-y 261
+x 490
+y 254
 w 60
 h 25
 fgColor index 0
@@ -2233,22 +2341,14 @@ command {
 }
 endObjectProperties
 
-endGroup
-
-visPv "ISTF:CV1:status.INAV"
-visInvert
-visMin "0"
-visMax "1"
-endObjectProperties
-
 # (Static Text)
 object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
 release 1
-x 462
-y 257
+x 488
+y 250
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -2262,74 +2362,161 @@ value {
 }
 endObjectProperties
 
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 380
-y 209
-w 90
-h 100
-
-beginGroup
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 380
-y 209
-w 90
-h 100
-lineColor index 0
-fillColor index 19
-invisible
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 415
-y 250
-w 20
-h 20
-lineColor index 14
-fill
-fillColor index 15
-endObjectProperties
-
-# (Lines)
-object activeLineClass
-beginObjectProperties
-major 4
-minor 0
-release 1
-x 405
-y 239
-w 40
-h 40
-lineColor index 14
-fillColor index 19
-arrows "to"
-numPoints 2
-xPoints {
-  0 405
-  1 445
-}
-yPoints {
-  0 279
-  1 239
-}
-endObjectProperties
-
 endGroup
 
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 412
+y 393
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 305
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 215
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 124
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 31
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 471
+w 233
+h 80
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 377
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 288
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 202
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 116
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 29
+w 233
+h 77
+lineColor index 49
+fillColor index 19
 endObjectProperties
 
