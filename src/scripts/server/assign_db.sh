@@ -14,6 +14,7 @@ elementDB=$(echo $line | cut -d "=" -f 2)
 if [ $elementPV == $IOC_ID_UPDATE ]
 then
 IOC_TYPE=$elementDB
+echo $IOC_TYPE
 echo "Switching $2 database to $IOC_TYPE"
 fi
 done < ~/epics-gui-triumf/src/database/IOC/IOC_DEVICE_ASSOCIATIONS.txt
@@ -30,13 +31,17 @@ then
 
 echo "Configuring IOC at IP: $IP"
 #Copy the corresponding IOC db to a generic named file 'dbconfig.db'
-cp -r ~/epics-gui-triumf/src/database/IOC/${elementDB} ~/epics-gui-triumf/src/database/dbconfig.db
+rm -r ~/epics-gui-triumf/src/database/dbconfig.db
+rm -r ~/epics-gui-triumf/src/scripts/run_script.py
+cp -r ~/epics-gui-triumf/src/database/IOC/${IOC_TYPE} ~/epics-gui-triumf/src/database/dbconfig.db
 cp -r ~/epics-gui-triumf/src/scripts/IOC/${SCRIPT_DIR} ~/epics-gui-triumf/src/scripts/run_script.py
 
+echo $IOC_TYPE
 #Opens a secure transfer ssh connection to transfer the dbconfig.db file
 sshpass -p "triumf" scp ~/epics-gui-triumf/src/database/dbconfig.db pi@${IP}:~
 sshpass -p "triumf" scp ~/epics-gui-triumf/src/scripts/run_script.py pi@${IP}:~
 
+echo $IOC_ID_UPDATE
 #Opens a ssh connection to kill the current IOC, change the IOC_ID on the IOC device and re-run the IOC
 sshpass -p "triumf" ssh -t pi@${IP} "pkill screen; sed -i 's/ID=${TARGET_IOC}/ID=${IOC_ID_UPDATE}/' ~/env/IOC_CONFIG && screen -d -m sh -c '/opt/epics/epics-base/bin/linux-arm/softIoc -m IOC=${IOC_ID_UPDATE} -d ~/dbconfig.db; exit' && screen -d -m sh -c 'python3 ~/run_script.py ${IOC_ID_UPDATE}; exit'"
 
