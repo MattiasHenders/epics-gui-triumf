@@ -89,10 +89,10 @@ def setup():
 
     GPIO.setmode(GPIO.BCM)
 
-    for i in gpioList:
-        GPIO.setup(i, (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+    for i in range(len(gpioList)):
+        GPIO.setup(gpioList[i], (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
         if gpioOutputList[i]:
-            GPIO.output(i, GPIO.HIGH)
+            GPIO.output(gpioList[i], GPIO.HIGH)
         previousList.append(False)
     ####################################################
     # SET the interlock devices and interlocks
