@@ -8,6 +8,8 @@ record(bi, "$(IOC):RDVAC"){
    field(INP, "0")
    field(ZNAM, "LOW")
    field(ONAM, "HIGH")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
