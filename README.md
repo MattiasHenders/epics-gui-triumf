@@ -9,7 +9,6 @@ SHORT Intro to the GUI project
 ####  [Description](#description)  - Why make this? Who is it for?
 ####  [Installation](#installation) - How do I install this GUI?
 ####  [Contributors](#contributors) - Who helped out with this project?
-####  [Roadmap](#roadmap) - Where is this project going? stuff
 
 ## <a name="description"></a> Description
 
@@ -47,6 +46,4 @@ All the developers who worked on this project in alphabetical order.
 
 <!-- Made with [contributors-img](https://contrib.rocks) -->
 ---
-
-## <a name="roadmap"></a> Roadmap
 
