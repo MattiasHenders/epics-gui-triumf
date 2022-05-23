@@ -1,7 +1,5 @@
 # EPICS GUI for TRIUMF
 
-SHORT Intro to the GUI project
-
 <img src="/img/triumf_bcit.png" alt="TRIUMF and BCIT" width="250"/>
 
 ## Table of Contents
@@ -12,7 +10,10 @@ SHORT Intro to the GUI project
 
 ## <a name="description"></a> Description
 
-Text describing
+This project was designed to:
+ - Create Raspberry Pi cluster running EPICS
+ - Control tabletop experiments with ER-PCC
+ - Create a control system cheaper than the one at TRIUMF currently.
 
 ## <a name="installation"></a> Installation
 
@@ -28,22 +29,10 @@ cd epics-gui-triumf
 
 All the developers who worked on this project in alphabetical order.
 
-<a href="https://github.com/MattiasHenders">
-  <img src="https://contrib.rocks/image?repo=MattiasHenders/epics-gui-triumf"/>
+<a href="https://github.com/MattiasHenders/epics-gui-triumf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MattiasHenders/epics-gui-triumf" />
 </a>
 
-<a href="https://github.com/ethan-sadowski">
-   <img src="https://contrib.rocks/image?repo=ethan-sadowski/epics-gui-triumf"/>
-</a>
-
-<a href="https://github.com/MadeByChris">
-   <img src="https://contrib.rocks/image?repo=MadeByChris/epics-gui-triumf"/>
-</a>
-
-<a href="https://github.com/buhryan">
-   <img src="https://contrib.rocks/image?repo=buhryan/epics-gui-triumf"/>
-</a>
-
-<!-- Made with [contributors-img](https://contrib.rocks) -->
+<!--Made with [contrib.rocks](https://contrib.rocks).-->
 ---
 
