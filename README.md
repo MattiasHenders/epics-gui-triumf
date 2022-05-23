@@ -25,6 +25,12 @@ git clone https://github.com/MattiasHenders/epics-gui-triumf.git
 cd epics-gui-triumf
 ``
 
+Run the EPICS server using the following command in the root of the project:
+
+``
+bash ./start_server.sh
+``
+
 ## <a name="contributors"></a> Contributors
 
 All the developers who worked on this project in alphabetical order.
