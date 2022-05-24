@@ -6,6 +6,9 @@ import RPi.GPIO as GPIO
 # Sleep time variables
 sleepTimeShort = 0.25
 sleepTimeLong = 0.75
+sleepTimeVeryLong = 3
+
+time.sleep(sleepTimeVeryLong)
 
 # ID From System args
 pvID = ""

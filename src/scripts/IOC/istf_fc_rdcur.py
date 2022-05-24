@@ -50,6 +50,9 @@ class ADS7830(ADCDevice):
 # Sleep time variables
 sleepTimeShort = 0.25
 sleepTimeLong = 0.75
+sleepTimeVeryLong = 3
+
+time.sleep(sleepTimeVeryLong)
 
 # ADC variables
 adc = ADCDevice() # Define an ADCDevice class object

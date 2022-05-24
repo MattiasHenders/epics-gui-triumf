@@ -43,7 +43,7 @@ sshpass -p "triumf" scp ~/epics-gui-triumf/src/scripts/run_script.py pi@${IP}:~
 
 echo $IOC_ID_UPDATE
 #Opens a ssh connection to kill the current IOC, change the IOC_ID on the IOC device and re-run the IOC
-sshpass -p "triumf" ssh -t pi@${IP} "pkill screen; sed -i 's/ID=${TARGET_IOC}/ID=${IOC_ID_UPDATE}/' ~/env/IOC_CONFIG && screen -d -m sh -c '/opt/epics/epics-base/bin/linux-arm/softIoc -m IOC=${IOC_ID_UPDATE} -d ~/dbconfig.db; exit' && screen -d -m sh -c 'python3 ~/run_script.py ${IOC_ID_UPDATE}; exit'"
+sshpass -p "triumf" ssh -t pi@${IP} "pkill screen; sed -i 's/ID=${TARGET_IOC}/ID=${IOC_ID_UPDATE}/' ~/env/IOC_CONFIG && screen -L -d -m sh -c '/opt/epics/epics-base/bin/linux-arm/softIoc -m IOC=${IOC_ID_UPDATE} -d ~/dbconfig.db; exit' && screen -L -d -m sh -c 'python3 ~/run_script.py ${IOC_ID_UPDATE}; exit'"
 
 else
 	echo "RPI with that PV not available!"
