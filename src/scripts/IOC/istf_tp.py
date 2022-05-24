@@ -25,6 +25,7 @@ pv2 = PV(pvID + ":VV")
 
 pvList= [pv0.pvname, pv1.pvname, pv2.pvname] # List of PVs in order for this device
 gpioList = [5, 6, 13]     # List of GPIO pins for this device
+gpioOutputList = [True, True, True] # False if INPUT / True if Output
 
 #########################
 # Callback Functions for PV/GPIO logic
@@ -44,9 +45,10 @@ def setup():
 
     GPIO.setmode(GPIO.BCM)
 
-    for i in gpioList:
-        GPIO.setup(i, GPIO.OUT)
-        GPIO.output(i, GPIO.HIGH)
+    for i in range(len(gpioList)):
+        GPIO.setup(gpioList[i], (GPIO.IN, GPIO.OUT)[gpioOutputList[i]])
+        if gpioOutputList[i]:
+            GPIO.output(gpioList[i], GPIO.HIGH)
 
     ####################################################
     # SET the interlock devices and interlocks
