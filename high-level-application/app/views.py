@@ -36,7 +36,7 @@ def index():
     if request.method == 'POST': 
         searched_pv = request.form.get('pv') # Get the name of the PV from the form
         # print("SEARCHED PV: " + str(type(searched_pv)))
-        if searched_pv == "":
+        if searched_pv.strip() == "":
             searched_pv = "INVALID PV NAME"
         pv_value = caget(searched_pv) if caget(searched_pv) else "PV not found" # If the PV name is in epics, get it's value, else not found
         searched_name = searched_pv
