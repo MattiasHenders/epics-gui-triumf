@@ -438,8 +438,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 40
+x 116
+y 37
 w 217
 h 61
 
@@ -451,8 +451,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 109
-y 30
+x 126
+y 27
 w 60
 h 80
 file "symbols/fc.edl"
@@ -470,8 +470,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 196
-y 41
+x 213
+y 38
 w 107
 h 27
 font "helvetica-bold-r-24.0"
@@ -490,8 +490,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 186
-y 80
+x 203
+y 77
 w 129
 h 20
 
@@ -503,8 +503,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 250
-y 80
+x 267
+y 77
 w 65
 h 19
 fgColor index 0
@@ -526,8 +526,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 186
-y 80
+x 203
+y 77
 w 60
 h 20
 fgColor index 0
@@ -577,8 +577,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 182
-y 69
+x 199
+y 66
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -602,8 +602,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 121
+x 116
+y 126
 w 218
 h 61
 
@@ -615,8 +615,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 109
-y 111
+x 126
+y 116
 w 60
 h 80
 file "symbols/fc.edl"
@@ -634,8 +634,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 186
-y 128
+x 203
+y 133
 w 124
 h 16
 font "helvetica-bold-r-14.0"
@@ -654,8 +654,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 186
-y 156
+x 203
+y 161
 w 129
 h 25
 
@@ -667,8 +667,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 250
-y 156
+x 267
+y 161
 w 65
 h 24
 fgColor index 0
@@ -690,8 +690,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 186
-y 156
+x 203
+y 161
 w 60
 h 25
 fgColor index 0
@@ -741,8 +741,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 183
-y 150
+x 200
+y 155
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -766,8 +766,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 203
+x 116
+y 212
 w 218
 h 61
 
@@ -779,8 +779,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 109
-y 193
+x 126
+y 202
 w 60
 h 80
 file "symbols/fc.edl"
@@ -798,8 +798,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 196
-y 204
+x 213
+y 213
 w 107
 h 27
 font "helvetica-bold-r-24.0"
@@ -818,8 +818,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 186
-y 243
+x 203
+y 252
 w 129
 h 20
 
@@ -831,8 +831,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 250
-y 243
+x 267
+y 252
 w 65
 h 19
 fgColor index 0
@@ -854,8 +854,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 186
-y 243
+x 203
+y 252
 w 60
 h 20
 fgColor index 0
@@ -905,8 +905,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 183
-y 232
+x 200
+y 241
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -930,8 +930,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 285
+x 116
+y 294
 w 218
 h 61
 
@@ -943,8 +943,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 109
-y 275
+x 126
+y 284
 w 60
 h 80
 file "symbols/fc.edl"
@@ -962,8 +962,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 186
-y 292
+x 203
+y 301
 w 124
 h 16
 font "helvetica-bold-r-14.0"
@@ -982,8 +982,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 186
-y 320
+x 203
+y 329
 w 129
 h 25
 
@@ -995,8 +995,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 250
-y 320
+x 267
+y 329
 w 65
 h 24
 fgColor index 0
@@ -1018,8 +1018,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 186
-y 320
+x 203
+y 329
 w 60
 h 25
 fgColor index 0
@@ -1071,8 +1071,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 183
-y 314
+x 200
+y 323
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1096,8 +1096,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 367
+x 116
+y 376
 w 215
 h 76
 
@@ -1109,8 +1109,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 367
+x 116
+y 376
 w 78
 h 76
 file "symbols/turbo_pump.edl"
@@ -1127,8 +1127,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 197
-y 370
+x 214
+y 385
 w 106
 h 27
 font "helvetica-bold-r-24.0"
@@ -1147,8 +1147,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 182
-y 414
+x 199
+y 423
 w 128
 h 25
 
@@ -1160,8 +1160,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 245
-y 414
+x 262
+y 423
 w 65
 h 24
 fgColor index 0
@@ -1183,8 +1183,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 182
-y 414
+x 199
+y 423
 w 60
 h 25
 fgColor index 0
@@ -1234,8 +1234,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 180
-y 409
+x 197
+y 418
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1259,8 +1259,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 464
+x 116
+y 473
 w 215
 h 76
 
@@ -1272,8 +1272,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 99
-y 464
+x 116
+y 473
 w 78
 h 76
 file "symbols/turbo_pump.edl"
@@ -1290,8 +1290,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 197
-y 467
+x 214
+y 481
 w 106
 h 27
 font "helvetica-bold-r-24.0"
@@ -1310,8 +1310,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 182
-y 511
+x 199
+y 520
 w 128
 h 25
 
@@ -1323,8 +1323,8 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 245
-y 511
+x 262
+y 520
 w 65
 h 24
 fgColor index 0
@@ -1346,8 +1346,8 @@ beginObjectProperties
 major 4
 minor 3
 release 0
-x 182
-y 511
+x 199
+y 520
 w 60
 h 25
 fgColor index 0
@@ -1397,8 +1397,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 180
-y 507
+x 197
+y 516
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1423,7 +1423,7 @@ major 4
 minor 0
 release 0
 x 414
-y 133
+y 126
 w 69
 h 68
 
@@ -1436,7 +1436,7 @@ major 4
 minor 0
 release 0
 x 414
-y 133
+y 126
 w 69
 h 68
 lineColor index 0
@@ -1451,7 +1451,7 @@ major 4
 minor 0
 release 0
 x 438
-y 155
+y 148
 w 24
 h 22
 lineColor index 14
@@ -1466,7 +1466,7 @@ major 4
 minor 0
 release 1
 x 425
-y 144
+y 137
 w 45
 h 46
 lineColor index 14
@@ -1478,8 +1478,8 @@ xPoints {
   1 470
 }
 yPoints {
-  0 190
-  1 144
+  0 183
+  1 137
 }
 endObjectProperties
 
@@ -1493,8 +1493,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 504
-y 132
+x 503
+y 127
 w 100
 h 27
 font "helvetica-bold-r-24.0"
@@ -1514,7 +1514,7 @@ major 4
 minor 0
 release 0
 x 490
-y 169
+y 162
 w 127
 h 25
 
@@ -1527,7 +1527,7 @@ major 4
 minor 4
 release 0
 x 552
-y 169
+y 162
 w 65
 h 24
 fgColor index 0
@@ -1550,7 +1550,7 @@ major 4
 minor 3
 release 0
 x 490
-y 169
+y 162
 w 60
 h 25
 fgColor index 0
@@ -1601,7 +1601,7 @@ major 4
 minor 1
 release 1
 x 488
-y 164
+y 157
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1621,8 +1621,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 504
-y 41
+x 500
+y 36
 w 111
 h 27
 font "helvetica-bold-r-24.0"
@@ -1642,7 +1642,7 @@ major 4
 minor 0
 release 0
 x 490
-y 78
+y 71
 w 127
 h 25
 
@@ -1655,7 +1655,7 @@ major 4
 minor 4
 release 0
 x 552
-y 78
+y 71
 w 65
 h 24
 fgColor index 0
@@ -1678,7 +1678,7 @@ major 4
 minor 3
 release 0
 x 490
-y 78
+y 71
 w 60
 h 25
 fgColor index 0
@@ -1729,7 +1729,7 @@ major 4
 minor 1
 release 1
 x 487
-y 73
+y 66
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -1749,8 +1749,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 416
-y 69
+x 419
+y 62
 w 61
 h 25
 lineColor index 0
@@ -1785,7 +1785,7 @@ major 4
 minor 0
 release 0
 x 82
-y 578
+y 580
 w 602
 h 208
 lineColor index 14
@@ -1798,8 +1798,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 81
-y 17
+x 82
+y 14
 w 602
 h 550
 lineColor index 14
@@ -1813,7 +1813,7 @@ major 4
 minor 0
 release 0
 x 403
-y 388
+y 381
 w 219
 h 100
 
@@ -1826,7 +1826,7 @@ major 4
 minor 0
 release 0
 x 491
-y 445
+y 438
 w 60
 h 25
 
@@ -1839,7 +1839,7 @@ major 4
 minor 3
 release 0
 x 491
-y 445
+y 438
 w 60
 h 25
 fgColor index 0
@@ -1890,7 +1890,7 @@ major 4
 minor 0
 release 0
 x 403
-y 388
+y 381
 w 90
 h 100
 
@@ -1903,7 +1903,7 @@ major 4
 minor 0
 release 0
 x 403
-y 388
+y 381
 w 90
 h 100
 lineColor index 0
@@ -1918,7 +1918,7 @@ major 4
 minor 0
 release 0
 x 438
-y 429
+y 422
 w 20
 h 20
 lineColor index 14
@@ -1933,7 +1933,7 @@ major 4
 minor 0
 release 1
 x 428
-y 418
+y 411
 w 40
 h 40
 lineColor index 14
@@ -1945,8 +1945,8 @@ xPoints {
   1 468
 }
 yPoints {
-  0 458
-  1 418
+  0 451
+  1 411
 }
 endObjectProperties
 
@@ -1961,7 +1961,7 @@ major 4
 minor 1
 release 1
 x 504
-y 407
+y 400
 w 110
 h 27
 font "helvetica-bold-r-24.0"
@@ -1981,7 +1981,7 @@ major 4
 minor 1
 release 1
 x 488
-y 440
+y 433
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -2006,7 +2006,7 @@ major 4
 minor 0
 release 0
 x 403
-y 299
+y 292
 w 219
 h 100
 
@@ -2019,7 +2019,7 @@ major 4
 minor 0
 release 0
 x 403
-y 299
+y 292
 w 90
 h 100
 
@@ -2032,7 +2032,7 @@ major 4
 minor 0
 release 0
 x 403
-y 299
+y 292
 w 90
 h 100
 lineColor index 0
@@ -2047,7 +2047,7 @@ major 4
 minor 0
 release 0
 x 438
-y 340
+y 333
 w 20
 h 20
 lineColor index 14
@@ -2062,7 +2062,7 @@ major 4
 minor 0
 release 1
 x 428
-y 329
+y 322
 w 40
 h 40
 lineColor index 14
@@ -2074,8 +2074,8 @@ xPoints {
   1 468
 }
 yPoints {
-  0 369
-  1 329
+  0 362
+  1 322
 }
 endObjectProperties
 
@@ -2090,7 +2090,7 @@ major 4
 minor 0
 release 0
 x 492
-y 354
+y 347
 w 60
 h 25
 
@@ -2103,7 +2103,7 @@ major 4
 minor 3
 release 0
 x 492
-y 354
+y 347
 w 60
 h 25
 fgColor index 0
@@ -2154,7 +2154,7 @@ major 4
 minor 1
 release 1
 x 504
-y 316
+y 309
 w 110
 h 27
 font "helvetica-bold-r-24.0"
@@ -2174,7 +2174,7 @@ major 4
 minor 1
 release 1
 x 488
-y 349
+y 342
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -2199,7 +2199,7 @@ major 4
 minor 0
 release 0
 x 403
-y 209
+y 202
 w 219
 h 100
 
@@ -2212,7 +2212,7 @@ major 4
 minor 0
 release 0
 x 403
-y 209
+y 202
 w 90
 h 100
 
@@ -2225,7 +2225,7 @@ major 4
 minor 0
 release 0
 x 403
-y 209
+y 202
 w 90
 h 100
 lineColor index 0
@@ -2240,7 +2240,7 @@ major 4
 minor 0
 release 0
 x 438
-y 250
+y 243
 w 20
 h 20
 lineColor index 14
@@ -2255,7 +2255,7 @@ major 4
 minor 0
 release 1
 x 428
-y 239
+y 232
 w 40
 h 40
 lineColor index 14
@@ -2267,8 +2267,8 @@ xPoints {
   1 468
 }
 yPoints {
-  0 279
-  1 239
+  0 272
+  1 232
 }
 endObjectProperties
 
@@ -2283,7 +2283,7 @@ major 4
 minor 1
 release 1
 x 504
-y 224
+y 221
 w 110
 h 27
 font "helvetica-bold-r-24.0"
@@ -2303,7 +2303,7 @@ major 4
 minor 3
 release 0
 x 490
-y 261
+y 254
 w 60
 h 25
 fgColor index 0
@@ -2348,7 +2348,7 @@ major 4
 minor 1
 release 1
 x 488
-y 257
+y 250
 w 134
 h 32
 font "helvetica-medium-r-10.0"
@@ -2364,5 +2364,159 @@ endObjectProperties
 
 endGroup
 
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 412
+y 393
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 305
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 215
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 124
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 411
+y 31
+w 222
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 471
+w 233
+h 80
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 377
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 288
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 202
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 116
+w 233
+h 77
+lineColor index 49
+fillColor index 19
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 29
+w 233
+h 77
+lineColor index 49
+fillColor index 19
 endObjectProperties
 

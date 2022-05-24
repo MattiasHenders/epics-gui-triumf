@@ -938,3 +938,37 @@ bgColor index 8
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 300
+y 370
+w 100
+h 30
+controlPv "ISTF:FC0:SOL"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 510
+y 370
+w 100
+h 30
+controlPv "ISTF:FC1:SOL"
+fgColor index 29
+fgAlarm
+bgColor index 8
+font "helvetica-medium-r-14.0"
+endObjectProperties
+

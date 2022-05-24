@@ -1,53 +1,52 @@
-#=========================
-# Turbo Pump V2 Controller
-#=========================
+#========================
+# Faraday Cup Controller
+#========================
 
-record(bi, "$(IOC):RP"){
+record(bi, "$(IOC):SOL"){
 
-   field(DESC, "Roughing Pump ON OFF")
+   field(DESC, "Faraday Cup Compressed Air")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
-record(bi, "$(IOC):TP"){
+record(bi, "$(IOC):IN"){
 
-   field(DESC, "Turbo Pump ON OFF")
+   field(DESC, "Faraday Cup IN")
+   field(INP, "0")
+   field(ZNAM, "OUT")
+   field(ONAM, "IN")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):OUT"){
+
+   field(DESC, "Faraday Cup OUT")
+   field(INP, "1")
+   field(ZNAM, "OUT")
+   field(ONAM, "IN")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
+   field(SCAN, ".1 second")
+}
+
+record(bi, "$(IOC):HWR"){
+
+   field(DESC, "Cooling Water is flowing")
    field(INP, "0")
    field(ZNAM, "OFF")
    field(ONAM, "ON")
-   field(SCAN, ".1 second")
-}
-
-record(bi, "$(IOC):VV1"){
-
-   field(DESC, "TP Isolation From RP")
-   field(INP, "1")
-   field(ZNAM, "OFF")
-   field(ONAM, "ON")
-   field(SCAN, ".1 second")
-}
-
-record(bi, "$(IOC):VV2"){
-
-   field(DESC, "RP Isolation ON OFF")
-   field(INP, "1")
-   field(ZNAM, "OFF")
-   field(ONAM, "ON")
-   field(SCAN, ".1 second")
-}
-
-record(bi, "$(IOC):VV3"){
-
-   field(DESC, "RV For All ON OFF")
-   field(INP, "1")
-   field(ZNAM, "OFF")
-   field(ONAM, "ON")
+   field(ZSV, "MAJOR")
+   field(OSV, "NO_ALARM")
    field(SCAN, ".1 second")
 }
 
 record(bi, "$(IOC):device"){
 field(INP, "1")
-field(DESC, "ISTF TP")
+field(DESC, "ISTF FC")
 }

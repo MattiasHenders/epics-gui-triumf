@@ -844,7 +844,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_fc0.edl"
+  0 "istf_fc1.edl"
 }
 endObjectProperties
 
@@ -1008,7 +1008,7 @@ buttonLabel "Details"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "istf_fc0.edl"
+  0 "istf_fc1.edl"
 }
 endObjectProperties
 
