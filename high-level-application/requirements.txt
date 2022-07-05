@@ -38,7 +38,7 @@ matplotlib-venn==0.11.5
 mccabe==0.6.1
 mpmath==1.1.0
 munch==2.5.0
-numpy==1.17.4
+numpy==1.22.0
 paramiko==2.7.2
 parso==0.7.1
 pickleshare==0.7.5
