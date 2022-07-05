@@ -14,7 +14,7 @@ cryptography==3.3.1
 cycler==0.10.0
 datadiff==2.0.0
 decorator==4.4.2
-Django==4.0.4
+Django==4.0.6
 entrypoints==0.3
 flake8==3.7.9
 Flask==2.1.2
