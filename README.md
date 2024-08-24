@@ -4,41 +4,70 @@
 
 ## Table of Contents
 
-####  [Description](#description)  - Why make this? Who is it for?
-####  [Installation](#installation) - How do I install this GUI?
-####  [Contributors](#contributors) - Who helped out with this project?
+- [Description](#description) - Why was this project created? Who is it for?
+- [Features](#features) - What does this GUI offer?
+- [Installation](#installation) - How to set up the GUI on your system.
+- [Usage](#usage) - How to use the GUI after installation.
+- [Contributors](#contributors) - Who contributed to this project?
 
 ## <a name="description"></a> Description
 
-This project was designed to:
- - Create Raspberry Pi cluster running EPICS
- - Control tabletop experiments with ER-PCC
- - Create a control system cheaper than the one at TRIUMF currently.
+The EPICS GUI for TRIUMF project aims to build a cost-effective control system for tabletop experiments by leveraging a Raspberry Pi cluster running the Experimental Physics and Industrial Control System (EPICS). This project is designed to:
+
+- **Create a Raspberry Pi Cluster Running EPICS**: Utilize a low-cost, scalable solution for controlling experiments.
+- **Control Tabletop Experiments with ER-PCC**: Integrate with ER-PCC for streamlined experiment management.
+- **Offer a Cost-Effective Alternative**: Provide a more affordable control system compared to existing solutions at TRIUMF.
+
+## <a name="features"></a> Features
+
+- **Raspberry Pi Integration**: Seamlessly integrates with Raspberry Pi clusters for versatile deployment options.
+- **EPICS Compatibility**: Fully supports EPICS, ensuring compatibility with existing control systems and standards.
+- **ER-PCC Support**: Includes support for ER-PCC, making it suitable for a range of experimental setups.
+- **User-Friendly Interface**: Provides an intuitive GUI for easy control and monitoring of experiments.
 
 ## <a name="installation"></a> Installation
 
-``
-git clone https://github.com/MattiasHenders/epics-gui-triumf.git
-``
+To install and set up the EPICS GUI for TRIUMF, follow these steps:
 
-``
-cd epics-gui-triumf
-``
+1. **Clone the Repository**: Download the project files from GitHub.
+   ```bash
+   git clone https://github.com/MattiasHenders/epics-gui-triumf.git
+   ```
 
-Run the EPICS server using the following command in the root of the project:
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd epics-gui-triumf
+   ```
 
-``
-bash ./start_server.sh
-``
+3. **Run the EPICS Server**: Execute the startup script to initialize the EPICS server.
+   ```bash
+   bash ./start_server.sh
+   ```
+
+4. **Configuration**: Review the configuration files in the `config` directory to ensure proper setup for your environment.
+
+## <a name="usage"></a> Usage
+
+Once installed, you can use the EPICS GUI to control and monitor your experiments. The main features include:
+
+- **Experiment Control**: Use the GUI to start, stop, and manage experiments.
+- **Data Monitoring**: View real-time data and logs from your experiments.
+- **Configuration Management**: Adjust settings and configurations through the user-friendly interface.
+
+For detailed usage instructions, refer to the [Documentation](#documentation) or consult the `docs` directory within the project.
 
 ## <a name="contributors"></a> Contributors
 
-All the developers who worked on this project in alphabetical order.
+This project was made possible by the contributions of many developers. You can view the list of contributors on GitHub:
 
 <a href="https://github.com/MattiasHenders/epics-gui-triumf/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=MattiasHenders/epics-gui-triumf" />
 </a>
 
-<!--Made with [contrib.rocks](https://contrib.rocks).-->
+## <a name="documentation"></a> Documentation
+
+For more information, including detailed installation and usage instructions, visit the [Documentation](#documentation) section in the `docs` directory.
+
 ---
 
+Thank you for your interest in the EPICS GUI for TRIUMF project! If you have any questions or need further assistance, please feel free to reach out.
